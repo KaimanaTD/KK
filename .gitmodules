@@ -1,0 +1,3 @@
+[submodule "build"]
+	path = build
+	url = git@github.com:kcmckell/ant-build-script.git
