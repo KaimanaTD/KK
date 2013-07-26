@@ -4,12 +4,13 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-  <?php require(partial/head.php); ?>
+  <?php require('partial/head.php'); ?>
 </head>
 <body>
-  <?php include(partial/oldBrowser.php); ?>
+  <?php include('partial/oldBrowser.php'); ?>
   <!-- Add your site or application content here -->
+  <?php require('partial/nav.php'); ?>
 
-  <?php require(partial/scripts.php); ?>
+  <?php require('partial/scripts.php'); ?>
 </body>
 </html>
