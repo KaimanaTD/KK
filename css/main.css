@@ -97,14 +97,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	background: #f6b76a;
+}
+
+.wrapper {
+	background: #5d5542;
+	text-align: center;
+}
 
 
 
 
 
-
-
-
+.content {
+	text-align: left;
+}
 
 
 
