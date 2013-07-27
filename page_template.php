@@ -12,8 +12,10 @@
 <body>
   <?php include('partial/oldBrowser.php'); ?>
   <div class="wrapper grid-parent">
-  <?php include('partial/banner.php'); ?>
-  <?php require('partial/nav.php'); ?>
+  <header>
+    <?php include('partial/banner.php'); ?>
+    <?php require('partial/nav.php'); ?>
+  </header>
   <!-- Add your site or application content here -->
   <div class="content">
 	<aside>
