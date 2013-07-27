@@ -21,7 +21,7 @@
 		},
 		{
 			test: Modernizr.cssremunit,
-			nope: 'js/conditional/js/rem.min.js'
+			nope: 'js/conditional/REM-unit-polyfill/js/rem.min.js'
 		}
 	]);
 </script>
