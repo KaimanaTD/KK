@@ -4,3 +4,6 @@
 [submodule "js/conditional/REM-unit-polyfill"]
 	path = js/conditional/REM-unit-polyfill
 	url = git@github.com:kcmckell/REM-unit-polyfill.git
+[submodule "js/unsemantic"]
+	path = js/unsemantic
+	url = git@github.com:kcmckell/unsemantic.git
