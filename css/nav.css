@@ -12,12 +12,12 @@ nav {
 }
 nav ul {
   width: 100%;
+  padding: 0;
   list-style: none;
 }
 nav ul>li {
   float: left;
   padding: 1em;
-  width: 14%;
   text-align: center;
 }
 nav ul>li>a {

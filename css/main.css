@@ -108,13 +108,16 @@ body {
 	text-align: center;
 }
 
-
-
-
+nav ul>li{
+	background: #8dc9c7;
+}
 
 .content {
 	text-align: left;
 }
+
+
+
 
 
 

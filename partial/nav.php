@@ -9,11 +9,12 @@
     array("Contact","contacts.php")
   );
 ?>
-<nav>
+<nav class="grid-100 grid-parent">
   <ul> 
     <?php foreach ($pagenames as $page) { ?>
-      <li><a href="<?php echo $page[1];?>"><?php echo $page[0];?></a></li>
+      <li class="grid-10"><a href="<?php echo $page[1];?>"><?php echo $page[0];?></a></li>
     <?php } ?>
+	<li class="grid-30 hide-on-mobile"></li>
   </ul>
   <select onchange="if (this.value) window.location.href = this.value;">
     <?php foreach ($pagenames as $page) { ?>
