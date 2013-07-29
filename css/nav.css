@@ -39,6 +39,9 @@ nav ul>li a {
   display: table-cell;
   vertical-align: middle;
 }
+header nav ul {
+ margin-top: 0;
+}
 nav select {display:none;}
 
 @media screen and (max-width: 44em) {
