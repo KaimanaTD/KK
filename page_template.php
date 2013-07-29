@@ -18,10 +18,19 @@
   </header>
   <!-- Add your site or application content here -->
   <div class="content">
-	<aside>
-	</aside>
-	<section>
+	<section class="grid-70">
+      <article>
+        <h1>Article Title</h1>
+        <p>
+          Body text.
+        </p>
+      </article>
 	</section>
+    <aside class="grid-30">
+      <p>
+        Sample Text.
+      </p>
+	</aside>
   </div>
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
