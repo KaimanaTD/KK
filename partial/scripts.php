@@ -22,11 +22,10 @@
 		{
 			test: Modernizr.cssremunit,
 			nope: 'js/conditional/REM-unit-polyfill/js/rem.min.js'
-		}
+		},
+        { load: ['js/plugins.js', 'js/main.js'] }
 	]);
 </script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
 
 <!-- //-end- concat_js -->
 
