@@ -30,6 +30,7 @@
       <p>
         Sample Text.
       </p>
+      <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>
 	</aside>
     <section class="testimonials grid-100 mobile-grid-100 grid-parent">
       <div class="testimonial grid-50 mobile-grid-50">
@@ -85,5 +86,6 @@
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
   <?php require('partial/scripts.php'); ?>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>
