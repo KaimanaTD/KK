@@ -101,6 +101,7 @@ body {
 	max-width: 960px;
 	margin: 0 auto;
 	background: #f6b76a;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .wrapper {
@@ -134,7 +135,16 @@ footer {
   font-size: small;
 }
 
+h1 {
+  font-family: deftone_stylusregular;
+  font-weight: normal;
+}
 
+.main h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 0;
+}
 
 
 
