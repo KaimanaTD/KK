@@ -20,7 +20,7 @@
   <div class="content">
     <section class="main grid-70">
       <article>
-        <h1>Article Title</h1>
+        <h1>Sample Article Title</h1>
         <p>
           Body text.
         </p>
