@@ -18,14 +18,14 @@
   </header>
   <!-- Add your site or application content here -->
   <div class="content">
-    <section class="grid-70">
+    <section class="main grid-70">
       <article>
         <h1>Article Title</h1>
         <p>
           Body text.
         </p>
       </article>
-	</section>
+	</section><!-- /main -->
     <aside class="grid-30">
       <p>
         Sample Text.
