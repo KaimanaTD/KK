@@ -1,6 +1,6 @@
 <?php 
   $pagenames = array(
-    array("Home","#"),
+    array("Home","index.php"),
     array("Bids and Fess","bidding.php"),
     array("Logistics","logistics.php"),
     array("Teams","teams.php"),
