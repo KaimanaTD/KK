@@ -118,6 +118,10 @@ nav ul>li{
     color: #ddd59c;
 }
 
+.content a {
+  color: #ff9933;
+}
+
 article {
   border-bottom: 1px white solid;
 }
