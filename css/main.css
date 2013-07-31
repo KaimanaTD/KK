@@ -145,8 +145,19 @@ h1 {
   text-align: center;
   margin-top: 0;
 }
+.testimonial{
+  background: rgba(198,198,198,.35);
+  border: 1rem solid #5D5542;
+  padding: 1rem;
+}
+.testifier {
+  text-align: center;
+  font-style: italic;
+}
 
-
+.avatar {
+  margin-bottom: .5rem;
+}
 
 
 
