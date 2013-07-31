@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <?php require('partial/head.php'); ?>
-  <title></title>
+  <title>Kaimana Klassik 27 - 2013</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 </head>
