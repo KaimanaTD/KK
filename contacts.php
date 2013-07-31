@@ -18,19 +18,74 @@
   </header>
   <!-- Add your site or application content here -->
   <div class="content">
-	<section class="grid-70">
-      <article>
-        <h1>Article Title</h1>
+    <section class="main">
+      <article class="grid-100 mobile-grid-100">
+        <h1>Contact Us</h1>
         <p>
-          Body text.
+          If you have questions or comments, please <a href="mailto:kaimanatd@gmail.com">email the tournament directors</a>.
         </p>
       </article>
-	</section>
-    <aside class="grid-30">
-      <p>
-        Sample Text.
-      </p>
-	</aside>
+      <article class="grid-100 grid-parent">
+        <h1 class="grid-100">Kaimana Kommittee</h1>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            <a href="mailto:kaimanatd@gmail.com">Jack Wade</a>          
+            <h2>Tournament Director</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            <a href="mailto:kaimanatd@gmail.com">Nick DeBoer</a>          
+            <h2>Tournament Director</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            <a href="mailto:kaimanaopen@gmail.com">Ben Bergen</a>          
+            <h2>Open Coordinator</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            <a href="mailto:kaimanawomen@gmail.com">Jena Kline</a>          
+            <h2>Women's Coordinator</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            Alex Globerson
+            <h2>Entertainment Director</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            Mondo Chun
+            <h2>Kaimana Guru</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            ??
+            <h2>Welcome Committee</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            ??
+            <h2>Volunteer Coordinator</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            ??
+            <h2>Grinds</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            Mark Slivka
+            <h2>Schwag</h2>
+          </div>
+          <div class="testifier grid-25">
+            <img class="avatar" src="img/PersonIcon.png" />
+            <a href="mailto:webmaster@hawaiiultimate.com">Clay "Dukes" McKell</a>
+            <h2>Website</h2>
+          </div>
+
+        </div>
+      </article>
+    </section>
   </div>
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
