@@ -157,6 +157,7 @@ h1 {
 
 .avatar {
   margin-bottom: .5rem;
+  max-width: 100%;
 }
 
 

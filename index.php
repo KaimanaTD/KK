@@ -35,7 +35,7 @@
     <section class="testimonials grid-100 mobile-grid-100 grid-parent">
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar" style="max-width:100%" src="img/PersonIcon.png" />
+          <img class="avatar"  src="img/PersonIcon.png" />
           Sam O'Brien
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
@@ -44,7 +44,7 @@
       </div>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar" style="max-width:100%" src="img/PersonIcon.png" />
+          <img class="avatar"  src="img/PersonIcon.png" />
           Joanne Adamkewicz
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
@@ -53,7 +53,7 @@
       </div>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar" style="max-width:100%" src="img/PersonIcon.png" />
+          <img class="avatar"  src="img/PersonIcon.png" />
           Christopher Yap
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
@@ -62,7 +62,7 @@
       </div>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar" style="max-width:100%" src="img/PersonIcon.png" />
+          <img class="avatar"  src="img/PersonIcon.png" />
           JD Lobue, Jr.
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
@@ -71,7 +71,7 @@
       </div>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar" style="max-width:100%" src="img/PersonIcon.png" />
+          <img class="avatar"  src="img/PersonIcon.png" />
           Jill Van Wie
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
@@ -80,7 +80,7 @@
       </div>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar" style="max-width:100%" src="img/PersonIcon.png" />
+          <img class="avatar"  src="img/PersonIcon.png" />
           Sparta
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
@@ -89,7 +89,7 @@
       </div>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar" style="max-width:100%" src="img/PersonIcon.png" />
+          <img class="avatar"  src="img/PersonIcon.png" />
           Kenny Gonzales
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
@@ -98,7 +98,7 @@
       </div>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar" style="max-width:100%" src="img/PersonIcon.png" />
+          <img class="avatar"  src="img/PersonIcon.png" />
           Jim Siewert
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
