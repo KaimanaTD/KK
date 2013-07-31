@@ -6,8 +6,8 @@
 <head>
   <?php require('partial/head.php'); ?>
   <title>KK27 | Bids & Fees</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Instructions for bids and fees for Kaimana Klassik.">
+  <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc bids bidding fees payment">
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>

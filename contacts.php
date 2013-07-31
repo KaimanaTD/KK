@@ -6,8 +6,8 @@
 <head>
   <?php require('partial/head.php'); ?>
   <title>KK27 | Contact</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Contact information and Komittee bios for Kaimana Klassik">
+  <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc contact contacts email kommittee committee">
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>

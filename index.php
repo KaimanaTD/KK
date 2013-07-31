@@ -6,8 +6,8 @@
 <head>
   <?php require('partial/head.php'); ?>
   <title>Kaimana Klassik 27 - 2013</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Kaimana Klassik is the premier ultimate tournament in Hawaii.  It's 27th year promises to be the best yet.">
+  <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc">
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>

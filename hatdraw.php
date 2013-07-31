@@ -6,8 +6,8 @@
 <head>
   <?php require('partial/head.php'); ?>
   <title>KK27 | Hat Draw</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Information on the post-Kaimana Hat Draw.">
+  <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc hat draw hatdraw">
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>

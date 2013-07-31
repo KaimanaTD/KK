@@ -6,8 +6,8 @@
 <head>
   <?php require('partial/head.php'); ?>
   <title>KK27 | Teams</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="This year's crop of teams attending Kaimana Klassik.">
+  <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc teams">
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>

@@ -6,8 +6,8 @@
 <head>
   <?php require('partial/head.php'); ?>
   <title>KK27 | History</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Historical records for Kaimana Klassik.">
+  <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc history">
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>
