@@ -113,6 +113,22 @@ nav ul>li{
 	background: #8dc9c7;
 }
 
+.banner {
+  overflow:hidden;
+}
+
+.banner h1 {
+  background-image: url("../img/GreetingsBanner.jpg");
+  height: 250px;
+  width: 960px;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
 .content {
 	text-align: left;
     color: #ddd59c;
