@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/text/text.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/nav.css">
-<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/vendor/modernizr.custom.03341.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
