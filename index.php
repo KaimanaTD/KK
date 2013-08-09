@@ -21,18 +21,20 @@
   <div class="content">
     <section class="main grid-70">
       <h1>Greetings from Kaimana!</h1>
-      <h2>HAWAII'S BIGGEST AND BEST WOMENS AND OPEN TOURNAMENT</h2>
+      <h2>February 15-17, 2014</h2>
+      <h2>HAWAII'S BIGGEST & BEST WOMENS/OPEN TOURNAMENT</h2>
       <p>16 Open and 16 Women's Teams</p>
       <article>
-        <p>The party starts on Friday, February 14 with evening registration and entertainment, and play continues 		
-	through the President’s Day holiday on Monday, February 17. </p>
-        <p>Make your trip a real vacation and stay through the following weekend, where you can join us for the Post-Kaimana Hilo Hat Draw!  Stay tuned for details.  </p>
+        <p>The party starts on Friday, February 14 with evening registration and entertainment.  Games start Saturday morning and continue through 
+        finals on the afternoon of President’s Day holiday on Monday, February 17. </p>
+        <p>Make your trip a real vacation ~ stay through the following weekend, February 22-23, and join us for the Post-Kaimana Hilo Hat Draw!                
+        Stay tuned for details.  </p>
       </article>
       <article>
         <h2>Start the Chatter!</h2>
         <p><strong>Team bids are currently being accepted</strong></p>
         <p>$420 team deposit due on NOVEMBER 8, 2013</p>
-        <p>Send in your bids now.</p>
+        <p>Send in your bids now.  (Online bid submission will be available shortly.)</p>
       </article>
       <article>
         <h2>How to submit a team bid</h2>
@@ -40,12 +42,12 @@
           <ul>
             <li>Contact information for captain or organizer, including name, email address, and phone number(s)</li>
             <li>The number of players you actually anticipate having on your roster come February, as well as the number you have that are currently committed 
-          $420 deposit (3 player fees)</li> 
-            <li>U.S. dollars in the form of a check payable to Kaimana Klassik, money order, or pay online now</li>
+          <li>$420 deposit (3 player fees)</li> 
+            <li>U.S. dollars in the form of a check payable to Kaimana Klassik or money order (online pay will be available shortly)</li>
           </ul>
         <p>Preference will be given to bids that also include: 
         <ul>
-          <li>What your team can contribute to Kaimana 25 both competitively and in spirit,</li>
+          <li>What your team can contribute to Kaimana both competitively and in spirit,</li>
           <li>Your team's history at Kaimana, if any, or your team's history in general,</li>
           <li>Something fun, original, and convincing!</li>
         </ul>
@@ -58,7 +60,7 @@
 	</section><!-- /main -->
     <aside class="grid-30">
       <p>
-        Sample Text.
+        Current Info
       </p>
       <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>
 	</aside>
