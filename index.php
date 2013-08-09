@@ -21,7 +21,7 @@
   <div class="content">
     <section class="main grid-70">
       <h1>Greetings from Kaimana!</h1>
-      <h2>February 15-17, 2014</h2>
+      <h1 id="homedates">February 15, 16, 17, 2014</h1>
       <h2>HAWAII'S BIGGEST & BEST WOMENS/OPEN TOURNAMENT</h2>
       <p>16 Open and 16 Women's Teams</p>
       <article>

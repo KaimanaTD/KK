@@ -156,10 +156,16 @@ h1 {
   font-weight: normal;
 }
 
+h1#homedates {
+  color: #ff9933;
+  text-shadow: -0.3rem 0.2rem .1rem black;
+}
+
 .content h1 {
   font-size: 4rem;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 .testimonial{
   background: rgba(198,198,198,.35);
