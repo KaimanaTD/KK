@@ -21,6 +21,7 @@
   <div class="content">
     <section class="main grid-70">
       <h1>Greetings from Kaimana!</h1>
+      <h2>February 15-17, 2014</h2>
       <h2>HAWAII'S BIGGEST & BEST WOMENS/OPEN TOURNAMENT</h2>
       <p>16 Open and 16 Women's Teams</p>
       <article>
@@ -59,7 +60,7 @@
 	</section><!-- /main -->
     <aside class="grid-30">
       <p>
-        Sample Text.
+        Current Info
       </p>
       <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>
 	</aside>
