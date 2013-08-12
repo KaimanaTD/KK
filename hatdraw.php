@@ -20,9 +20,9 @@
   <div class="content">
 	<section class="grid-70">
       <article>
-        <h1>Article Title</h1>
+        <h1>Post-Kaimana Hilo Hat Draw</h1>
         <p>
-          Body text.
+          Stay tuned for details regarding the Hilo Hat Draw!  
         </p>
       </article>
 	</section>
