@@ -20,15 +20,15 @@
   <div class="content">
 	<section class="grid-70">
       <article>
-        <h1>Article Title</h1>
+        <h1>Teams</h1>
         <p>
-          Body text.
+          Team list will be updated once bids have been accepted.  Check back in late November!  
         </p>
       </article>
 	</section>
     <aside class="grid-30">
       <p>
-        Sample Text.
+        Slide Show here?
       </p>
 	</aside>
   </div>
