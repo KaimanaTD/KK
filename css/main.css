@@ -182,8 +182,22 @@ h1#homedates {
   max-width: 100%;
 }
 
+table {
+  text-align: center;
+  font-size: smaller;
+}
 
+th {
+  border-bottom: white solid 1px;
+}
 
+tr:nth-child(even) {
+  background: #918266;
+}
+
+table span.semester {
+  font-style: italic;
+}
 
 
 
