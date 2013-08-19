@@ -19,16 +19,16 @@
   <!-- Add your site or application content here -->
   <div class="content">
 	<section class="grid-70">
-      <article>
+<!--      <article>-->
         <h1>Teams</h1>
         <p>
           Team list will be updated once bids have been accepted.  Check back in late November!  
         </p>
-      </article>
+<!--      </article>-->
 	</section>
     <aside class="grid-30">
       <p>
-        Slide Show here?
+        Is your team social?  Contact the <a href="mailto:webmaster@hawaiiultimate.com">webmaster</a> to feature your team's online presence here.
       </p>
 	</aside>
   </div>
