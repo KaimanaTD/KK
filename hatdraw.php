@@ -18,20 +18,20 @@
   </header>
   <!-- Add your site or application content here -->
   <div class="content">
-	<section class="grid-70">
-      <article>
+	<section class="grid-100">
+      <!--<article>-->
         <h1>Post-Kaimana Hilo Hat Draw</h1>
         <h2>February 22-23, 2014 on the Big Island</h2>
        <p>
           Stay tuned for details regarding the Hilo Hat Draw!  
         </p>
-      </article>
+      <!--</article>-->
 	</section>
-    <aside class="grid-30">
+<!--    <aside class="grid-30">
       <p>
         Sample Text.
       </p>
-	</aside>
+	</aside>-->
   </div>
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
