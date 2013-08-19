@@ -27,66 +27,61 @@
       </article>
       <article class="grid-100 grid-parent">
         <h1 class="grid-100">Kaimana Klassik Kommittee</h1>
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             <a href="mailto:kaimanatd@gmail.com">Jack Wade</a>          
             <h2>Tournament Director</h2>
           </div>
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             <a href="mailto:kaimanatd@gmail.com">Nick DeBoer</a>          
             <h2>Tournament Director</h2>
           </div>
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             <a href="mailto:kaimanaopen@gmail.com">Ben Bergen</a>          
             <h2>Open Coordinator</h2>
           </div>
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             <a href="mailto:kaimanawomen@gmail.com">Jena Kline</a>          
             <h2>Women's Coordinator</h2>
           </div>
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             Mondo Chun
             <h2>Kaimana Guru</h2>
           </div>
-          
-         <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             Alex Globerson
             <h2>Entertainment Director</h2>
           </div>
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             Mark Slivka
             <h2>Schwag</h2>
           </div>
-          
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             Kimba Towler
             <h2>Welcome Committee</h2>
           </div>
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             Stephen Parrish & Cale Jorgensen
             <h2>Volunteer Coordinator</h2>
           </div>
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
             Jeanette Clark & Becky Mia
             <h2>Grinds</h2>
           </div>
-          
-          <div class="testifier grid-25">
+          <div class="testifier grid-25 mobile-grid-50">
             <img class="avatar" src="img/PersonIcon.png" />
-            <a href="mailto:webmaster@hawaiiultimate.com">Clay "Dukes" McKell</a>
+            <a href="mailto:webmaster@hawaiiultimate.com">Clay "Dukes" McKell</a> & Jena Kline
             <h2>Website</h2>
           </div>
-
-        </div>
       </article>
     </section>
   </div>
