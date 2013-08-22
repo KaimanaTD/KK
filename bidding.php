@@ -22,6 +22,7 @@
 		<h1>Bids & Fees</h1>
     <article>
 				<p>
+						Player fee is $140.00 per player<a id="note1_ref" class="notesymbol" href="#note1_text">*</a> this year. 
 						Fee includes all breakfasts and dinners, entertainment, camping, players' pack (cup, disc, and Kaimana logo surprise), plus all field supplies (water, fruit, juice, EMT).
 				</p>
         <p>
@@ -96,6 +97,14 @@ Honolulu, HI 96816
 						<dt>January 25, 2014</dt><dd> Deadline for full refunds on player fee.</dd>    
 						<dt>February 9, 2014</dt><dd> Last day to register online.</dd>    
 				</dl>
+		</aside>
+		<aside class="notecontainer grid-30">
+				<h3>Notes</h3>
+				<p id="note1_text" class="notetext">
+						<span class="notesymbol">*</span>
+						Kaimana fees are based on an ideal budget divided by a realistic average of the number of players who have attended the tournament in recent years. Any excess monies earned by the tournament go towards supporting the events, activities, and outreach of the Hawaii Ultimate League Association (HULA).
+						<a class="notebacklink" href="#note1_ref">Back</a>
+				</p>
 		</aside>
   </div>
   <?php include('partial/foot.php'); ?>
