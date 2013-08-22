@@ -211,6 +211,17 @@ blockquote {
 	white-space: pre;
 }
 
+/* Styles for foot/side notes */
+a.notesymbol {
+	text-decoration: none;
+	margin-left: -2px;
+}
+.notecontainer p {
+	font-size: smaller;
+}
+a.notebacklink {
+	font-style: italic;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
