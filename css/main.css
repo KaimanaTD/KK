@@ -199,8 +199,17 @@ table span.semester {
   font-style: italic;
 }
 
+dt {
+	font-weight: bold;
+}
 
+.allcaps {
+	text-transform: uppercase;
+}
 
+blockquote {
+	white-space: pre;
+}
 
 /* ==========================================================================
    Helper classes
