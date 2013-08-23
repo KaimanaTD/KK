@@ -144,14 +144,6 @@
 			test: Modernizr.cssremunit,
 			nope: 'js/conditional/REM-unit-polyfill/js/rem.min.js'
 		},
-        {load: [
-            "js/carousel/responsive-carousel.min.js",
-//            "js/carousel/responsive-carousel.autoinit.js",
-//            "js/carousel/responsive-carousel.autoplay.js",
-            "js/carousel/responsive-carousel.css",
-            "js/carousel/responsive-carousel.slide.css"
-          ]
-        },
         { load: ['js/plugins.js', 'js/main.js'] }
 	]);
 </script>
