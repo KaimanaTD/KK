@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <?php require('partial/head.php'); ?>
   <title></title>
@@ -18,19 +18,17 @@
   </header>
   <!-- Add your site or application content here -->
   <div class="content">
-	<section class="grid-70">
-      <article>
-        <h1>Article Title</h1>
-        <p>
-          Body text.
-        </p>
-      </article>
+	<section class="grid-100 grid-parent">
+		<h1>Maps</h1>
+		<div class="grid-50 mobile-grid-100">
+				<h2>Oahu</h2>
+				<img class="map" src="img/map_oahu.gif"/>
+		</div>
+		<div class="grid-50 mobile-grid-100">
+				<h2>Waimanalo</h2>
+				<img class="map" src="img/map_waimanalo.jpg"/>
+		</div>
 	</section>
-    <aside class="grid-30">
-      <p>
-        Sample Text.
-      </p>
-	</aside>
   </div>
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
