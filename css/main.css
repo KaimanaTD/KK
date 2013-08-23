@@ -211,6 +211,10 @@ blockquote {
 	white-space: pre;
 }
 
+img.map {
+	max-width:100%;
+}
+
 /* Styles for foot/side notes */
 a.notesymbol {
 	text-decoration: none;
