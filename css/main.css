@@ -182,6 +182,10 @@ h1#homedates {
   max-width: 100%;
 }
 
+.kommitteeposition .avatar {
+	width: 100%;
+}
+
 table {
   text-align: center;
   font-size: smaller;
