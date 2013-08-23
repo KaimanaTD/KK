@@ -1,7 +1,7 @@
 <?php 
   $pagenames = array(
     array("Home","index.php"),
-    array("Bids and Fess","bidding.php"),
+    array("Bids and Fees","bidding.php"),
     array("Logistics","logistics.php"),
     array("Teams","teams.php"),
     array("Hat Draw","hatdraw.php"),
