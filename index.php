@@ -139,29 +139,6 @@
         </div>
       </div>
     </section>
-    <section class="carousel sponsors grid-100 mobile-grid-100" data-transition="slide">
-      <div>
-        <img src="img/sponsors/Five-Ultimate-Logo-4.gif"/>
-      </div>
-      <div>
-        <img src="img/sponsors/COLogo.gif"/>
-      </div>
-      <div>
-        <img src="img/sponsors/GWSlogo.jpg" />
-      </div>
-      <div>
-        <img src="img/sponsors/RawRev.gif" />
-      </div>
-      <div>
-        <img src="img/sponsors/UltiPeace.gif" />
-      </div>
-      <div>
-        <img src="img/sponsors/pp.gif" />
-      </div>
-      <div>
-        <img src="img/sponsors/styro.gif" />
-      </div>
-    </section>
   </div><!-- /content -->
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
