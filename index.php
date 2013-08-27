@@ -62,7 +62,7 @@
       <p>
         Current Info
       </p>
-      <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>
+      <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27+AND+-Triglavv" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>	
 	</aside>
     <section class="testimonials grid-100 mobile-grid-100 grid-parent">
       <h1>Testimonials</h1>
