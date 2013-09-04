@@ -146,6 +146,10 @@ section:last-of-type article:last-of-type {
 	border-bottom: 0;
 }
 
+section:last-of-type {
+  margin-bottom: 1rem;
+}
+
 aside {
   background: #5ca4a9;
 }
@@ -169,7 +173,7 @@ h1#homedates {
   font-size: 4rem;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 .testimonial{
   background: rgba(198,198,198,.35);
