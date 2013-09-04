@@ -144,6 +144,9 @@
 			test: Modernizr.cssremunit,
 			nope: 'js/conditional/REM-unit-polyfill/js/rem.min.js'
 		},
+        {
+          load: 'js/conditional/carousel/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js'
+        },
         { load: ['js/plugins.js', 'js/main.js'] }
 	]);
 </script>

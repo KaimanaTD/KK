@@ -8,6 +8,25 @@ jQuery(document).ready(function(){
     navbar($alllistitems);
     bannerResize($irelement, $(window).width());
   });
+  // Carousel kickoff
+  $('div[class="carousel"][id="sponsors"]').carouFredSel({
+    // Configuration options available: http://caroufredsel.dev7studios.com/configuration.php
+    circular: true,
+//    responsive: true,
+    width: "100%",
+    align: "center",
+    items: {
+      visible: 1,
+      width: "variable"
+    },
+    scroll: {
+      pauseOnHover: "immediate-resume",
+      fx: "fade"
+    },
+    auto: {
+      timeoutDuration: 4000
+    }
+  });
 })
 
 function navbar($lilist) {

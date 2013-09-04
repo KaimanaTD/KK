@@ -139,6 +139,18 @@
         </div>
       </div>
     </section>
+    <section class="grid-100 mobile-grid-100">
+      <h1>Sponsors</h1>
+      <div id="sponsors" class="carousel">
+        <img src="img/sponsors/COLogo.png"/>
+        <img src="img/sponsors/Five-Ultimate-Logo-4.png"/>
+        <img src="img/sponsors/GWSlogo.png"/>
+        <img src="img/sponsors/RawRev.gif"/>
+        <img src="img/sponsors/UltiPeace.png"/>
+        <img src="img/sponsors/pp.png"/>
+        <img src="img/sponsors/styro.jpg"/>
+      </div>
+    </section>
   </div><!-- /content -->
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
