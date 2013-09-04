@@ -137,16 +137,17 @@
 		{
 			load: '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js',
 			complete: function() {
-				if ( !window.jQuery ) {Modernizr.load('js/vendor/jquery-1.10.2.min.js')}
+				if ( !window.jQuery ) {Modernizr.load('js/vendor/jquery-1.10.2.min.js')};
+                Modernizr.load({
+                  test: $('.carousel').length > 0,
+                  yep: 'js/conditional/carousel/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js'
+                });
 			}
 		},
 		{
 			test: Modernizr.cssremunit,
 			nope: 'js/conditional/REM-unit-polyfill/js/rem.min.js'
 		},
-        {
-          load: 'js/conditional/carousel/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js'
-        },
         { load: ['js/plugins.js', 'js/main.js'] }
 	]);
 </script>
