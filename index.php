@@ -59,9 +59,29 @@
        </article>
 	</section><!-- /main -->
     <aside class="grid-30">
-      <p>
-        Current Info
-      </p>
+      <div class="carousel" id="lead">
+        <img src="img/image_01_133.jpg"/>
+        <img src="img/image_02_133.jpg"/>
+        <img src="img/image_03_133.jpg"/>
+        <img src="img/image_04_133.jpg"/>
+        <img src="img/image_05_133.jpg"/>
+        <img src="img/image_06_133.jpg"/>
+        <img src="img/image_07_133.jpg"/>
+        <img src="img/image_08_133.jpg"/>
+        <img src="img/image_10_133.jpg"/>
+        <img src="img/image_11_133.jpg"/>
+        <img src="img/image_12_133.jpg"/>
+        <img src="img/image_14_133.jpg"/>
+        <img src="img/image_15_133.jpg"/>
+        <img src="img/image_16_133.jpg"/>
+        <img src="img/image_17_133.jpg"/>
+        <img src="img/image_18_133.jpg"/>
+        <img src="img/image_19_133.jpg"/>
+        <img src="img/image_20_133.jpg"/>
+        <img src="img/image_21_133.jpg"/>
+        <img src="img/image_22_133.jpg"/>
+        <img src="img/image_24_133.jpg"/>
+      </div>
       <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>
 	</aside>
     <section class="testimonials grid-100 mobile-grid-100 grid-parent">

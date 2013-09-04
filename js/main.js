@@ -9,8 +9,23 @@ jQuery(document).ready(function(){
     bannerResize($irelement, $(window).width());
   });
   // Carousel kickoff
+  // Configuration options available: http://caroufredsel.dev7studios.com/configuration.php
+  $('div[class="carousel"][id="lead"]').carouFredSel({
+    width: "100%",
+    padding: 10,
+    align: "center",
+    items: {
+      visible: 1
+    },
+    scroll: {
+      pauseOnHover: "immediate-resume",
+      fx: "fade"
+    },
+    auto: {
+      timeoutDuration: 2000
+    }
+  });
   $('div[class="carousel"][id="sponsors"]').carouFredSel({
-    // Configuration options available: http://caroufredsel.dev7studios.com/configuration.php
     circular: true,
 //    responsive: true,
     width: "100%",
