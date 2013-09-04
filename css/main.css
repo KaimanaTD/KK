@@ -349,6 +349,20 @@ a.notebacklink {
     /* Style adjustments for viewports that meet the condition */
 }
 
+@media only screen and (max-width: 481px) {
+.banner h1 {
+  background-image: url("../img/GreetingsBannerMobile.jpg");
+  height: 83px;
+  width: 226px;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+}
+
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
