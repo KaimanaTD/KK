@@ -59,7 +59,6 @@
        </article>
 	</section><!-- /main -->
     <aside class="grid-30">
-<<<<<<< HEAD
       <iframe src="//player.vimeo.com/video/37438019" width="200" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <div class="carousel" id="lead">
         <img src="img/image_01_133.jpg"/>
@@ -84,11 +83,6 @@
         <img src="img/image_22_133.jpg"/>
         <img src="img/image_24_133.jpg"/>
       </div>
-=======
-      <p>
-        Current Info
-      </p>
->>>>>>> 37c977d12b1645d3ae5b74c882e4be0f1848ce99
       <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27+AND+-Triglavv" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>	
 	</aside>
     <section class="testimonials grid-100 mobile-grid-100 grid-parent">
