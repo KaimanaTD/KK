@@ -223,6 +223,10 @@ img.map {
 	max-width:100%;
 }
 
+iframe#twitter-widget-0 {
+  margin-top: 1rem;
+}
+
 /* Styles for foot/side notes */
 a.notesymbol {
 	text-decoration: none;

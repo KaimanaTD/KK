@@ -59,6 +59,7 @@
        </article>
 	</section><!-- /main -->
     <aside class="grid-30">
+      <iframe src="//player.vimeo.com/video/37438019" width="200" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <div class="carousel" id="lead">
         <img src="img/image_01_133.jpg"/>
         <img src="img/image_02_133.jpg"/>
