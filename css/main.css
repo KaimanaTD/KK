@@ -19,7 +19,7 @@ textarea {
 }
 
 html {
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -393,18 +393,27 @@ a.notebacklink {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media only screen and (max-width: 481px) {
-.banner h1 {
-  background-image: url("../img/GreetingsBannerMobile.jpg");
-  height: 83px;
-  width: 226px;
-  display: inline-block;
-  vertical-align: middle;
-  background-size: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  margin: 0;
-}
+@media only screen and (max-width: 35rem) {
+  html {
+    font-size: 1.15em;
+  }
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .banner h1 {
+    background-image: url("../img/GreetingsBannerMobile.jpg");
+    height: 83px;
+    width: 226px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
   .carousel#lead {
     display: none;
   }

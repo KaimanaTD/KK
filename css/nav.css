@@ -49,11 +49,13 @@ nav select {display:none;}
   nav select {
     display: block;
     width:100%;
+    font-size: .75rem;
   }
-  nav:after {
+/*  Don't really like the word "Menu" showing up.  Could replace it with an icon in the future.*/
+/*  nav:after {
     position: absolute;
     content: "Menu";
     right: 0;
     bottom: -1em;
-  }
+  }*/
 }
