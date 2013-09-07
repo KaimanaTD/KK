@@ -405,6 +405,12 @@ a.notebacklink {
   background-repeat: no-repeat;
   margin: 0;
 }
+  .carousel#lead {
+    display: none;
+  }
+  .carousel#lead > div {
+    background-image: none;
+  }
 }
 
 @media print,
