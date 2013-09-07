@@ -61,27 +61,27 @@
     <aside class="grid-30">
       <iframe src="//player.vimeo.com/video/37438019" width="200" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <div class="carousel" id="lead">
-        <img src="img/image_01_133.jpg"/>
-        <img src="img/image_02_133.jpg"/>
-        <img src="img/image_03_133.jpg"/>
-        <img src="img/image_04_133.jpg"/>
-        <img src="img/image_05_133.jpg"/>
-        <img src="img/image_06_133.jpg"/>
-        <img src="img/image_07_133.jpg"/>
-        <img src="img/image_08_133.jpg"/>
-        <img src="img/image_10_133.jpg"/>
-        <img src="img/image_11_133.jpg"/>
-        <img src="img/image_12_133.jpg"/>
-        <img src="img/image_14_133.jpg"/>
-        <img src="img/image_15_133.jpg"/>
-        <img src="img/image_16_133.jpg"/>
-        <img src="img/image_17_133.jpg"/>
-        <img src="img/image_18_133.jpg"/>
-        <img src="img/image_19_133.jpg"/>
-        <img src="img/image_20_133.jpg"/>
-        <img src="img/image_21_133.jpg"/>
-        <img src="img/image_22_133.jpg"/>
-        <img src="img/image_24_133.jpg"/>
+        <div id="lead_01"></div>
+        <div id="lead_02"></div>
+        <div id="lead_03"></div>
+        <div id="lead_04"></div>
+        <div id="lead_05"></div>
+        <div id="lead_06"></div>
+        <div id="lead_07"></div>
+        <div id="lead_08"></div>
+        <div id="lead_10"></div>
+        <div id="lead_11"></div>
+        <div id="lead_12"></div>
+        <div id="lead_14"></div>
+        <div id="lead_15"></div>
+        <div id="lead_16"></div>
+        <div id="lead_17"></div>
+        <div id="lead_18"></div>
+        <div id="lead_19"></div>
+        <div id="lead_20"></div>
+        <div id="lead_21"></div>
+        <div id="lead_22"></div>
+        <div id="lead_24"></div>
       </div>
       <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27+AND+-Triglavv" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>	
 	</aside>
