@@ -3,10 +3,10 @@ jQuery(document).ready(function(){
   var $alllistitems = $('nav li');
   var $irelement = $('.banner .ir');
   navbar($alllistitems);
-  bannerResize($irelement, $(window).width());
+  bannerResize($irelement, window.innerWidth);
   $(window).resize(function(){
     navbar($alllistitems);
-    bannerResize($irelement, $(window).width());
+    bannerResize($irelement, window.innerWidth);
   });
   // Carousel kickoff
   // Configuration options available: http://caroufredsel.dev7studios.com/configuration.php
@@ -73,6 +73,7 @@ function navbar($lilist) {
 }
 
 function bannerResize($imagereplaced, width) {
-  var mar = Math.min(0, Math.floor((width-960)/2));
+  // The 560px breakpoint corresponds to a 35em mobile breakpoint.  This value is also used in main.css.
+  var mar = (width>560 ? Math.min(0, Math.floor((width-960)/2)) : 0);
   $imagereplaced.css({'margin-left':mar});
 }
