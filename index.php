@@ -70,18 +70,6 @@
         <div id="lead_07"></div>
         <div id="lead_08"></div>
         <div id="lead_10"></div>
-        <div id="lead_11"></div>
-        <div id="lead_12"></div>
-        <div id="lead_14"></div>
-        <div id="lead_15"></div>
-        <div id="lead_16"></div>
-        <div id="lead_17"></div>
-        <div id="lead_18"></div>
-        <div id="lead_19"></div>
-        <div id="lead_20"></div>
-        <div id="lead_21"></div>
-        <div id="lead_22"></div>
-        <div id="lead_24"></div>
       </div>
       <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27+AND+-Triglavv" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>	
 	</aside>
