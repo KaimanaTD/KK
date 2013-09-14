@@ -978,23 +978,23 @@ Jena Kline & Jack Wade
 </td>
 
 <td>
-<a href="../Skeletor.jpg")" class="poplink" scrolling="yes">
+<a href="img/Skeletor.jpg")" class="poplink" scrolling="yes">
 Skeletor</a>
 </td>
 
 <td>
-<a href="../Air.jpg")" class="poplink" scrolling="yes">
+<a href="img/Air.jpg")" class="poplink" scrolling="yes">
 AIR</a>
 
 </td>
 
 <td>
-<a href="../Shooter McGavin.jpg")" class="poplink" scrolling="yes">
+<a href="img/Shooter McGavin.jpg")" class="poplink" scrolling="yes">
 Shooter McGavin</a>
 </td>
 
 <td>
-<a href="../Black Betty.jpg")" class="poplink" scrolling="yes">
+<a href="img/Black Betty.jpg")" class="poplink" scrolling="yes">
 Black Betty</a>
 </td>
 
