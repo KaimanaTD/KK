@@ -787,9 +787,7 @@ Proud Coyote
 </td>
 
 <td>
-
-  <font face="Verdana" size=-1>Queue
-
+Queue
 </td>
 
 <td>
