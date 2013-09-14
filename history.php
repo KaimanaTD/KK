@@ -639,7 +639,7 @@ Doughboys
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p76134607/h3B601E1#h15383236")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p76134607/h3B601E1#h15383236" class="poplink" scrolling="yes">
 Hot Box</a>
 </td>
 
@@ -673,13 +673,11 @@ Better Half
 </td>
 
 <td>
-
-  <font face="Verdana" size=-1>Sarcastic Fringeheads
-
+Sarcastic Fringeheads
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p258061860/h1E9A7E58#h1f5adf92")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p258061860/h1E9A7E58#h1f5adf92" class="poplink" scrolling="yes">
 Free Lovin Sisters</a>
 </td>
 
@@ -819,23 +817,23 @@ Jena Kline & Lisa Curtis
 </td>
 
 <td>
-<a href="http://kardanphotography.com/p77467568/?photo=h38F67BDE#955677662")" class="poplink" scrolling="yes">
+<a href="http://kardanphotography.com/p77467568/?photo=h38F67BDE#955677662" class="poplink" scrolling="yes">
 Skeletor</a>
 </td>
 
 
 <td>
-<a href="http://kardanphotography.com/p310846551/?photo=h1D99FB59#496630617")" class="poplink" scrolling="yes">
+<a href="http://kardanphotography.com/p310846551/?photo=h1D99FB59#496630617" class="poplink" scrolling="yes">
 Howling Coyotes</a>
 </td>
 
 <td>
-<a href="http://kardanphotography.com/p203881504/?photo=h0434C86A#70568042")" class="poplink" scrolling="yes">
+<a href="http://kardanphotography.com/p203881504/?photo=h0434C86A#70568042" class="poplink" scrolling="yes">
 Kane</a>
 </td>
 
 <td>
-<a href="http://kardanphotography.com/p533459206/?photo=h01709AC0#24156864")" class="poplink" scrolling="yes">
+<a href="http://kardanphotography.com/p533459206/?photo=h01709AC0#24156864" class="poplink" scrolling="yes">
 NAU</a>
 </td>
 
@@ -861,22 +859,22 @@ Jena Kline & Ben Bergen
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p623215371/h2ece9b25#h2ece9b25")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p623215371/h2ece9b25#h2ece9b25" class="poplink" scrolling="yes">
 Ono</a>
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p623215371/h35f197e9#h35f197e9")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p623215371/h35f197e9#h35f197e9" class="poplink" scrolling="yes">
 Shaolin Coyotes</a>
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p922003061/h6945094#h18f3f9fc")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p922003061/h6945094#h18f3f9fc" class="poplink" scrolling="yes">
 He Lolo</a>
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p623215371/h2b15deff#h2b15deff")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p623215371/h2b15deff#h2b15deff" class="poplink" scrolling="yes">
 Shiny Unicorns</a>
 </td>
 
@@ -900,22 +898,22 @@ Jena Kline & Ben Bergen
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p360393927/h2faa7223#h37962142")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p360393927/h2faa7223#h37962142" class="poplink" scrolling="yes">
 Stigmata Chelada</a>
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p360393927/h2faa7223#h232a1c38")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p360393927/h2faa7223#h232a1c38" class="poplink" scrolling="yes">
 Coyotes Y'all</a>
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p360393927/h37962142#h33acdad5")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p360393927/h37962142#h33acdad5" class="poplink" scrolling="yes">
 Shooter McGavin</a>
 </td>
 
 <td>
-<a href="http://www.kardanphotography.com/p360393927/e37962142#h2f4bef5d")" class="poplink" scrolling="yes">
+<a href="http://www.kardanphotography.com/p360393927/e37962142#h2f4bef5d" class="poplink" scrolling="yes">
 Lady Freaks</a>
 </td>
 
@@ -942,22 +940,22 @@ Mark Slivka & Marci Reeves
 </td>
 
 <td>
-<a href="https://picasaweb.google.com/115690559576841843415/Kaimana2011#5600182796882723170")" class="poplink" scrolling="yes">
+<a href="https://picasaweb.google.com/115690559576841843415/Kaimana2011#5600182796882723170" class="poplink" scrolling="yes">
 Ono</a>
 </td>
 
 <td>
-<a href="https://picasaweb.google.com/115690559576841843415/Kaimana2011#5600180644067991106")" class="poplink" scrolling="yes">
+<a href="https://picasaweb.google.com/115690559576841843415/Kaimana2011#5600180644067991106" class="poplink" scrolling="yes">
 Rebel Coyotes</a>
 </td>
 
 <td>
-<a href="https://picasaweb.google.com/115690559576841843415/Kaimana2011#5600180722465598514")" class="poplink" scrolling="yes">
+<a href="https://picasaweb.google.com/115690559576841843415/Kaimana2011#5600180722465598514" class="poplink" scrolling="yes">
 Beer For Breakfast</a>
 </td>
 
 <td>
-<a href="https://picasaweb.google.com/115690559576841843415/Kaimana2011#5600181162490617586")" class="poplink" scrolling="yes">
+<a href="https://picasaweb.google.com/115690559576841843415/Kaimana2011#5600181162490617586" class="poplink" scrolling="yes">
 Freshly Squeezed</a>
 </td>
 
