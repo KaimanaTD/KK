@@ -926,7 +926,7 @@ Megan Grimshaw
 
 <tr>
 <td>
-2011
+  <a href="kk/kk24" target="_blank">2011</a>
 </td>
 
 <td>
@@ -966,7 +966,7 @@ Jess Kaneshiro
 
 <tr>
 <td>
-2012
+  <a href="kk/kk25" target="_blank">2012</a>
 </td>
 
 <td>
@@ -1010,7 +1010,7 @@ Chris Stevens
 <tr>
 <td>
 
- <a href="http://www.kaimanaklassik.com/kk26" target="_blank">
+ <a href="kk/kk26" target="_blank">
  2013</a> 
 
 </td>
