@@ -86,6 +86,8 @@ Honolulu, HI 96816
       </article>
 	</section>
 		<aside class="grid-30">
+          <h2>Announcements</h2>
+          <dt>September 19, 2013</dt><dd><a href="onlinebidform.php">Team bids</a> are now being accepted.</dd>
 				<h2>Important Dates</h2>
 				<dl>
 						<dt>November 8, 2013</dt><dd> Deadline for team bids (we must receive info and payment by then).</dd>     

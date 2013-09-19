@@ -175,6 +175,23 @@ h1#homedates {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.googleform {
+  text-align: center;
+}
+
+.googleform iframe {
+  max-width: 100%;
+}
+
+article.paypal {
+  text-align: center;
+}
+
+article.paypal form table{
+  margin: 0 auto;
+}
+
 .testimonial{
   background: rgba(198,198,198,.35);
   border: 1rem solid #5D5542;
