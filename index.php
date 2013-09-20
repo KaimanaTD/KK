@@ -34,7 +34,7 @@
         <h2>Start the Chatter!</h2>
         <p><strong>Team bids are currently being accepted</strong></p>
         <p>$420 team deposit due on NOVEMBER 8, 2013</p>
-        <p>Send in your bids now.  (Online bid submission will be available shortly.)</p>
+        <p>Send in your bids now.  (<a href="onlinebidform.php">Online bid submission</a> is now available)</p>
       </article>
       <article>
         <h2>How to submit a team bid</h2>
@@ -43,7 +43,7 @@
             <li>Contact information for captain or organizer, including name, email address, and phone number(s)</li>
             <li>The number of players you actually anticipate having on your roster come February, as well as the number you have that are currently committed 
           <li>$420 deposit (3 player fees)</li> 
-            <li>U.S. dollars in the form of a check payable to Kaimana Klassik or money order (online pay will be available shortly)</li>
+            <li>U.S. dollars in the form of a check payable to Kaimana Klassik or money order (<a href="onlinepayment.php">online payment</a> now available)</li>
           </ul>
         <p>Preference will be given to bids that also include: 
         <ul>
