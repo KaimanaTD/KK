@@ -28,7 +28,7 @@
         <p>
 						All players should register and pay online, if possible.  
 						Individual online registration and payment will be open once team bids have been accepted (mid to late November).  
-						If you cannot pay online, please do so by sending a check to: 
+						If you cannot pay online, please do so by sending a check made out to <strong>Kaimana Klassik</strong> to: 
 <blockquote>Jack Wade 
 1308 Center Street 
 Apartment B2
