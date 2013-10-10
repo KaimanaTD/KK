@@ -71,7 +71,11 @@
         <div id="lead_08"></div>
         <div id="lead_10"></div>
       </div>
+      <a class="twitter-timeline" href="https://twitter.com/KaimanaKlassik" data-chrome="" data-dnt="true" data-tweet-limit="5" data-widget-id="388448727339261953">Tweets by @KaimanaKlassik</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<!-- Old widget is broken on Twitter.  Apparently they get to decide which tweets that match the search criteria are returned.  Lame.
       <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" data-chrome="" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27+AND+-Triglavv" data-widget-id="360230608397541376">Tweets about "@KaimanaKlassik OR #KK27"</a>	
+      -->
 	</aside>
     <section class="testimonials grid-100 mobile-grid-100 grid-parent">
       <h1>Testimonials</h1>
@@ -164,6 +168,8 @@
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
   <?php require('partial/scripts.php'); ?>
+  <!-- See if placing Twitter script IN THE MIDDLE OF THE EFFING PAGE works.
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  -->
 </body>
 </html>
