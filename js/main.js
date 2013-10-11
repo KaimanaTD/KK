@@ -1,13 +1,5 @@
 jQuery(document).ready(function(){
-  // Stupid nav bar spacing.
-  var $alllistitems = $('nav li');
-  var $irelement = $('.banner .ir');
-  navbar($alllistitems);
-  bannerResize($irelement, window.innerWidth);
-  $(window).resize(function(){
-    navbar($alllistitems);
-    bannerResize($irelement, window.innerWidth);
-  });
+  // Select navigation syncing.
   // Note this only works for pages in the top level directory.
   var path_split = window.location.pathname.split("/");
   var needle = path_split[path_split.length-1];
@@ -83,3 +75,17 @@ function bannerResize($imagereplaced, width) {
   var mar = (width>560 ? Math.min(0, Math.floor((width-960)/2)) : 0);
   $imagereplaced.css({'margin-left':mar});
 }
+
+// Son of Suckerfish JS.  http://www.htmldog.com/articles/suckerfish/
+sfHover = function() {
+	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
