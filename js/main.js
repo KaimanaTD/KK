@@ -8,6 +8,10 @@ jQuery(document).ready(function(){
     navbar($alllistitems);
     bannerResize($irelement, window.innerWidth);
   });
+  // Note this only works for pages in the top level directory.
+  var path_split = window.location.pathname.split("/");
+  var needle = path_split[path_split.length-1];
+  $("nav select option").filter(function(ind) {return $(this).attr("value") == needle;}).attr({"selected":"selected"});
   // Carousel kickoff
   // Configuration options available: http://caroufredsel.dev7studios.com/configuration.php
   $('div[class="carousel"][id="lead"]').carouFredSel({
