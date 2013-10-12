@@ -14,38 +14,40 @@ jQuery(document).ready(function(){
   $("nav select option").filter(function(ind) {return $(this).attr("value") == needle;}).attr({"selected":"selected"});
   // Carousel kickoff
   // Configuration options available: http://caroufredsel.dev7studios.com/configuration.php
-  $('div[class="carousel"][id="lead"]').carouFredSel({
-    width: "100%",
-    padding: 10,
-    align: "center",
-    items: {
-      visible: 1
-    },
-    scroll: {
-      pauseOnHover: "immediate-resume",
-      fx: "fade"
-    },
-    auto: {
-      timeoutDuration: 2000
-    }
-  });
-  $('div[class="carousel"][id="sponsors"]').carouFredSel({
-    circular: true,
-//    responsive: true,
-    width: "100%",
-    align: "center",
-    items: {
-      visible: 1,
-      width: "variable"
-    },
-    scroll: {
-      pauseOnHover: "immediate-resume",
-      fx: "fade"
-    },
-    auto: {
-      timeoutDuration: 4000
-    }
-  });
+  if ($('div[class="carousel"]').length > 0) {
+	  $('div[class="carousel"][id="lead"]').carouFredSel({
+		width: "100%",
+		padding: 10,
+		align: "center",
+		items: {
+		  visible: 1
+		},
+		scroll: {
+		  pauseOnHover: "immediate-resume",
+		  fx: "fade"
+		},
+		auto: {
+		  timeoutDuration: 2000
+		}
+	  });
+	  $('div[class="carousel"][id="sponsors"]').carouFredSel({
+		circular: true,
+	//    responsive: true,
+		width: "100%",
+		align: "center",
+		items: {
+		  visible: 1,
+		  width: "variable"
+		},
+		scroll: {
+		  pauseOnHover: "immediate-resume",
+		  fx: "fade"
+		},
+		auto: {
+		  timeoutDuration: 4000
+		}
+	  });
+  };
   var $allVideos = $('iframe[src^="//player.vimeo.com"]'),
       $fluidEl = $('aside');
   $allVideos.each(function(){
