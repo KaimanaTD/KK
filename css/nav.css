@@ -1,32 +1,9 @@
 /* 
     Document   : nav
-    Created on : Jul 25, 2013, 9:08:52 PM
+    Created on : Oct 12, 2013, 9:22 PM
     Author     : kcmckell
     Description:
         Styling for the common navigation bar.
-*/
-
-/*nav {
-  width: 100%;
-  position: relative;
-}
-nav ul {
-  width: 100%;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  display: table;
-}
-nav ul>li {
-  float: left;
-  width: 14%;
-  text-align: center;
-}
-
-
-header nav ul {
- margin-top: 0;
-}
 */
 
 #nav, #nav ul {
