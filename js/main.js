@@ -66,6 +66,25 @@ jQuery(document).ready(function(){
       $el.width(newWidth).height(newWidth * $el.data('aspectRatio'));
     });
   }).resize();
+  // Registration fanciness
+  // Nifty Ajax methodology:
+  // http://stackoverflow.com/questions/8840257/jquery-ajax-handling-continue-responses-success-vs-done
+  function reg_get(url) {
+		return $.ajax(url,{
+			type: "GET",
+			dataType: "text"
+		}).always(function(){
+			// remove loading image?
+		})
+		.fail(function(jqXHR, textStatus, errorThrown) {
+			// handle request failure
+		});
+	};
+	var reg_url = "https://docs.google.com/spreadsheet/pub?key=0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc&output=csv";
+	reg_get(reg_url).done(function(data, textStatus, jqXHR){
+		console.log(data);
+	});
+	
 })
 
 function navbar($lilist) {
