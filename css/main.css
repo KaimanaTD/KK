@@ -109,8 +109,13 @@ body {
 	text-align: center;
 }
 
-nav ul>li{
+nav ul li{
 	background: #8dc9c7;
+	transition: background-color 0.15s ease;
+}
+
+nav li:hover {
+	background-color: #ff9933;
 }
 
 .banner {
