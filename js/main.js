@@ -22,23 +22,35 @@ jQuery(document).ready(function(){
 		  timeoutDuration: 2000
 		}
 	  });
-	  $('div[class="carousel"][id="sponsors"]').carouFredSel({
-		circular: true,
-	//    responsive: true,
-		width: "100%",
-		align: "center",
-		items: {
-		  visible: 1,
-		  width: "variable"
-		},
-		scroll: {
-		  pauseOnHover: "immediate-resume",
-		  fx: "fade"
-		},
-		auto: {
-		  timeoutDuration: 4000
-		}
-	  });
+      var sponsor_carousel = $('div[class="carousel"][id="sponsors"]');
+      sponsor_carousel.carouFredSel({
+        circular: true,
+    //    responsive: true,
+        width: "100%",
+        align: "center",
+        items: {
+          visible: 1,
+          width: "variable"
+        },
+        scroll: {
+          pauseOnHover: "immediate-resume",
+          fx: "fade"
+        },
+        auto: {
+          timeoutDuration: 4000
+        }
+      });
+      sponsor_carousel.children('img').each(function(){
+        var sponsor_url = $(this).attr('data-url');
+        if (sponsor_url) {
+          $(this)
+            .css({'cursor':'pointer'})
+            .click(function(){
+                        console.log(sponsor_url);
+              window.open(sponsor_url,'_blank');
+            });          
+        };
+      });
   };
   var $allVideos = $('iframe[src^="//player.vimeo.com"]'),
       $fluidEl = $('aside');
