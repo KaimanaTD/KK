@@ -155,12 +155,12 @@
     <section class="grid-100 mobile-grid-100">
       <h1>Sponsors</h1>
       <div id="sponsors" class="carousel">
-        <img src="img/sponsors/COLogo.png" data-url="http://skinourishment.com/collections/climbon"/>
+        <img src="img/sponsors/COLogo.png" data-url="http://skinourishment.com/"/>
         <img src="img/sponsors/Five-Ultimate-Logo-4.png" data-url="http://fiveultimate.com/"/>
         <img src="img/sponsors/GWSlogo.png" data-url="http://www.surfhnl.com/"/>
         <img src="img/sponsors/RawRev.gif" data-url="http://www.rawrev.com"/>
         <img src="img/sponsors/UltiPeace.png" data-url="http://www.ultimatepeace.org/"/>
-        <img src="img/sponsors/pp.png" data-url="http://www.plannedparenthood.org/health-center/centerDetails.asp?f=2951"/>
+        <img src="img/sponsors/pp.png" data-url="http://www.plannedparenthood.org/hawaii/"/>
         <img src="img/sponsors/styro.jpg" data-url="http://styrophobia.com/"/>
       </div>
     </section>
