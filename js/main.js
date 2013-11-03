@@ -79,11 +79,35 @@ jQuery(document).ready(function(){
 		.fail(function(jqXHR, textStatus, errorThrown) {
 			// handle request failure
 		});
-	};
-	var reg_url = "https://docs.google.com/spreadsheet/pub?key=0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc&output=csv";
-	reg_get(reg_url).done(function(data, textStatus, jqXHR){
-		console.log(data);
-	});
+  };
+  var reg_url = "https://docs.google.com/spreadsheet/pub?key=0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc&output=csv";
+  var team_url = reg_url+'&single=true&gid=2';
+  var $regform = $('form#registration');
+  var $teamselect = $regform.find('select#team');
+  var $playerselect = $regform.find('select#players');
+  reg_get(team_url).done(function(data, textStatus, jqXHR){
+    $teamselect.find('option.loading').replaceWith('<option value="" selected="selected">Please select a team</option>');
+    var data_array = data.split("\n");
+    var team_info = [];
+    for (var t = 1; t < data_array.length; t++) {
+      team_info = data_array[t].split(',');
+      $teamselect.append('<option value="'+team_info[1]+'">'+team_info[0]+'</option>');
+      console.log(team_info);
+    };
+  });
+  $teamselect.change(function(){
+    reg_get(reg_url+'&single=true&gid='+$teamselect.val()).done(function(data, textStatus, jqXHR){
+      $playerselect.find('option.loading').remove();
+      var data_array = data.split("\n");
+      var player_info = [];
+      for (var p = 1; p < data_array.length; p++){
+        player_info = data_array[p].match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
+        $playerselect.append('<option value="'+player_info[3]+'">'+player_info[0].replace(/^\"|\"$/g,"")+' '+player_info[1].replace(/^\"|\"$/g,"")+'</option>');
+        console.log(player_info);
+      }
+    });
+    $playerselect;
+  });
 	
 })
 
