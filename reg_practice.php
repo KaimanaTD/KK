@@ -25,22 +25,7 @@
           Body text.
         </p>
         <form id="registration">
-          <fieldset>
-            <label for="team">
-              Team
-            </label>
-            <select id="team" name="team">
-              <option class="loading" value="" selected="selected">Loading...</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <label for="players">
-              Players and Guests
-            </label>
-            <select id="players" name="players" multiple>
-              <option class="loading" value="" selected="selected">Waiting for team selection...</option>
-            </select>
-          </fieldset>
+          <button id="add_team" type="button" name="add_team">Add players from another team</button>
         </form>
       </article>
 	</section>
