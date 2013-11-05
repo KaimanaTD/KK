@@ -71,7 +71,8 @@ jQuery(document).ready(function(){
   // http://stackoverflow.com/questions/8840257/jquery-ajax-handling-continue-responses-success-vs-done
   var $regform = $('form#registration');
   if ($regform) {
-    var $add_team_button = $('form#registration button#add_team');
+    var $add_team_button = $regform.find('button#add_team');
+    //var $submit_button = $regform.find('button#calculate');
     var $firstfs = build_team_list(1);
     $regform.prepend($firstfs);
     $add_team_button.click(function(){
@@ -79,6 +80,12 @@ jQuery(document).ready(function(){
       var n = $all_fs.length;
       var $next_fs = build_team_list(n);
       $all_fs.after($next_fs);
+    });
+    $regform.on('submit',function(e){
+      //process.
+      alert("regform handler found.");
+      e.preventDefault();
+      console.log($(this).serialize());
     });
   };
 })
@@ -145,7 +152,7 @@ function build_team_list(n) {
   });
   return $fieldset;
 };
-    
+
 // Son of Suckerfish JS.  http://www.htmldog.com/articles/suckerfish/
 sfHover = function() {
 	var sfEls = document.getElementById("nav").getElementsByTagName("LI");

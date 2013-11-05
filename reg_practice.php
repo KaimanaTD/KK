@@ -24,9 +24,12 @@
         <p>
           Body text.
         </p>
-        <form id="registration">
-          <button id="add_team" type="button" name="add_team">Add players from another team</button>
-        </form>
+        <div id="reg_form">
+          <form id="registration">
+            <button id="add_team" type="button" name="add_team">Add players from another team</button>
+            <button id="calculate" type="submit">Calculate total</button>
+          </form>
+        </div>
       </article>
 	</section>
     <aside class="grid-30">
