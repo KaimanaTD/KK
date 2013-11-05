@@ -72,13 +72,12 @@ jQuery(document).ready(function(){
   var $regform = $('form#registration');
   if ($regform) {
     var $add_team_button = $regform.find('button#add_team');
-    //var $submit_button = $regform.find('button#calculate');
     var $firstfs = build_team_list(1);
     $regform.prepend($firstfs);
     $add_team_button.click(function(){
       var $all_fs = $regform.find('fieldset');
       var n = $all_fs.length;
-      var $next_fs = build_team_list(n);
+      var $next_fs = build_team_list(n+1);
       $all_fs.after($next_fs);
     });
     $regform.on('submit',function(e){
@@ -125,8 +124,7 @@ function reg_get(url) {
 function build_team_list(n) {
   var reg_url = "https://docs.google.com/spreadsheet/pub?key=0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc&output=csv";
   var team_url = reg_url+'&single=true&gid=2';
-  var $fieldset = $('<fieldset/>')
-      .append('<label for="team'+n+'">Team</label>');
+  var $fieldset = $('<fieldset/>');
   reg_get(team_url).done(function(data, textStatus, jqXHR){
     var $teamselect = $('<select/>', {id: 'team'+n, name: 'team'+n})
       .append('<option value="" selected="selected">Please select a team</option>');
@@ -148,7 +146,10 @@ function build_team_list(n) {
         };
       });
     });
-    $fieldset.append($teamselect).append('<label for="players'+n+'">Players and Guests</label>').append($playerselect);
+    $fieldset.append('<label for="team'+n+'">Team</label>')
+      .append($teamselect)
+      .append('<label for="players'+n+'">Players and Guests</label>')
+      .append($playerselect);
   });
   return $fieldset;
 };
