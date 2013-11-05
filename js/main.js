@@ -69,46 +69,18 @@ jQuery(document).ready(function(){
   // Registration fanciness
   // Nifty Ajax methodology:
   // http://stackoverflow.com/questions/8840257/jquery-ajax-handling-continue-responses-success-vs-done
-  function reg_get(url) {
-		return $.ajax(url,{
-			type: "GET",
-			dataType: "text"
-		}).always(function(){
-			// remove loading image?
-		})
-		.fail(function(jqXHR, textStatus, errorThrown) {
-			// handle request failure
-		});
-  };
-  var reg_url = "https://docs.google.com/spreadsheet/pub?key=0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc&output=csv";
-  var team_url = reg_url+'&single=true&gid=2';
   var $regform = $('form#registration');
-  var $teamselect = $regform.find('select#team');
-  var $playerselect = $regform.find('select#players');
-  reg_get(team_url).done(function(data, textStatus, jqXHR){
-    $teamselect.find('option.loading').replaceWith('<option value="" selected="selected">Please select a team</option>');
-    var data_array = data.split("\n");
-    var team_info = [];
-    for (var t = 1; t < data_array.length; t++) {
-      team_info = data_array[t].split(',');
-      $teamselect.append('<option value="'+team_info[1]+'">'+team_info[0]+'</option>');
-      console.log(team_info);
-    };
-  });
-  $teamselect.change(function(){
-    reg_get(reg_url+'&single=true&gid='+$teamselect.val()).done(function(data, textStatus, jqXHR){
-      $playerselect.find('option.loading').remove();
-      var data_array = data.split("\n");
-      var player_info = [];
-      for (var p = 1; p < data_array.length; p++){
-        player_info = data_array[p].match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
-        $playerselect.append('<option value="'+player_info[3]+'">'+player_info[0].replace(/^\"|\"$/g,"")+' '+player_info[1].replace(/^\"|\"$/g,"")+'</option>');
-        console.log(player_info);
-      }
+  if ($regform) {
+    var $add_team_button = $('form#registration button#add_team');
+    var $firstfs = build_team_list(1);
+    $regform.prepend($firstfs);
+    $add_team_button.click(function(){
+      var $all_fs = $regform.find('fieldset');
+      var n = $all_fs.length;
+      var $next_fs = build_team_list(n);
+      $all_fs.after($next_fs);
     });
-    $playerselect;
-  });
-	
+  };
 })
 
 function navbar($lilist) {
@@ -131,6 +103,49 @@ function bannerResize($imagereplaced, width) {
   $imagereplaced.css({'margin-left':mar});
 }
 
+function reg_get(url) {
+  return $.ajax(url,{
+      type: "GET",
+      dataType: "text"
+  }).always(function(){
+      // remove loading image?
+  })
+  .fail(function(jqXHR, textStatus, errorThrown) {
+      // handle request failure
+  });
+};
+
+function build_team_list(n) {
+  var reg_url = "https://docs.google.com/spreadsheet/pub?key=0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc&output=csv";
+  var team_url = reg_url+'&single=true&gid=2';
+  var $fieldset = $('<fieldset/>')
+      .append('<label for="team'+n+'">Team</label>');
+  reg_get(team_url).done(function(data, textStatus, jqXHR){
+    var $teamselect = $('<select/>', {id: 'team'+n, name: 'team'+n})
+      .append('<option value="" selected="selected">Please select a team</option>');
+    var data_array = data.split("\n");
+    var team_info = [];
+    for (var t = 1; t < data_array.length; t++) {
+      team_info = data_array[t].split(',');
+      $teamselect.append('<option value="'+team_info[1]+'">'+team_info[0]+'</option>');
+    };
+    var $playerselect = $('<select/>', {id: 'players'+n, name: 'players'+n, multiple: 'true'}).append('<option class="loading" value="">Waiting for team selection...</option>');
+    $teamselect.change(function(){
+      reg_get(reg_url+'&single=true&gid='+$teamselect.val()).done(function(data, textStatus, jqXHR){
+        $playerselect.find('option.loading').remove();
+        var data_array = data.split("\n");
+        var player_info = [];
+        for (var p = 1; p < data_array.length; p++){
+          player_info = data_array[p].match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
+          $playerselect.append('<option value="'+player_info[3]+'">'+player_info[0].replace(/^\"|\"$/g,"")+' '+player_info[1].replace(/^\"|\"$/g,"")+'</option>');
+        };
+      });
+    });
+    $fieldset.append($teamselect).append('<label for="players'+n+'">Players and Guests</label>').append($playerselect);
+  });
+  return $fieldset;
+};
+    
 // Son of Suckerfish JS.  http://www.htmldog.com/articles/suckerfish/
 sfHover = function() {
 	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
