@@ -136,6 +136,8 @@ function build_team_list(n) {
     };
     var $playerselect = $('<select/>', {id: 'players'+n, name: 'players'+n, multiple: 'true'}).append('<option class="loading" value="">Waiting for team selection...</option>');
     $teamselect.change(function(){
+      $playerselect.find('option').remove();
+      $playerselect.append('<option class="loading" value="">Loading...</option>');
       reg_get(reg_url+'&single=true&gid='+$teamselect.val()).done(function(data, textStatus, jqXHR){
         $playerselect.find('option.loading').remove();
         var data_array = data.split("\n");
