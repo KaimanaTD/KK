@@ -205,7 +205,7 @@ function build_team_list(n) {
         var player_info = [];
         for (var p = 1; p < data_array.length; p++){
           player_info = data_array[p].match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
-          $playerselect.append('<option value="'+player_info[3]+'">'+player_info[0].replace(/^\"|\"$/g,"")+' '+player_info[1].replace(/^\"|\"$/g,"")+'</option>');
+          $playerselect.append('<option value="'+player_info[3]+','+player_info[0]+','+player_info[1]+'">'+render_player_name(player_info[0],player_info[1])+'</option>');
         };
       });
     });
@@ -216,6 +216,10 @@ function build_team_list(n) {
   });
   return $fieldset;
 };
+
+function render_player_name(fn,ln){
+  return fn.replace(/^\"|\"$/g,"")+' '+ln.replace(/^\"|\"$/g,"");
+}
 
 // Son of Suckerfish JS.  http://www.htmldog.com/articles/suckerfish/
 sfHover = function() {
