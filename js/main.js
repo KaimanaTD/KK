@@ -1,3 +1,28 @@
+if (!Array.prototype.filter) {
+  Array.prototype.filter = function (fn, context) {
+    var i,
+        value,
+        result = [],
+        length;
+
+        if (!this || typeof fn !== 'function' || (fn instanceof RegExp)) {
+          throw new TypeError();
+        }
+
+        length = this.length;
+
+        for (i = 0; i < length; i++) {
+          if (this.hasOwnProperty(i)) {
+            value = this[i];
+            if (fn.call(context, value, i, this)) {
+              result.push(value);
+            }
+          }
+        }
+    return result;
+  };
+}
+
 jQuery(document).ready(function(){
   // Select navigation syncing.
   // Note this only works for pages in the top level directory.
@@ -70,6 +95,7 @@ jQuery(document).ready(function(){
   // Nifty Ajax methodology:
   // http://stackoverflow.com/questions/8840257/jquery-ajax-handling-continue-responses-success-vs-done
   var $regform = $('form#registration');
+  var prices = {'player_early': 140, 'guest': 60};
   if ($regform) {
     var $add_team_button = $regform.find('button#add_team');
     var $firstfs = build_team_list(1);
@@ -81,10 +107,45 @@ jQuery(document).ready(function(){
       $all_fs.after($next_fs);
     });
     $regform.on('submit',function(e){
-      //process.
-      alert("regform handler found.");
       e.preventDefault();
-      console.log($(this).serialize());
+      var form_vals = $(this).serializeArray();      
+      var players = [];
+      var guests = [];
+      var subtotal = 0;
+      var all_ids = [];
+      $.each(form_vals.filter(function(el){return el['name'].match(/^players.*$/gi);}), function(ind,val){
+        if (val["value"][2] == 2) {
+          subtotal += prices.guest;
+          all_ids.push(val[0]);
+          guests.push('<tr><td>'+render_player_name(val[1],val[2])+'</td><td>'+prices.guest+'</td></tr>');
+        } else {
+          subtotal += prices.player;
+          all_ids.push(val[0]);
+          players.push('<tr><td>'+render_player_name(val[1],val[2])+'</td><td>'+prices.player+'</td></tr>');
+        };
+      });
+      console.log(players);
+      console.log(guests);
+      var table = '<table><tr><th>Name</th><th>Price</th></tr>';
+      if (players.length > 0) {
+        table += '<tr><td>Players</td><td></td></tr>';
+        for (var p = 0; p < players.length; p++) {
+          table += players[p];
+        };
+      };
+      if (guests.length > 0) {
+        table += '<tr><td>Guests</td><td></td></tr>';
+        for (var g = 0; g < guests.length; g++) {
+          table += guests[g];
+        };
+      };
+      var $summary = ('<div></div>').append(table);
+      console.log($summary);
+      $regform.after($summary);
+      // PSEUDOCODE:
+//      var $paypalbutton; 
+//      $paypalbutton.attr({'price': price, 'item': all_ids.join(',')});
+//      $paypalbutton.show;
     });
   };
 })
