@@ -96,6 +96,7 @@ jQuery(document).ready(function(){
   // http://stackoverflow.com/questions/8840257/jquery-ajax-handling-continue-responses-success-vs-done
   var $regform = $('form#registration');
   var prices = {'player_early': 140, 'guest': 60};
+  prices['player'] = prices.player_early;
   if ($regform) {
     var $add_team_button = $regform.find('button#add_team');
     var $firstfs = build_team_list(1);
@@ -114,14 +115,17 @@ jQuery(document).ready(function(){
       var subtotal = 0;
       var all_ids = [];
       $.each(form_vals.filter(function(el){return el['name'].match(/^players.*$/gi);}), function(ind,val){
-        if (val["value"][2] == 2) {
+        console.log(val);
+        // Should be in the form [ ID, First, Last ]
+        var item = val.value.split(',');
+        if (item[0][2] == 2) {
           subtotal += prices.guest;
-          all_ids.push(val[0]);
-          guests.push('<tr><td>'+render_player_name(val[1],val[2])+'</td><td>'+prices.guest+'</td></tr>');
+          all_ids.push(item[0]);
+          guests.push('<tr><td>'+render_player_name(item[1],item[2])+'</td><td>'+prices.guest+'</td></tr>');
         } else {
           subtotal += prices.player;
-          all_ids.push(val[0]);
-          players.push('<tr><td>'+render_player_name(val[1],val[2])+'</td><td>'+prices.player+'</td></tr>');
+          all_ids.push(item[0]);
+          players.push('<tr><td>'+render_player_name(item[1],item[2])+'</td><td>'+prices.player+'</td></tr>');
         };
       });
       console.log(players);
@@ -217,8 +221,8 @@ function build_team_list(n) {
   return $fieldset;
 };
 
-function render_player_name(fn,ln){
-  return fn.replace(/^\"|\"$/g,"")+' '+ln.replace(/^\"|\"$/g,"");
+function render_player_name(first,last){
+   return first.replace(/^\"|\"$/g,"")+' '+last.replace(/^\"|\"$/g,"");
 }
 
 // Son of Suckerfish JS.  http://www.htmldog.com/articles/suckerfish/
