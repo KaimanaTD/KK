@@ -143,7 +143,8 @@ jQuery(document).ready(function(){
           table += guests[g];
         };
       };
-      var $summary = ('<div></div>').append(table);
+      table += '<tr><td>Total:</td><td>'+subtotal+'</td>';
+      var $summary = $('<div></div>').append(table);
       console.log($summary);
       $regform.after($summary);
       // PSEUDOCODE:
