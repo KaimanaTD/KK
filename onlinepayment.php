@@ -21,6 +21,9 @@
 	<section class="grid-100">
       <article class="paypal">
         <h1>Team Bid Payment</h1>
+		<p id="deadline_warning" class="hidden">
+			<strong>NOTICE: Team bid payments submitted after midnight Hawaii Standard Time on November 8, 2013 will be considered late.</strong>
+		</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="S6CZGX43UQEBW">
@@ -39,5 +42,18 @@
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
   <?php require('partial/scripts.php'); ?>
+  <script>
+	var now = new Date(<?php echo json_encode(date('c',$_SERVER['REQUEST_TIME'])); ?>);
+	var deadline = new Date( '2013-11-08T23:59:59-10:00');
+	var latewarningDOM = document.getElementById("deadline_warning");
+	var interval = setInterval(clocktick, 1000);
+	function clocktick() {
+		now = Date(Date.parse(now)+1000);
+		var d = new Date(now);
+		if (d > deadline) {
+			latewarningDOM.className = latewarningDOM.className.replace(/(?:^|\s)hidden(?!\S)/,'');
+		};
+	};
+  </script>
 </body>
 </html>
