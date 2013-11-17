@@ -141,17 +141,21 @@
                   {
                     load: 'js/vendor/jquery-1.10.2.min.js',
                     complete: function(){
-                      Modernizr.load({
-                        test: $('.carousel').length > 0,
-                        yep: 'js/conditional/carousel/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js'
-                      });
+                      Modernizr.load(
+                        {
+                          test: $('.carousel').length > 0,
+                          yep: 'js/conditional/carousel/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js'
+                        }
+                      );
                     }
                   });
                 };
-                Modernizr.load({
-                  test: $('.carousel').length > 0,
-                  yep: 'js/conditional/carousel/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js'
-                });
+                Modernizr.load(
+                  {
+                    test: $('.carousel').length > 0,
+                    yep: 'js/conditional/carousel/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js'
+                  }
+                );
 			}
 		},
 		{
