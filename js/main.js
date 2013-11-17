@@ -1,28 +1,3 @@
-if (!Array.prototype.filter) {
-  Array.prototype.filter = function (fn, context) {
-    var i,
-        value,
-        result = [],
-        length;
-
-        if (!this || typeof fn !== 'function' || (fn instanceof RegExp)) {
-          throw new TypeError();
-        }
-
-        length = this.length;
-
-        for (i = 0; i < length; i++) {
-          if (this.hasOwnProperty(i)) {
-            value = this[i];
-            if (fn.call(context, value, i, this)) {
-              result.push(value);
-            }
-          }
-        }
-    return result;
-  };
-}
-
 jQuery(document).ready(function(){
   // Select navigation syncing.
   // Note this only works for pages in the top level directory.
@@ -91,68 +66,7 @@ jQuery(document).ready(function(){
       $el.width(newWidth).height(newWidth * $el.data('aspectRatio'));
     });
   }).resize();
-  // Registration fanciness
-  // Nifty Ajax methodology:
-  // http://stackoverflow.com/questions/8840257/jquery-ajax-handling-continue-responses-success-vs-done
-  var $regform = $('form#registration');
-  var prices = {'player_early': 140, 'guest': 60};
-  prices['player'] = prices.player_early;
-  if ($regform) {
-    var $add_team_button = $regform.find('button#add_team');
-    var $firstfs = build_team_list(1);
-    $regform.prepend($firstfs);
-    $add_team_button.click(function(){
-      var $all_fs = $regform.find('fieldset');
-      var n = $all_fs.length;
-      var $next_fs = build_team_list(n+1);
-      $all_fs.after($next_fs);
-    });
-    $regform.on('submit',function(e){
-      e.preventDefault();
-      var form_vals = $(this).serializeArray();      
-      var players = [];
-      var guests = [];
-      var subtotal = 0;
-      var all_ids = [];
-      $.each(form_vals.filter(function(el){return el['name'].match(/^players.*$/gi);}), function(ind,val){
-        console.log(val);
-        // Should be in the form [ ID, First, Last ]
-        var item = val.value.split(',');
-        if (item[0][2] == 2) {
-          subtotal += prices.guest;
-          all_ids.push(item[0]);
-          guests.push('<tr><td>'+render_player_name(item[1],item[2])+'</td><td>'+prices.guest+'</td></tr>');
-        } else {
-          subtotal += prices.player;
-          all_ids.push(item[0]);
-          players.push('<tr><td>'+render_player_name(item[1],item[2])+'</td><td>'+prices.player+'</td></tr>');
-        };
-      });
-      console.log(players);
-      console.log(guests);
-      var table = '<table><tr><th>Name</th><th>Price</th></tr>';
-      if (players.length > 0) {
-        table += '<tr><td>Players</td><td></td></tr>';
-        for (var p = 0; p < players.length; p++) {
-          table += players[p];
-        };
-      };
-      if (guests.length > 0) {
-        table += '<tr><td>Guests</td><td></td></tr>';
-        for (var g = 0; g < guests.length; g++) {
-          table += guests[g];
-        };
-      };
-      table += '<tr><td>Total:</td><td>'+subtotal+'</td>';
-      var $summary = $('<div></div>').append(table);
-      console.log($summary);
-      $regform.after($summary);
-      // PSEUDOCODE:
-//      var $paypalbutton; 
-//      $paypalbutton.attr({'price': price, 'item': all_ids.join(',')});
-//      $paypalbutton.show;
-    });
-  };
+  
 })
 
 function navbar($lilist) {
@@ -173,57 +87,6 @@ function bannerResize($imagereplaced, width) {
   // The 560px breakpoint corresponds to a 35em mobile breakpoint.  This value is also used in main.css.
   var mar = (width>560 ? Math.min(0, Math.floor((width-960)/2)) : 0);
   $imagereplaced.css({'margin-left':mar});
-}
-
-function reg_get(url) {
-  return $.ajax(url,{
-      type: "GET",
-      dataType: "text"
-  }).always(function(){
-      // remove loading image?
-  })
-  .fail(function(jqXHR, textStatus, errorThrown) {
-      // handle request failure
-  });
-};
-
-function build_team_list(n) {
-  var reg_url = "https://docs.google.com/spreadsheet/pub?key=0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc&output=csv";
-  var team_url = reg_url+'&single=true&gid=2';
-  var $fieldset = $('<fieldset/>');
-  reg_get(team_url).done(function(data, textStatus, jqXHR){
-    var $teamselect = $('<select/>', {id: 'team'+n, name: 'team'+n})
-      .append('<option value="" selected="selected">Please select a team</option>');
-    var data_array = data.split("\n");
-    var team_info = [];
-    for (var t = 1; t < data_array.length; t++) {
-      team_info = data_array[t].split(',');
-      $teamselect.append('<option value="'+team_info[1]+'">'+team_info[0]+'</option>');
-    };
-    var $playerselect = $('<select/>', {id: 'players'+n, name: 'players'+n, multiple: 'true'}).append('<option class="loading" value="">Waiting for team selection...</option>');
-    $teamselect.change(function(){
-      $playerselect.find('option').remove();
-      $playerselect.append('<option class="loading" value="">Loading...</option>');
-      reg_get(reg_url+'&single=true&gid='+$teamselect.val()).done(function(data, textStatus, jqXHR){
-        $playerselect.find('option.loading').remove();
-        var data_array = data.split("\n");
-        var player_info = [];
-        for (var p = 1; p < data_array.length; p++){
-          player_info = data_array[p].match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
-          $playerselect.append('<option value="'+player_info[3]+','+player_info[0]+','+player_info[1]+'">'+render_player_name(player_info[0],player_info[1])+'</option>');
-        };
-      });
-    });
-    $fieldset.append('<label for="team'+n+'">Team</label>')
-      .append($teamselect)
-      .append('<label for="players'+n+'">Players and Guests</label>')
-      .append($playerselect);
-  });
-  return $fieldset;
-};
-
-function render_player_name(first,last){
-   return first.replace(/^\"|\"$/g,"")+' '+last.replace(/^\"|\"$/g,"");
 }
 
 // Son of Suckerfish JS.  http://www.htmldog.com/articles/suckerfish/
