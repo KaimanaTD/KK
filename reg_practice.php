@@ -33,6 +33,9 @@
             <button id="calculate" type="submit">Calculate total</button>
           </form>
         </div>
+        <div id="payment_summary">
+          <table></table>
+        </div>
       </article>
 	</section>
     <aside class="grid-30">
@@ -93,7 +96,7 @@
       });
       console.log(players);
       console.log(guests);
-      var table = '<table><tr><th>Name</th><th>Price</th></tr>';
+      var table = '<tr><th>Name</th><th>Price</th></tr>';
       if (players.length > 0) {
         table += '<tr><td>Players</td><td></td></tr>';
         for (var p = 0; p < players.length; p++) {
@@ -107,9 +110,7 @@
         };
       };
       table += '<tr><td>Total:</td><td>'+subtotal+'</td>';
-      var $summary = $('<div></div>').append(table);
-      console.log($summary);
-      $regform.after($summary);
+      var $table = $('div#payment_summary table').html(table);
       // PSEUDOCODE:
 //      var $paypalbutton; 
 //      $paypalbutton.attr({'price': price, 'item': all_ids.join(',')});
