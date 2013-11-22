@@ -36,6 +36,16 @@
         <div id="payment_summary">
           <table></table>
         </div>
+        <div id="reg_pay">
+          <script src="js/paypal-button.min.js?merchant=photo@claymckell.com" 
+              data-button="buynow" 
+              data-name="KK27Registration" 
+              data-amount="1" 
+              data-shipping="0" 
+              data-tax="0" 
+              data-env="sandbox"
+          ></script>
+        </div>
       </article>
 	</section>
     <aside class="grid-30">
@@ -111,6 +121,14 @@
       };
       table += '<tr><td>Total:</td><td>'+subtotal+'</td>';
       var $table = $('div#payment_summary table').html(table);
+      var $paypal_button = $('form.paypal-button');
+      var $amount = $paypal_button.find('input[name="amount"]').attr({"value":subtotal});
+      var $custom = $paypal_button.find('input[name="custom"]');
+      if ($custom.length > 0) {
+        $custom.attr({"value":all_ids.join(',')});
+      } else {
+        $paypal_button.prepend('<input type="hidden" name="custom" value="'+all_ids.join(',')+'">');
+      };
       // PSEUDOCODE:
 //      var $paypalbutton; 
 //      $paypalbutton.attr({'price': price, 'item': all_ids.join(',')});
