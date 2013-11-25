@@ -52,7 +52,7 @@ ini_set('error_log', dirname(__FILE__).'/ipn.log');
 
 
 // instantiate the IpnListener class
-include('../ipnlistener.php');
+include('ipnlistener.php');
 $listener = new IpnListener();
 
 
@@ -122,8 +122,8 @@ if ($verified) {
     $errmsg .= "'receiver_email' does not match:";
     $errmsg .= $_POST['receiver_email'] . "\n";
   };
-	// check that payment_amount/payment_currency are correct
-  $id_array = $_POST['custom'].explode(',');
+	// Check that payment_amount/payment_currency are correct
+  $id_array = explode(',', $_POST['custom']);
   $npeople = array(
     "players" => 0,
     "guests" => 0
@@ -135,6 +135,7 @@ if ($verified) {
       $npeople["players"] += 1;
     };
   };
+  $errmsg .= serialize($npeople);
   unset($id);
   $payment_date = $_POST['payment_date'];
   $payment_date_proper = strtotime($payment_date);
@@ -163,29 +164,35 @@ if ($verified) {
     $errmsg .= "Instead we received " . $payment_amount;
     // Write alert to database.
     foreach ($writedata as $id => $val) {
-      $val['amt'] = $payment_amount;
-      $val['meth'] = 'FRAUD';
+      $writedata[$id]['amt'] = $payment_amount;
+      $writedata[$id]['meth'] = 'FRAUD';
+      $errmsg .= "Attempting to write {$val['amt']} to 'amt'.\n";
+      $errmsg .= "Attempting to write {$val['meth']} to 'meth.\n";
     };
     unset($val);
   } else {
     // Write results to database.
     foreach ($writedata as $id => $val) {
-      if ($id[2] == '2') {
-        $val['amt'] = $fees['guest'];
-        $val['meth'] = 'PayPal';
+      $id_string = (string)$id;
+      if ($id_string[2] == '2') {
+        $writedata[$id]['amt'] = $fees['guest'];
+        $writedata[$id]['meth'] = 'PayPal';
       } else {
-        $val['amt'] = $fees['player'];
-        $val['meth'] = 'PayPal';
+        $writedata[$id]['amt'] = $fees['player'];
+        $writedata[$id]['meth'] = 'PayPal';
       };
     };
     unset($val);
   }
+  $errmsg .= "Here is the writedata in total:\n" . serialize($writedata) . "\n";
   foreach ($writedata as $id=>$val) {
+    $errmsg .= "For player id $id we are trying to write\n" . serialize($val) ."\n";
     sgs_walk('Form Responses', 'write_to_ss', 'playerid='.$id, $val);
   }
   unset($val);
   
   if (!empty($errmsg)) {
+    error_log($errmsg);
     $body = "IPN failed fraud checks: \n$errmsg\n\n";
     $body .= $listener->getTextReport();
     mail('webmaster@hawaiiultimate.com','PayPal IPN Fraud Warning', $body);
@@ -196,7 +203,7 @@ if ($verified) {
     a good idea to have a developer or sys admin manually investigate any 
     invalid IPN.
     */
-    mail('YOUR EMAIL ADDRESS', 'Invalid IPN', $listener->getTextReport());
+    mail('webmaster@hawaiiultimate.com', 'Invalid IPN', $listener->getTextReport());
 }
 
 function write_to_ss($data, $input) {
