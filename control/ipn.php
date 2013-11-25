@@ -136,7 +136,6 @@ if ($verified) {
       $npeople["players"] += 1;
     };
   };
-  $errmsg .= serialize($npeople);
   unset($id);
   $payment_date = $_POST['payment_date'];
   $payment_date_proper = strtotime($payment_date);
@@ -167,8 +166,6 @@ if ($verified) {
     foreach ($writedata as $id => $val) {
       $writedata[$id]['amt'] = $payment_amount;
       $writedata[$id]['meth'] = 'FRAUD';
-      $errmsg .= "Attempting to write {$val['amt']} to 'amt'.\n";
-      $errmsg .= "Attempting to write {$val['meth']} to 'meth.\n";
     };
     unset($val);
   } else {
@@ -185,9 +182,7 @@ if ($verified) {
     };
     unset($val);
   }
-  $errmsg .= "Here is the writedata in total:\n" . serialize($writedata) . "\n";
   foreach ($writedata as $id=>$val) {
-    $errmsg .= "For player id $id we are trying to write\n" . serialize($val) ."\n";
     sgs_walk('Form Responses', 'write_to_ss', 'playerid='.$id, $val);
   }
   unset($val);
@@ -196,7 +191,7 @@ if ($verified) {
     error_log($errmsg);
     $body = "IPN failed fraud checks: \n$errmsg\n\n";
     $body .= $listener->getTextReport();
-    mail('webmaster@hawaiiultimate.com','PayPal IPN Fraud Warning', $body);
+    mail('webmaster@hawaiiultimate.com','PayPal IPN Fraud Warning', $body, 'From: webmaster@hawaiiultimate.com');
   }
 } else {
     /*
@@ -204,7 +199,7 @@ if ($verified) {
     a good idea to have a developer or sys admin manually investigate any 
     invalid IPN.
     */
-    mail('webmaster@hawaiiultimate.com', 'Invalid IPN', $listener->getTextReport());
+    mail('webmaster@hawaiiultimate.com', 'Invalid IPN', $listener->getTextReport(), 'From: webmaster@hawaiiultimate.com');
 }
 
 function write_to_ss($data, $input) {
