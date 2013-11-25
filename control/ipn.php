@@ -112,13 +112,84 @@ if ($verified) {
 	    3. Check that $_POST['receiver_email'] is your Primary PayPal email 
 	    4. Check that $_POST['payment_amount'] and $_POST['payment_currency'] 
 	       are correct
-    
-    Since implementations on this varies, I will leave these checks out of this
-    example and just send an email using the getTextReport() method to get all
-    of the details about the IPN.  
     */
-    mail('YOUR EMAIL ADDRESS', 'Verified IPN', $listener->getTextReport());
-
+    $errmsg = '';
+	// check whether the payment_status is Completed
+  if ($_POST['payment_status'] != 'Completed') {exit(0);};
+	// check that txn_id has not been previously processed
+	// check that receiver_email is your PayPal email
+  if ($_POST['receiver_email'] != 'photo@claymckell.com') {
+    $errmsg .= "'receiver_email' does not match:";
+    $errmsg .= $_POST['receiver_email'] . "\n";
+  };
+	// check that payment_amount/payment_currency are correct
+  $id_array = $_POST['custom'].explode(',');
+  $npeople = array(
+    "players" => 0,
+    "guests" => 0
+  );
+  foreach ($id_array as $id) {
+    if ($id[2] == '2') {
+      $npeople["guests"] += 1;
+    } else {
+      $npeople["players"] += 1;
+    };
+  };
+  unset($id);
+  $payment_date = $_POST['payment_date'];
+  $payment_date_proper = strtotime($payment_date);
+  $fees = array(
+    "guest" => 80,
+    "regular" => 140,
+    "late" => 165,
+    "player" => ($payment_date_proper < $date["late_start"] ? 140 : 165)
+  );
+  $expected_amount = $npeople["players"]*$fees["player"] + $npeople["guests"]*$fees["guest"];
+  $payment_amount = $_POST['mc_gross'];
+  $writedata = array();
+  for ($ind = 0, $len = count($id_array); $ind < $len ; ++$ind) {
+    $writedata[$id_array[$ind]] = array(
+      'amt'=>'',
+      'meth'=>'',
+      'date'=>$payment_date,
+      'by'=>$_POST['first_name'] . ' ' . $_POST['last_name'] . ': ' . $_POST['payer_email']
+    );
+  }
+  if ($payment_amount < $expected_amount) {
+    // Possible fraud.
+    $errmsg .= "'mc_gross' does not match.  For these player ID's:\n";
+    $errmsg .= $_POST['custom'];
+    $errmsg .= "\nWe expect payment of " . $expected_amount . ".\n";
+    $errmsg .= "Instead we received " . $payment_amount;
+    // Write alert to database.
+    foreach ($writedata as $id => $val) {
+      $val['amt'] = $payment_amount;
+      $val['meth'] = 'FRAUD';
+    };
+    unset($val);
+  } else {
+    // Write results to database.
+    foreach ($writedata as $id => $val) {
+      if ($id[2] == '2') {
+        $val['amt'] = $fees['guest'];
+        $val['meth'] = 'PayPal';
+      } else {
+        $val['amt'] = $fees['player'];
+        $val['meth'] = 'PayPal';
+      };
+    };
+    unset($val);
+  }
+  foreach ($writedata as $id=>$val) {
+    sgs_walk('Form Responses', 'write_to_ss', 'playerid='.$id, $val);
+  }
+  unset($val);
+  
+  if (!empty($errmsg)) {
+    $body = "IPN failed fraud checks: \n$errmsg\n\n";
+    $body .= $listener->getTextReport();
+    mail('webmaster@hawaiiultimate.com','PayPal IPN Fraud Warning', $body);
+  }
 } else {
     /*
     An Invalid IPN *may* be caused by a fraudulent transaction attempt. It's
@@ -126,6 +197,14 @@ if ($verified) {
     invalid IPN.
     */
     mail('YOUR EMAIL ADDRESS', 'Invalid IPN', $listener->getTextReport());
+}
+
+function write_to_ss($data, $input) {
+  $data['receivedamount'] = $input['amt'];
+  $data['receivedmethod'] = $input['meth'];
+  $data['receiveddate'] = $input['date'];
+  $data['paidby'] = $input['by'];
+  return $data;
 }
 
 ?>
