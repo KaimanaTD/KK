@@ -1,4 +1,5 @@
 <?php
+// TODO: Do syntax checking on Player ID's.  They could be user-edited in the JS.
 /**
  *  PHP-PayPal-IPN Example
  *
