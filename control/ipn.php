@@ -17,7 +17,27 @@
  *  @license    http://opensource.org/licenses/gpl-3.0.html
  */
  
- 
+date_default_timezone_set('Pacific/Honolulu');
+/* ------------------------------------------------------------------------
+ * Start Configuration of Google Spreadsheet custom API
+ * ------------------------------------------------------------------------
+ */
+// Where's Zend's Loader.php
+define('SGS_ZEND_LOADER', 'Zend/Loader.php');
+set_include_path(get_include_path() . PATH_SEPARATOR . dirname(__FILE__) . "/ZendGdata-1.12.3/library");
+require_once 'credentials.php';
+require_once 'dates.php';
+// Lifted from the URL of Google Doc I want to work with
+define('SGS_SHEET_ID', '0ApzvRgA17RKMdGdfaUZLV3hnQjV1V3cxV3QzUFNoeVE');
+
+// Include the API
+require_once('sgs.php');
+
+/* ------------------------------------------------------------------------
+ * End Configuration
+ * ------------------------------------------------------------------------
+ */
+
 /*
 Since this script is executed on the back end between the PayPal server and this
 script, you will want to log errors to a file or email. Do not try to use echo
@@ -28,7 +48,7 @@ sure your web server has permissions to write to that file. In a production
 environment it is better to have that log file outside of the web root.
 */
 ini_set('log_errors', true);
-ini_set('error_log', dirname(__FILE__).'/ipn_errors.log');
+ini_set('error_log', dirname(__FILE__).'/ipn.log');
 
 
 // instantiate the IpnListener class
