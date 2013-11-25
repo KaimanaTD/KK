@@ -23,9 +23,22 @@
   <div class="content">
 	<section class="grid-70">
       <article>
-        <h1>Article Title</h1>
+        <h1>Registration Payment</h1>
         <p>
-          Body text.
+          After submitting your registration form, please find select your team and find your name below.
+          Guests are listed on the "Guest" team.
+          You may pay for more than one person on a team by Control/Command-clicking names (may not work on touch devices).
+          You may pay for people on more than one team (e.g. a player and a guest) by selecting "Add players from another team" and repeating the process.
+        </p>
+        <p>
+          When everyone has been selected, select "Calculate total" and check the names and prices.
+        </p>
+        <p>
+          When ready, the "Buy Now" button will ask you to authorize the payment via PayPal.  
+          You will receive a confirmation message to your PayPal email shortly.
+        </p>
+        <p>
+          Any problems with registration or payments should be directed to <a href="mailto:webmaster@hawaiiultimate.com">the webmaster</a>.
         </p>
         <div id="reg_form">
           <form id="registration">
