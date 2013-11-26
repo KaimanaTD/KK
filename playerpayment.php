@@ -57,6 +57,8 @@
               data-shipping="0" 
               data-tax="0" 
               data-env="sandbox"
+              data-notify_url="http://kaimanaklassik.com/control/ipn.php"
+              data-return="http://kaimanaklassik.com/paymentconfirmation.php"
           ></script>
         </div>
       </article>
