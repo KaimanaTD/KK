@@ -4,6 +4,7 @@
 
 # Not-for-public-consumption
 control/credentials.php
+control/ipn.log
 
 # Build script products
 intermediate/
