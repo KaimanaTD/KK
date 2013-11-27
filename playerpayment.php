@@ -145,89 +145,103 @@
     }; // endif $regform
   });
 
-function reg_get(url) {
-  return $.ajax(url,{
+function reg_get(key,sheetname) {
+  sheetname = (typeof sheetname !== 'undefined' ? sheetname : 'TeamSheetMap');
+  return $.ajax("control/reg.php",{
       type: "GET",
+      data: {
+        'sskey':key,
+        'sheetname':sheetname
+      },
       dataType: "json"
   }).always(function(){
       // remove loading image?
+//      console.log('Have ajaxed');
   })
   .fail(function(jqXHR, textStatus, errorThrown) {
       // handle request failure
+      console.log(jqXHR);
+      console.log(textStatus);
+      console.log(errorThrown);
   });
 };
 
 function build_team_list(n) {
+//  reg_get('0ApzvRgA17RKMdGJsaVZHTjZsb204bUJRQUtCcS1Id1E').done(function(data){
+//        alert(data);
+//      });
   //var reg_url = "http://spreadsheets.google.com/feeds/list/0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc/";
   var div_order = ["Open","Women","Guests"];
-  var reg_url_open = "http://spreadsheets.google.com/feeds/list/0ApzvRgA17RKMdGJsaVZHTjZsb204bUJRQUtCcS1Id1E/";
-  var reg_url_women = "http://spreadsheets.google.com/feeds/list/0ApzvRgA17RKMdGxRdmpRcUxnNmZuRS1adkFYTmZUTkE/";
-  var reg_url_guests = "http://spreadsheets.google.com/feeds/list/0ApzvRgA17RKMdEktVnhnczRJWEJOUzd3Wkd2dmR1cUE/";
-  var reg_url_array = [reg_url_open, reg_url_women, reg_url_guests];
-  var format_suffix = '/public/values?alt=json';
-  //var team_url = reg_url+"1"+format_suffix;
-  var team_request_array = [];
-  for (var div=0; div<reg_url_array.length; div++) {team_request_array.push(reg_get(reg_url_array[div]+"1"+format_suffix));};
+  var sskey_open = "0ApzvRgA17RKMdGJsaVZHTjZsb204bUJRQUtCcS1Id1E";
+  var sskey_women = "0ApzvRgA17RKMdGxRdmpRcUxnNmZuRS1adkFYTmZUTkE";
+  var sskey_guests = "0ApzvRgA17RKMdEktVnhnczRJWEJOUzd3Wkd2dmR1cUE";
+  var sskeys = [[sskey_open], [sskey_women], [sskey_guests]];
   var teamdic = {
-    'playerid':'gsx$_cre1l',
-    'firstname':'gsx$_cn6ca',
-    'lastname':'gsx$_cokwr',
-    'team':'gsx$_cpzh4'
+    'playerid':'_cre1l',
+    'firstname':'_cn6ca',
+    'lastname':'_cokwr',
+    'team':'_cpzh4',
+    'receivedamt':'_chk2m',
+    'receiveddate':'_ciyn3'
   };
   var $fieldset = $('<fieldset/>');
-  // Multiple async calls handled via method here:
-  // http://stackoverflow.com/questions/9865586/jquery-when-troubleshooting-with-variable-number-of-arguments
-  var defer = $.when.apply($, team_request_array);
-  defer.done(function(){
-    var $teamselect = $('<select/>', {id: 'team'+n, name: 'team'+n})
-        .append('<option value="" selected="selected">Please select a team</option>');
-    // Possibly handle situation in which responses is not an array.
-    // But for now:
-    $.each(arguments, function(index, data){
-      var data_array = data[0].feed.entry;
-      var team_info = [];
-      // HACKY!  We know the feed.link[0].href is of the form https://spreadsheets.google.com/pub?key=0ApzvRgA17RKMdGJsaVZHTjZsb204bUJRQUtCcS1Id1E, so just take what's after the = sign.
-      var division_key = data[0].feed.link[0].href.split('=')[1];
-      $teamselect.append('<optgroup label="'+div_order[index]+'">');
-      for (var t = 0; t < data_array.length; t++) {
-        team_info = data_array[t];
-        $teamselect.append('<option value="'+division_key+','+team_info.gsx$sheetnumber.$t+'">'+team_info.gsx$teamname.$t+'</option>');
+  var $teamselect = $('<select/>', {id: 'team'+n, name: 'team'+n})
+        .append('<option class="loading" value="" selected="selected">Loading teams...</option>');
+  var $playerselect = $('<select/>', {id: 'players'+n, name: 'players'+n, multiple: 'true'})
+    .append('<option class="loading" value="">Waiting for team selection...</option>');
+  $.when(reg_get(sskey_open), reg_get(sskey_women), reg_get(sskey_guests))
+    .done(function(resp_open,resp_women,resp_guests){
+      console.log(resp_open);
+      var $opengroup = $('<optgroup/>',{label:'OPEN'}),
+        $womengroup = $('<optgroup/>',{label:'WOMEN'}),
+        $guestgroup = $('<optgroup/>',{label:'GUESTS'});
+      $opengroup.append(write_team_names(resp_open,sskey_open).join(''));
+      $womengroup.append(write_team_names(resp_women,sskey_women).join(''));
+      $guestgroup.append(write_team_names(resp_guests,sskey_guests).join(''));
+      $teamselect.find('option.loading').remove();
+      $teamselect.append('<option class="instructions" value="" selected="selected">Select a team...</option>')
+        .append($opengroup).append($womengroup).append($guestgroup);
+    }); // end .when.done
+  $teamselect.change(function(){
+    $playerselect.find('option').remove();
+    $playerselect.append('<option class="loading" value="">Loading...</option>');
+    // Know the value is passed of the form KEYSTRING,Sheet Name.
+    var team_vals = $teamselect.val().split(',');
+    reg_get(team_vals[0],team_vals[1]).done(function(data, textStatus, jqXHR){
+      console.log(data);
+      $playerselect.find('option.loading').remove();
+      var data_array = data;
+      var player_info = [];
+      for (var p = 0; p < data_array.length; p++){
+        player_info = data_array[p];
+        $playerselect.append(
+          '<option value="'
+          +player_info[teamdic["playerid"]]+','
+          +player_info[teamdic["firstname"]]+' '
+          +player_info[teamdic["lastname"]]+'">'
+          +player_info[teamdic["firstname"]]+' '
+          +player_info[teamdic["lastname"]]
+          +'</option>'
+        );
       };
-      $teamselect.append('</optgroup>');
     });
-    var $playerselect = $('<select/>', {id: 'players'+n, name: 'players'+n, multiple: 'true'})
-      .append('<option class="loading" value="">Waiting for team selection...</option>');
-    $teamselect.change(function(){
-      $playerselect.find('option').remove();
-      $playerselect.append('<option class="loading" value="">Loading...</option>');
-      // Know the value is passed of the form KEYSTRING,Sheet#.
-      var team_vals = $teamselect.val().split(',');
-      reg_get('http://spreadsheets.google.com/feeds/list/'+team_vals.join('/')+format_suffix).done(function(data, textStatus, jqXHR){
-        $playerselect.find('option.loading').remove();
-        var data_array = data.feed.entry;
-        var player_info = [];
-        for (var p = 0; p < data_array.length; p++){
-          player_info = data_array[p];
-          $playerselect.append(
-            '<option value="'
-            +player_info[teamdic["playerid"]].$t+','
-            +player_info[teamdic["firstname"]].$t+' '
-            +player_info[teamdic["lastname"]].$t+'">'
-            +player_info[teamdic["firstname"]].$t+' '
-            +player_info[teamdic["lastname"]].$t
-            +'</option>'
-          );
-        };
-      });
-    });
-    $fieldset.append('<label for="team'+n+'">Team</label>')
-      .append($teamselect)
-      .append('<label for="players'+n+'">Players and Guests</label>')
-      .append($playerselect);
   });
+  $fieldset.append('<label for="team'+n+'">Team</label>')
+    .append($teamselect)
+    .append('<label for="players'+n+'">Players and Guests</label>')
+    .append($playerselect);
   return $fieldset;
+  
+  function write_team_names(response,div_key) {
+    var out = [];
+    $.each(response[0],function(ind,val){
+      out.push('<option value="' + div_key + ',' + val.teamname + '">' + val.teamname + '</option>');
+    });
+    return out;
+  };
 };
-  </script>
-<!--  <script src="http://spreadsheets.google.com/feeds/list/0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc/3/public/values?alt=json-in-script&amp;callback=callbackfun"></script>-->
+
+
+  </script> 
 </body>
 </html>
