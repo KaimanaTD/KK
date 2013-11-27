@@ -50,7 +50,7 @@
           <table></table>
         </div>
         <div id="reg_pay">
-          <script src="js/paypal-button.min.js?merchant=photo@claymckell.com" 
+          <script src="js/paypal-button.min.js?merchant=photo-facilitator@claymckell.com" 
               data-button="buynow" 
               data-name="KK27Registration" 
               data-amount="1" 
