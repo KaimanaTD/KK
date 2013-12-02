@@ -1,4 +1,5 @@
 <?php
+define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0',1);
 date_default_timezone_set('Pacific/Honolulu');
 /* ------------------------------------------------------------------------
  * Start Configuration of Google Spreadsheet custom API
