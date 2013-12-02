@@ -21,7 +21,7 @@
   </header>
   <!-- Add your site or application content here -->
   <div class="content">
-	<section class="grid-70">
+	<section class="grid-100">
       <article>
         <h1>Registration Payment</h1>
         <p>
@@ -63,11 +63,11 @@
         </div>
       </article>
 	</section>
-    <aside class="grid-30">
+<!--    <aside class="grid-30">
       <p>
         Sample Text.
       </p>
-	</aside>
+	</aside>-->
   </div>
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
