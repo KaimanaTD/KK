@@ -1,7 +1,14 @@
 <?php 
   $pagenames = array(
     array("Home", array("index.php")),
-    array("Bids and Fees", array("bidding.php", array("Team Bid Form", "onlinebidform.php"), array("Team Bid Payment", "onlinepayment.php"))),
+    array("Bids and Fees", 
+      array("bidding.php", 
+        array("Player Registration Form", "playerregistration.php"),
+        array("Player Payment", "playerpayment.php"),
+        array("Team Bid Form", "onlinebidform.php"), 
+        array("Team Bid Payment", "onlinepayment.php")
+      )
+    ),
     array("Logistics", array("logistics.php")),
     array("Teams", array("teams.php")),
     array("Hat Draw", array("hatdraw.php")),
