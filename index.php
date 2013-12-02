@@ -31,6 +31,11 @@
         Stay tuned for details.  </p>
       </article>
       <article>
+        <h2>Registration is Now Open</h2>
+        <p>Players and guests can now <a href="playerregistration.php">register for the tournament</a>.</p>
+        <p>Early registration ensures your team will keep its bid and saves you money!  Until January 15, player fees are $140.  From then on, player fees are $165.</p>
+      </article>
+      <article>
         <h2>Start the Chatter!</h2>
         <p><strong>Team bids are currently being accepted</strong></p>
         <p>$420 team deposit due on NOVEMBER 8, 2013</p>

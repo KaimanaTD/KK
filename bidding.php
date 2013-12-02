@@ -26,7 +26,7 @@
 						Fee includes all breakfasts and dinners, entertainment, camping, players' pack (cup, disc, and Kaimana logo surprise), plus all field supplies (water, fruit, juice, EMT).
 				</p>
         <p>
-						All players should register and pay online, if possible.  
+						All players should <a href="playerregistration.php">register</a> and <a href="playerpayment.php">pay online</a>, if possible.  
 						Individual online registration and payment will be open once team bids have been accepted (mid to late November).  
 						If you cannot pay online, please do so by sending a check made out to <strong>Kaimana Klassik</strong> to: 
 <blockquote>Jack Wade 
@@ -87,18 +87,21 @@ Honolulu, HI 96816
 	</section>
 		<aside class="grid-30">
           <h2>Announcements</h2>
-          <dt>September 19, 2013</dt><dd><a href="onlinebidform.php">Team bids</a> are now being accepted.</dd>
-				<h2>Important Dates</h2>
-				<dl>
-						<dt>November 8, 2013</dt><dd> Deadline for team bids (we must receive info and payment by then).</dd>     
-						<dt>November 15, 2013</dt><dd> Accepted, wait-listed, and declined teams will be notified.</dd>    
-						<dt>November 22, 2013</dt><dd> Teams must accept/decline bids.</dd>    
-						<dt>December 13, 2013</dt><dd> Half of player fees due (based on up-to-date roster).</dd>    
-						<dt>January 1, 2014</dt><dd> No refunds of team deposits upon forfeiture after this date.</dd>    
-						<dt>January 15, 2014</dt><dd> Deadline for regular registration fee.</dd>    
-						<dt>January 25, 2014</dt><dd> Deadline for full refunds on player fee.</dd>    
-						<dt>February 9, 2014</dt><dd> Last day to register online.</dd>    
-				</dl>
+          <dl>
+            <dt>December 2, 2013</dt><dd><a href="playerregistration.php">Player and guest registration</a> is now open.</dd>
+            <dt>September 19, 2013</dt><dd><a href="onlinebidform.php">Team bids</a> are now being accepted.</dd>
+          </dl>
+          <h2>Important Dates</h2>
+          <dl>
+                  <dt>November 8, 2013</dt><dd> Deadline for team bids (we must receive info and payment by then).</dd>     
+                  <dt>November 15, 2013</dt><dd> Accepted, wait-listed, and declined teams will be notified.</dd>    
+                  <dt>November 22, 2013</dt><dd> Teams must accept/decline bids.</dd>    
+                  <dt>December 13, 2013</dt><dd> Half of player fees due (based on up-to-date roster).</dd>    
+                  <dt>January 1, 2014</dt><dd> No refunds of team deposits upon forfeiture after this date.</dd>    
+                  <dt>January 15, 2014</dt><dd> Deadline for regular registration fee.</dd>    
+                  <dt>January 25, 2014</dt><dd> Deadline for full refunds on player fee.</dd>    
+                  <dt>February 9, 2014</dt><dd> Last day to register online.</dd>    
+          </dl>
 		</aside>
 		<aside class="notecontainer grid-30">
 				<h3>Notes</h3>
