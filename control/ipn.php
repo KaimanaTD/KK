@@ -17,7 +17,7 @@
  *  @copyright  (c) 2011 - Micah Carrick
  *  @license    http://opensource.org/licenses/gpl-3.0.html
  */
- 
+define('SECURE_CONSTANT_IPN_f4ad6a26fd873896aec4f48f50208fe4',1); 
 date_default_timezone_set('Pacific/Honolulu');
 /* ------------------------------------------------------------------------
  * Start Configuration of Google Spreadsheet custom API
