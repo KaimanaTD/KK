@@ -8,9 +8,9 @@
   <script src="js/conditional/big-adapt.js"></script>
   <link rel="stylesheet" href="js/unsemantic/assets/stylesheets/unsemantic-grid-base.css">
   <script src="js/unsemantic/assets/javascripts/adapt.min.js"></script>
-  <title></title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Player Payment</title>
+  <meta name="description" content="Kaimana Klassik 27 player registration payment portal">
+  <meta name="keywords" content="Kaimana ultimate frisbee credit card paypal oahu">
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>
