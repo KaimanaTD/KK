@@ -88,6 +88,7 @@ Honolulu, HI 96816
 		<aside class="grid-30">
           <h2>Announcements</h2>
           <dl>
+			<dt>December 4, 2013</dt><dd>The <a href="http://www.hilohatdraw.com/index.html">Hilo Hat Draw site</a> is now live and accepting registrations.</dd>
             <dt>December 2, 2013</dt><dd><a href="playerregistration.php">Player and guest registration</a> is now open.</dd>
             <dt>September 19, 2013</dt><dd><a href="onlinebidform.php">Team bids</a> are now being accepted.</dd>
           </dl>
