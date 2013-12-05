@@ -89,62 +89,60 @@
     var $regform = $('form#registration');
     var prices = {'player_early': 140, 'guest': 80};
     prices['player'] = prices.player_early;
-    if ($regform) {
-      var $add_team_button = $regform.find('button#add_team');
-      var $firstfs = build_team_list(1);
-      $regform.prepend($firstfs);
-      $add_team_button.click(function(){
-        var $all_fs = $regform.find('fieldset');
-        var n = $all_fs.length;
-        var $next_fs = build_team_list(n+1);
-        $all_fs.after($next_fs);
-      });
-      $regform.on('submit',function(e){
-        e.preventDefault();
-        var form_vals = $(this).serializeArray();      
-        var players = [];
-        var guests = [];
-        var subtotal = 0;
-        var all_ids = [];
-        $.each(form_vals.filter(function(el){return el['name'].match(/^players.*$/gi);}), function(ind,val){
-          // Should be in the form [ ID, First, Last ]
-          var item = val.value.split(',');
-          if (item[0][2] == 2) {
-            subtotal += prices.guest;
-            all_ids.push(item[0]);
-            guests.push('<tr><td>'+item.slice(1).join()+'</td><td>'+prices.guest+'</td></tr>');
-          } else {
-            subtotal += prices.player;
-            all_ids.push(item[0]);
-            players.push('<tr><td>'+item.slice(1).join()+'</td><td>'+prices.player+'</td></tr>');
-          };
-        });
-		if (subtotal > 0) {$PPbutton.show();};
-        var table = '<tr><th>Name</th><th>Price</th></tr>';
-        if (players.length > 0) {
-          table += '<tr><td>Players</td><td></td></tr>';
-          for (var p = 0; p < players.length; p++) {
-            table += players[p];
-          };
-        };
-        if (guests.length > 0) {
-          table += '<tr><td>Guests</td><td></td></tr>';
-          for (var g = 0; g < guests.length; g++) {
-            table += guests[g];
-          };
-        };
-        table += '<tr><td>Total:</td><td>'+subtotal+'</td>';
-        var $table = $('div#payment_summary table').html(table);
-        var $paypal_button = $('form.paypal-button');
-        var $amount = $paypal_button.find('input[name="amount"]').attr({"value":subtotal});
-        var $custom = $paypal_button.find('input[name="custom"]');
-        if ($custom.length > 0) {
-          $custom.attr({"value":all_ids.join(',')});
+    var $add_team_button = $regform.find('button#add_team');
+    var $firstfs = build_team_list(1);
+    $regform.prepend($firstfs);
+    $add_team_button.click(function(){
+      var $all_fs = $regform.find('fieldset');
+      var n = $all_fs.length;
+      var $next_fs = build_team_list(n+1);
+      $all_fs.after($next_fs);
+    });
+    $regform.on('submit',function(e){
+      e.preventDefault();
+      var form_vals = $(this).serializeArray();      
+      var players = [];
+      var guests = [];
+      var subtotal = 0;
+      var all_ids = [];
+      $.each(form_vals.filter(function(el){return el['name'].match(/^players.*$/gi);}), function(ind,val){
+        // Should be in the form [ ID, First, Last ]
+        var item = val.value.split(',');
+        if (item[0][2] == 2) {
+          subtotal += prices.guest;
+          all_ids.push(item[0]);
+          guests.push('<tr><td>'+item.slice(1).join()+'</td><td>'+prices.guest+'</td></tr>');
         } else {
-          $paypal_button.prepend('<input type="hidden" name="custom" value="'+all_ids.join(',')+'">');
+          subtotal += prices.player;
+          all_ids.push(item[0]);
+          players.push('<tr><td>'+item.slice(1).join()+'</td><td>'+prices.player+'</td></tr>');
         };
       });
-    }; // endif $regform
+      if (subtotal > 0) {$PPbutton.show();};
+      var table = '<tr><th>Name</th><th>Price</th></tr>';
+      if (players.length > 0) {
+        table += '<tr><td>Players</td><td></td></tr>';
+        for (var p = 0; p < players.length; p++) {
+          table += players[p];
+        };
+      };
+      if (guests.length > 0) {
+        table += '<tr><td>Guests</td><td></td></tr>';
+        for (var g = 0; g < guests.length; g++) {
+          table += guests[g];
+        };
+      };
+      table += '<tr><td>Total:</td><td>'+subtotal+'</td>';
+      var $table = $('div#payment_summary table').html(table);
+      var $paypal_button = $('form.paypal-button');
+      var $amount = $paypal_button.find('input[name="amount"]').attr({"value":subtotal});
+      var $custom = $paypal_button.find('input[name="custom"]');
+      if ($custom.length > 0) {
+        $custom.attr({"value":all_ids.join(',')});
+      } else {
+        $paypal_button.prepend('<input type="hidden" name="custom" value="'+all_ids.join(',')+'">');
+      };
+    });
   });
 
 function reg_get(key,sheetname) {
