@@ -184,7 +184,8 @@ function build_team_list(n) {
     'lastname':'_cokwr',
     'team':'_cpzh4',
     'receivedamt':'_chk2m',
-    'receiveddate':'_ciyn3'
+    'receiveddate':'_ciyn3',
+    'privatereg':'_ckd7g'
   };
   var $fieldset = $('<fieldset/>');
   var $teamselect = $('<select/>', {id: 'team'+n, name: 'team'+n})
@@ -216,15 +217,17 @@ function build_team_list(n) {
       var player_info = [];
       for (var p = 0; p < data_array.length; p++){
         player_info = data_array[p];
-        $playerselect.append(
-          '<option value="'
-          +player_info[teamdic["playerid"]]+','
-          +player_info[teamdic["firstname"]]+' '
-          +player_info[teamdic["lastname"]]+'">'
-          +player_info[teamdic["firstname"]]+' '
-          +player_info[teamdic["lastname"]]
-          +'</option>'
-        );
+        if ( player_info[teamdic["privatereg"]] != 1 ) {
+          $playerselect.append(
+            '<option value="'
+            +player_info[teamdic["playerid"]]+','
+            +player_info[teamdic["firstname"]]+' '
+            +player_info[teamdic["lastname"]]+'">'
+            +player_info[teamdic["firstname"]]+' '
+            +player_info[teamdic["lastname"]]
+            +'</option>'
+          );
+        };
       };
     });
   });
