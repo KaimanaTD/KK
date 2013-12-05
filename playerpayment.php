@@ -82,6 +82,8 @@
   <script>
   jQuery(document).ready(function(){
     // Registration fanciness
+	var $PPbutton = $('div#reg_pay');
+	$PPbutton.hide();
     // Nifty Ajax methodology:
     // http://stackoverflow.com/questions/8840257/jquery-ajax-handling-continue-responses-success-vs-done
     var $regform = $('form#registration');
@@ -117,6 +119,7 @@
             players.push('<tr><td>'+item.slice(1).join()+'</td><td>'+prices.player+'</td></tr>');
           };
         });
+		if (subtotal > 0) {$PPbutton.show();};
         var table = '<tr><th>Name</th><th>Price</th></tr>';
         if (players.length > 0) {
           table += '<tr><td>Players</td><td></td></tr>';
