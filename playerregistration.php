@@ -21,6 +21,9 @@
 	<section class="grid-100">
       <article>
         <h1>Player Registration</h1>
+		<p>
+			Please complete the registration form below.  Prior to submitting, please read the <a href="KK27Waiver.pdf" target="_blank">waiver</a>.
+		</p>
         <div class="googleform">
           <iframe src="https://docs.google.com/forms/d/1g05kkyGYl45vNeyDpklFxtwgHe8JxU-JGKq4rXRP-dQ/viewform?embedded=true" width="700" height="1650" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
