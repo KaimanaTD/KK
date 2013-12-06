@@ -49,8 +49,8 @@
         </div>
         <div id="reg_form" class="grid-50 mobile-grid-100 grid-parent">
           <form id="registration">
-            <button id="add_team" class="grid-100" type="button" name="add_team">Add players from another team</button>
-            <button id="calculate" class="grid-100" type="submit">Calculate total</button>
+            <?php #NOTE: Form contents injected by jQuery, below. ?>
+            <button id="calculate" class="grid-100 mobile-grid-100" type="submit">Calculate total</button>
           </form>
         </div>
         <div id="payment_summary" class="grid-50 mobile-grid-100">
@@ -88,23 +88,30 @@
   <script src="js/main.js"></script>
   <script>
   jQuery(document).ready(function(){
+    // Magic constants
+    var prices = {'player_early': 140, 'player_late':165, 'guest': 80};
+    prices['player'] = prices.player_early;
     // Registration fanciness
 	var $PPbutton = $('div#reg_pay');
 	$PPbutton.hide();
     // Nifty Ajax methodology:
     // http://stackoverflow.com/questions/8840257/jquery-ajax-handling-continue-responses-success-vs-done
     var $regform = $('form#registration');
-    var prices = {'player_early': 140, 'guest': 80};
-    prices['player'] = prices.player_early;
-    var $add_team_button = $regform.find('button#add_team');
-    var $firstfs = build_team_list(1);
-    $regform.prepend($firstfs);
-    $add_team_button.click(function(){
+    $regform.on('click', 'button.add_team', function(){
       var $all_fs = $regform.find('fieldset');
+      console.log($all_fs);
       var n = $all_fs.length;
       var $next_fs = build_team_list(n+1);
-      $all_fs.after($next_fs);
+      console.log($next_fs);
+      $all_fs.last().after($next_fs);
+    }).on('click', 'button.rem_team', function(){
+      console.log($(this));
+      var $fs_to_remove = $(this).parent();
+      console.log($fs_to_remove);
+      $fs_to_remove.remove();
     });
+    var $firstfs = build_team_list(1);
+    $regform.prepend($firstfs);
     $regform.on('submit',function(e){
       e.preventDefault();
       var form_vals = $(this).serializeArray();      
@@ -236,13 +243,31 @@ function build_team_list(n) {
       };
     });
   });
-  var $team_pair = $('<div/>', {'class':'grid-100 grid-parent'})
+  var $add_button = $('<button/>', {
+    'class':"add_team grid-50 mobile-grid-50",
+    'type':"button",
+    'name':"add_team",
+    'text':'Add players from another team'
+  });
+  var $rem_button = $('<button/>', {
+    'class':"rem_team grid-50 mobile-grid-50",
+    'type':"button",
+    'name':"rem_team",
+    'text':'Remove this team'
+  });
+  var $team_pair = $('<div/>', {'class':'grid-100 grid-parent select_pair_wrapper'})
     .append('<label for="team'+n+'" class="grid-20 mobile-grid-100">Team</label>')
     .append($teamselect.addClass("grid-80 mobile-grid-100"));
-  var $player_pair = $('<div/>', {'class':'grid-100 grid-parent'})
+  var $player_pair = $('<div/>', {'class':'grid-100 grid-parent select_pair_wrapper'})
     .append('<label for="players'+n+'" class="grid-30 mobile-grid-100">Players and Guests</label>')
     .append($playerselect.addClass("grid-70 mobile-grid-100"));
-  $fieldset.append($team_pair).append($player_pair);
+  $fieldset.append($team_pair).append($player_pair)
+  if (n==1) {
+    $add_button.addClass("prefix-50 mobile-prefix-50");
+    $fieldset.append($add_button);
+  } else {
+    $fieldset.append($rem_button).append($add_button);;
+  };
   return $fieldset;
   
   function write_team_names(response,div_key) {
