@@ -101,15 +101,11 @@
     var $regform = $('form#registration');
     $regform.on('click', 'button.add_team', function(){
       var $all_fs = $regform.find('fieldset');
-      console.log($all_fs);
       var n = $all_fs.length;
       var $next_fs = build_team_list(n+1);
-      console.log($next_fs);
       $all_fs.last().after($next_fs);
     }).on('click', 'button.rem_team', function(){
-      console.log($(this));
       var $fs_to_remove = $(this).parent();
-      console.log($fs_to_remove);
       $fs_to_remove.remove();
     });
     var $firstfs = build_team_list(1);
@@ -172,21 +168,13 @@ function reg_get(key,sheetname) {
       dataType: "json"
   }).always(function(){
       // remove loading image?
-//      console.log('Have ajaxed');
   })
   .fail(function(jqXHR, textStatus, errorThrown) {
       // handle request failure
-      console.log(jqXHR);
-      console.log(textStatus);
-      console.log(errorThrown);
   });
 };
 
 function build_team_list(n) {
-//  reg_get('0ApzvRgA17RKMdGJsaVZHTjZsb204bUJRQUtCcS1Id1E').done(function(data){
-//        alert(data);
-//      });
-  //var reg_url = "http://spreadsheets.google.com/feeds/list/0ApzvRgA17RKMdFpyNUh0eWJKWVBuRmJlSkh5TGpNeWc/";
   var div_order = ["Open","Women","Guests"];
   var sskey_open = "0ApzvRgA17RKMdGJsaVZHTjZsb204bUJRQUtCcS1Id1E";
   var sskey_women = "0ApzvRgA17RKMdGxRdmpRcUxnNmZuRS1adkFYTmZUTkE";
@@ -208,7 +196,6 @@ function build_team_list(n) {
     .append('<option class="loading" value="">Waiting for team selection...</option>');
   $.when(reg_get(sskey_open), reg_get(sskey_women), reg_get(sskey_guests))
     .done(function(resp_open,resp_women,resp_guests){
-      console.log(resp_open);
       var $opengroup = $('<optgroup/>',{'label':'OPEN'}),
         $womengroup = $('<optgroup/>',{'label':'WOMEN'}),
         $guestgroup = $('<optgroup/>',{'label':'GUESTS'});
@@ -225,7 +212,6 @@ function build_team_list(n) {
     // Know the value is passed of the form KEYSTRING,Sheet Name.
     var team_vals = $teamselect.val().split(',');
     reg_get(team_vals[0],team_vals[1]).done(function(data, textStatus, jqXHR){
-      console.log(data);
       $playerselect.find('option.loading').remove();
       var data_array = data;
       var player_info = [];
@@ -271,7 +257,7 @@ function build_team_list(n) {
     $fieldset.append($rem_button).append($add_button);;
   };
   return $fieldset;
-  
+  // SUBFUNCTION
   function write_team_names(response,div_key) {
     var out = [];
     $.each(response[0],function(ind,val){
