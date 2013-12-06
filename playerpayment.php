@@ -8,6 +8,11 @@
   <script src="js/conditional/big-adapt.js"></script>
   <link rel="stylesheet" href="js/unsemantic/assets/stylesheets/unsemantic-grid-base.css">
   <script src="js/unsemantic/assets/javascripts/adapt.min.js"></script>
+  <style>
+    form#registration select.player {vertical-align:top;}
+    div#payment_summary table {width:100%;}
+    div#reg_pay {text-align:center;}
+  </style>
   <title>Player Payment</title>
   <meta name="description" content="Kaimana Klassik 27 player registration payment portal">
   <meta name="keywords" content="Kaimana ultimate frisbee credit card paypal oahu">
@@ -22,34 +27,36 @@
   <!-- Add your site or application content here -->
   <div class="content">
 	<section class="grid-100">
-      <article>
-        <h1>Registration Payment</h1>
-        <p>
-          After submitting your registration form, please find select your team and find your name below.
-          Guests are listed on the "Guest" team.
-          You may pay for more than one person on a team by Control/Command-clicking names (may not work on touch devices).
-          You may pay for people on more than one team (e.g. a player and a guest) by selecting "Add players from another team" and repeating the process.
-        </p>
-        <p>
-          When everyone has been selected, select "Calculate total" and check the names and prices.
-        </p>
-        <p>
-          When ready, the "Buy Now" button will ask you to authorize the payment via PayPal.  
-          You will receive a confirmation message to your PayPal email shortly.
-        </p>
-        <p>
-          Any problems with registration or payments should be directed to <a href="mailto:webmaster@hawaiiultimate.com">the webmaster</a>.
-        </p>
-        <div id="reg_form">
+      <article class="grid-parent">
+        <div class="grid-100">
+          <h1>Registration Payment</h1>
+          <p>
+            After submitting your registration form, please find select your team and find your name below.
+            Guests are listed on the "Guest" team.
+            You may pay for more than one person on a team by Control/Command-clicking names (may not work on touch devices).
+            You may pay for people on more than one team (e.g. a player and a guest) by selecting "Add players from another team" and repeating the process.
+          </p>
+          <p>
+            When everyone has been selected, select "Calculate total" and check the names and prices.
+          </p>
+          <p>
+            When ready, the "Buy Now" button will ask you to authorize the payment via PayPal.  
+            You will receive a confirmation message to your PayPal email shortly.
+          </p>
+          <p>
+            Any problems with registration or payments should be directed to <a href="mailto:webmaster@hawaiiultimate.com">the webmaster</a>.
+          </p>
+        </div>
+        <div id="reg_form" class="grid-50 mobile-grid-100 grid-parent">
           <form id="registration">
-            <button id="add_team" type="button" name="add_team">Add players from another team</button>
-            <button id="calculate" type="submit">Calculate total</button>
+            <button id="add_team" class="grid-100" type="button" name="add_team">Add players from another team</button>
+            <button id="calculate" class="grid-100" type="submit">Calculate total</button>
           </form>
         </div>
-        <div id="payment_summary">
+        <div id="payment_summary" class="grid-50 mobile-grid-100">
           <table></table>
         </div>
-        <div id="reg_pay">
+        <div id="reg_pay" class="grid-100">
           <script src="js/paypal-button.min.js?merchant=mondochun@juno.com" 
               data-button="buynow" 
               data-name="KK27Registration" 
@@ -186,16 +193,16 @@ function build_team_list(n) {
     'privatereg':'_ckd7g'
   };
   var $fieldset = $('<fieldset/>');
-  var $teamselect = $('<select/>', {id: 'team'+n, name: 'team'+n})
+  var $teamselect = $('<select/>', {'id':'team'+n, 'name':'team'+n, 'class':'reg team'})
         .append('<option class="loading" value="" selected="selected">Loading teams...</option>');
-  var $playerselect = $('<select/>', {id: 'players'+n, name: 'players'+n, multiple: 'true'})
+  var $playerselect = $('<select/>', {'id':'players'+n, 'name':'players'+n, 'multiple':'true', 'class':'reg player'})
     .append('<option class="loading" value="">Waiting for team selection...</option>');
   $.when(reg_get(sskey_open), reg_get(sskey_women), reg_get(sskey_guests))
     .done(function(resp_open,resp_women,resp_guests){
       console.log(resp_open);
-      var $opengroup = $('<optgroup/>',{label:'OPEN'}),
-        $womengroup = $('<optgroup/>',{label:'WOMEN'}),
-        $guestgroup = $('<optgroup/>',{label:'GUESTS'});
+      var $opengroup = $('<optgroup/>',{'label':'OPEN'}),
+        $womengroup = $('<optgroup/>',{'label':'WOMEN'}),
+        $guestgroup = $('<optgroup/>',{'label':'GUESTS'});
       $opengroup.append(write_team_names(resp_open,sskey_open).join(''));
       $womengroup.append(write_team_names(resp_women,sskey_women).join(''));
       $guestgroup.append(write_team_names(resp_guests,sskey_guests).join(''));
@@ -229,10 +236,13 @@ function build_team_list(n) {
       };
     });
   });
-  $fieldset.append('<label for="team'+n+'">Team</label>')
-    .append($teamselect)
-    .append('<label for="players'+n+'">Players and Guests</label>')
-    .append($playerselect);
+  var $team_pair = $('<div/>', {'class':'grid-100 grid-parent'})
+    .append('<label for="team'+n+'" class="grid-20 mobile-grid-100">Team</label>')
+    .append($teamselect.addClass("grid-80 mobile-grid-100"));
+  var $player_pair = $('<div/>', {'class':'grid-100 grid-parent'})
+    .append('<label for="players'+n+'" class="grid-30 mobile-grid-100">Players and Guests</label>')
+    .append($playerselect.addClass("grid-70 mobile-grid-100"));
+  $fieldset.append($team_pair).append($player_pair);
   return $fieldset;
   
   function write_team_names(response,div_key) {
