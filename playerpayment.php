@@ -60,18 +60,19 @@
         </div>
         <div id="payment_summary" class="grid-50 mobile-grid-100">
           <table></table>
+          <div id="reg_pay">
+            <script src="js/paypal-button.min.js?merchant=mondochun@juno.com" 
+                data-button="buynow" 
+                data-name="KK27Registration" 
+                data-amount="1" 
+                data-shipping="0" 
+                data-tax="0" 
+                data-notify_url="http://kaimanaklassik.com/control/ipn.php"
+                data-return="http://kaimanaklassik.com/paymentconfirmation.php"
+            ></script>
+          </div>
         </div>
-        <div id="reg_pay" class="grid-100">
-          <script src="js/paypal-button.min.js?merchant=mondochun@juno.com" 
-              data-button="buynow" 
-              data-name="KK27Registration" 
-              data-amount="1" 
-              data-shipping="0" 
-              data-tax="0" 
-              data-notify_url="http://kaimanaklassik.com/control/ipn.php"
-              data-return="http://kaimanaklassik.com/paymentconfirmation.php"
-          ></script>
-        </div>
+        
       </article>
 	</section>
 <!--    <aside class="grid-30">
