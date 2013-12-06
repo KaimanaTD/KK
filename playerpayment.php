@@ -128,7 +128,7 @@
           subtotal += prices.guest;
           all_ids.push(item[0]);
           guests.push('<tr><td>'+item.slice(1).join()+'</td><td>$'+prices.guest+'</td></tr>');
-        } else {
+        } else if (item[0][2] == 0 || item[0][2] == 1) {
           subtotal += prices.player;
           all_ids.push(item[0]);
           players.push('<tr><td>'+item.slice(1).join()+'</td><td>$'+prices.player+'</td></tr>');
@@ -191,7 +191,8 @@ function build_team_list(n) {
     'team':'_cpzh4',
     'receivedamt':'_chk2m',
     'receiveddate':'_ciyn3',
-    'privatereg':'_ckd7g'
+    'privatereg':'_ckd7g',
+    'paymentmeth':'_clrrx'
   };
   var $fieldset = $('<fieldset/>');
   var $teamselect = $('<select/>', {'id':'team'+n, 'name':'team'+n, 'class':'reg team'})
@@ -219,18 +220,19 @@ function build_team_list(n) {
       $playerselect.find('option.loading').remove();
       var data_array = data;
       var player_info = [];
+      var $opt;
       for (var p = 0; p < data_array.length; p++){
         player_info = data_array[p];
         if ( player_info[teamdic["privatereg"]] != 1 ) {
-          $playerselect.append(
-            '<option value="'
-            +player_info[teamdic["playerid"]]+','
-            +player_info[teamdic["firstname"]]+' '
-            +player_info[teamdic["lastname"]]+'">'
-            +player_info[teamdic["firstname"]]+' '
-            +player_info[teamdic["lastname"]]
-            +'</option>'
-          );
+          $opt = $('<option/>', {
+              'value':player_info[teamdic["playerid"]]+','+player_info[teamdic["firstname"]]+' '+player_info[teamdic["lastname"]],
+              'text':player_info[teamdic["firstname"]]+' '+player_info[teamdic["lastname"]]
+          });
+          if (player_info[teamdic["paymentmeth"]]!=="" || player_info[teamdic["paymentmeth"]]=="FRAUD") {
+            $opt.attr({'disabled':'disabled'});
+            // Add help message explaining the grey-ness.
+          };
+          $playerselect.append($opt);
         };
       };
     });
