@@ -12,7 +12,10 @@
     div.select_pair_wrapper {line-height:.75rem;}
     form#registration select.player {vertical-align:top;}
     form#registration button {-moz-appearance:none; padding:.2rem; margin-top:.5rem; margin-bottom:.5rem;}
-    div#payment_summary table {width:100%;}
+    div#payment_summary table {width:100%; font-size:110%; margin-bottom:1rem;}
+    div#payment_summary table td:first-child {text-align:left; padding-left:.5rem;}
+    div#payment_summary table tr:last-of-type {font-weight:bold; border-top:1px solid white;}
+    div#payment_summary table tr:last-of-type td:first-of-type {text-align:right;}
     div#reg_pay {text-align:center;}
   </style>
   <title>Player Payment</title>
@@ -123,28 +126,28 @@
         if (item[0][2] == 2) {
           subtotal += prices.guest;
           all_ids.push(item[0]);
-          guests.push('<tr><td>'+item.slice(1).join()+'</td><td>'+prices.guest+'</td></tr>');
+          guests.push('<tr><td>'+item.slice(1).join()+'</td><td>$'+prices.guest+'</td></tr>');
         } else {
           subtotal += prices.player;
           all_ids.push(item[0]);
-          players.push('<tr><td>'+item.slice(1).join()+'</td><td>'+prices.player+'</td></tr>');
+          players.push('<tr><td>'+item.slice(1).join()+'</td><td>$'+prices.player+'</td></tr>');
         };
       });
       if (subtotal > 0) {$PPbutton.show();};
       var table = '<tr><th>Name</th><th>Price</th></tr>';
       if (players.length > 0) {
-        table += '<tr><td>Players</td><td></td></tr>';
+        table += '<tr><td style="font-style:italic; padding:.25rem 1.5rem;">Players</td><td></td></tr>';
         for (var p = 0; p < players.length; p++) {
           table += players[p];
         };
       };
       if (guests.length > 0) {
-        table += '<tr><td>Guests</td><td></td></tr>';
+        table += '<tr><td style="font-style:italic; padding:.25rem 1.5rem;">Guests</td><td></td></tr>';
         for (var g = 0; g < guests.length; g++) {
           table += guests[g];
         };
       };
-      table += '<tr><td>Total:</td><td>'+subtotal+'</td>';
+      table += '<tr><td>Total:</td><td>$'+subtotal+'</td>';
       var $table = $('div#payment_summary table').html(table);
       var $paypal_button = $('form.paypal-button');
       var $amount = $paypal_button.find('input[name="amount"]').attr({"value":subtotal});
