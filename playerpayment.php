@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="js/unsemantic/assets/stylesheets/unsemantic-grid-base.css">
   <script src="js/unsemantic/assets/javascripts/adapt.min.js"></script>
   <style>
+    div.select_pair_wrapper {line-height:.75rem;}
     form#registration select.player {vertical-align:top;}
+    form#registration button {-moz-appearance:none; padding:.2rem; margin-top:.5rem; margin-bottom:.5rem;}
     div#payment_summary table {width:100%;}
     div#reg_pay {text-align:center;}
   </style>
