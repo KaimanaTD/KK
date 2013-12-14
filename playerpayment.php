@@ -97,6 +97,7 @@
     // Magic constants
     var prices = {'player_early': 140, 'player_late':165, 'guest': 80};
     prices['player'] = prices.player_early;
+    var PAYPAL_ITEM_MAXLEN = 127;
     // Registration fanciness
 	var $PPbutton = $('div#reg_pay');
 	$PPbutton.hide();
@@ -121,9 +122,11 @@
       var guests = [];
       var subtotal = 0;
       var all_ids = [];
+      var all_names = [];
       $.each(form_vals.filter(function(el){return el['name'].match(/^players.*$/gi);}), function(ind,val){
-        // Should be in the form [ ID, First, Last ]
+        // Should be in the form [ ID, First  Last ]
         var item = val.value.split(',');
+        all_names.push(item[1]);
         if (item[0][2] == 2) {
           subtotal += prices.guest;
           all_ids.push(item[0]);
@@ -158,6 +161,32 @@
       } else {
         $paypal_button.prepend('<input type="hidden" name="custom" value="'+all_ids.join(',')+'">');
       };
+      var $itemname = $paypal_button.find('input[name="item_name"]');
+      var all_names_string = 'KK27Registration for ';
+      var name_to_add = '';
+      var num_names_rem = 0;
+      while (all_names.length>0) {
+        if (name_to_add === '') {
+          name_to_add = all_names.shift();
+          all_names_string += name_to_add;
+        } else if (all_names.length == 1) {
+          name_to_add = ', and ' + all_names.shift();
+          if (all_names_string.length + name_to_add.length > PAYPAL_ITEM_MAXLEN) {
+            num_names_rem = 1+all_names.length;
+            break
+          }
+          all_names_string += name_to_add;
+        } else {
+          name_to_add = ', ' + all_names.shift();
+          if (all_names_string.length + name_to_add.length > PAYPAL_ITEM_MAXLEN) {
+            num_names_rem = 1+all_names.length;
+            break
+          }
+          all_names_string += name_to_add;
+        }
+      }
+      if (num_names_rem > 0) all_names_string += ', and ' + num_names_rem + ' more';
+      $itemname.attr({"value":all_names_string});
     });
   });
 
