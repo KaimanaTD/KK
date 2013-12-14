@@ -135,7 +135,7 @@
           Sparta
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
-          I was there with the womens Bec team, from Montreal, that won the spirit award, you the chicks that went topless!  Just wanted to say that I agree, best tournament I've ever been to!
+          I was there with the womens Bec team, from Montreal, that won the spirit award, you know the chicks that went topless!  Just wanted to say that I agree, best tournament I've ever been to!
         </div>
       </div>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
