@@ -141,15 +141,6 @@
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
           <img class="avatar"  src="img/PersonIcon.png" />
-          Kenny Gonzales
-        </div>
-        <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
-          I can honestly say that Kaimana Klassik changed my life!
-        </div>
-      </div>
-      <div class="testimonial grid-50 mobile-grid-50 grid-parent">
-        <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar"  src="img/PersonIcon.png" />
           Jim Siewert
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
