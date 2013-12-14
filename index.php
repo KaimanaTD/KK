@@ -86,6 +86,24 @@
       <h1>Testimonials</h1>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
+          <img class="avatar"  src="img/Jill-Van-Wie_picture-2013.jpg" />
+          Jill Van Wie
+        </div>
+        <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
+          It really is the best tournament in the U.S., and rivals only Paganello as the best tournament in the world.  I hear next year's 20th annual tourney is one not to be missed, so I'll see you there.
+        </div>
+      </div>
+      <div class="testimonial grid-50 mobile-grid-50 grid-parent">
+        <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
+          <img class="avatar"  src="img/JD-Lobue.jpg" />
+          JD Lobue, Jr.
+        </div>
+        <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
+          Having been to over a dozen Kaimana Klassiks, I have to say that it is the best ultimate experience I've ever had.  Where else can you enjoy the peaceful, relaxing climate, the aloha of the local community, and have fun playing ultimate all at the same time?
+        </div>
+      </div>
+      <div class="testimonial grid-50 mobile-grid-50 grid-parent">
+        <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
           <img class="avatar"  src="img/PersonIcon.png" />
           Sam O'Brien
         </div>
@@ -109,24 +127,6 @@
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
           This has got to be one of the best tournaments I've ever been to!  I found spirit to be the main theme of the weekend.  Everyone is there to play hard ultimate during the day, but when the day is done, it's a big social event.  It is very easy to make new friends in this environment.
-        </div>
-      </div>
-      <div class="testimonial grid-50 mobile-grid-50 grid-parent">
-        <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar"  src="img/PersonIcon.png" />
-          JD Lobue, Jr.
-        </div>
-        <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
-          Having been to over a dozen Kaimana Klassiks, I have to say that it is the best ultimate experience I've ever had.  Where else can you enjoy the peaceful, relaxing climate, the aloha of the local community, and have fun playing ultimate all at the same time?
-        </div>
-      </div>
-      <div class="testimonial grid-50 mobile-grid-50 grid-parent">
-        <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
-          <img class="avatar"  src="img/PersonIcon.png" />
-          Jill Van Wie
-        </div>
-        <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
-          It really is the best tournament in the U.S., and rivals only Paganello as the best tournament in the world.  I hear next year's 20th annual tourney is one not to be missed, so I'll see you there.
         </div>
       </div>
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
