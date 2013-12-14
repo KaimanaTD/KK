@@ -196,9 +196,9 @@ function build_team_list(n) {
   };
   var $fieldset = $('<fieldset/>');
   var $teamselect = $('<select/>', {'id':'team'+n, 'name':'team'+n, 'class':'reg team'})
-        .append('<option class="loading" value="" selected="selected">Loading teams...</option>');
+        .append('<option class="loading" value="" disabled="disabled" selected="selected">Loading teams...</option>');
   var $playerselect = $('<select/>', {'id':'players'+n, 'name':'players'+n, 'multiple':'true', 'class':'reg player'})
-    .append('<option class="loading" value="">Waiting for team selection...</option>');
+    .append('<option class="loading" value="" disabled="disabled" selected="selected">Waiting for team selection...</option>');
   $.when(reg_get(sskey_open), reg_get(sskey_women), reg_get(sskey_guests))
     .done(function(resp_open,resp_women,resp_guests){
       var $opengroup = $('<optgroup/>',{'label':'OPEN'}),
@@ -208,7 +208,7 @@ function build_team_list(n) {
       $womengroup.append(write_team_names(resp_women,sskey_women).join(''));
       $guestgroup.append(write_team_names(resp_guests,sskey_guests).join(''));
       $teamselect.find('option.loading').remove();
-      $teamselect.append('<option class="instructions" value="" selected="selected">Select a team...</option>')
+      $teamselect.append('<option class="instructions" value="" disabled="disabled" selected="selected">Select a team...</option>')
         .append($opengroup).append($womengroup).append($guestgroup);
     }); // end .when.done
   $teamselect.change(function(){
@@ -241,13 +241,13 @@ function build_team_list(n) {
     'class':"add_team grid-50 mobile-grid-50",
     'type':"button",
     'name':"add_team",
-    'text':'Add players from another team'
+    'text':'Add team'
   });
   var $rem_button = $('<button/>', {
     'class':"rem_team grid-50 mobile-grid-50",
     'type':"button",
     'name':"rem_team",
-    'text':'Remove this team'
+    'text':'Remove team'
   });
   var $team_pair = $('<div/>', {'class':'grid-100 grid-parent select_pair_wrapper'})
     .append('<label for="team'+n+'" class="grid-20 mobile-grid-100">Team</label>')
