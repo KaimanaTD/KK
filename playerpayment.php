@@ -10,6 +10,7 @@
   <script src="js/unsemantic/assets/javascripts/adapt.min.js"></script>
   <style>
     div.select_pair_wrapper {line-height:.75rem;}
+    form#registration label {line-height:1rem;}
     form#registration select.player {vertical-align:top;}
     form#registration button {-moz-appearance:none; padding:.2rem; margin-top:.5rem; margin-bottom:.5rem;}
     div#payment_summary table {width:100%; font-size:110%; margin-bottom:1rem;}
@@ -37,16 +38,17 @@
           <h1>Registration Payment</h1>
           <p>
             After submitting your registration form, please find select your team and find your name below.
-            Guests are listed on the "Guest" team.
-            You may pay for more than one person on a team by Control/Command-clicking names (may not work on touch devices).
-            You may pay for people on more than one team (e.g. a player and a guest) by selecting "Add players from another team" and repeating the process.
+            You may pay for more than one person on a team by Control/Command-clicking names (may not work on all touch screen devices).
           </p>
           <p>
-            When everyone has been selected, select "Calculate total" and check the names and prices.
+            When everyone has been selected, click "Calculate total" and check the names and prices.
           </p>
           <p>
             When ready, the "Buy Now" button will ask you to authorize the payment via PayPal.  
             You will receive a confirmation message to your PayPal email shortly.
+          </p>
+          <p>
+            Disabled (gray-ed out) names indicate that person has already been paid for online.
           </p>
           <p>
             Any problems with registration or payments should be directed to <a href="mailto:webmaster@hawaiiultimate.com">the webmaster</a>.
