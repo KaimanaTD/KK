@@ -76,7 +76,7 @@
 						</div>
 						<div class="grid-50 mobile-grid-50">
 								<img class="avatar" src="img/PersonIcon.png" />
-								Cale Jorgensen
+								Cale Jorgenson
 						</div>
 				</div>
 				<div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
