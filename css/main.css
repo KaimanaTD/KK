@@ -201,10 +201,17 @@ article.paypal form table{
   background: rgba(198,198,198,.35);
   border: 1rem solid #5D5542;
   padding: 1rem;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 .testifier {
   text-align: center;
   font-style: italic;
+}
+.testimonial .quotation {
+	text-align: justify;
 }
 
 .avatar {

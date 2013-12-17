@@ -114,7 +114,7 @@
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
           <img class="avatar"  src="img/PersonIcon.png" />
-          Joanne Adamkewicz
+          Joanne Adam&shy;kewicz<!--Adamkewicz-->
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
           As always, it was the best.  This was #6 for me, but I hadn't been back since 2000, now I'm thinking, "How can I stay away??"!!  The lined fields, the score boards, the abundant food -- all great.
@@ -123,7 +123,7 @@
       <div class="testimonial grid-50 mobile-grid-50 grid-parent">
         <div class="testifier grid-25 mobile-grid-100 mobile-push-100">
           <img class="avatar"  src="img/PersonIcon.png" />
-          Christopher Yap
+          <!--Christopher-->Chris&shy;topher Yap
         </div>
         <div class="quotation grid-75 mobile-grid-100 mobile-pull-100">
           This has got to be one of the best tournaments I've ever been to!  I found spirit to be the main theme of the weekend.  Everyone is there to play hard ultimate during the day, but when the day is done, it's a big social event.  It is very easy to make new friends in this environment.
