@@ -30,37 +30,37 @@
 				<div class="testifier kommitteeposition grid-50 mobile-grid-100 grid-parent">
 						<h2>Tournament Directors</h2>
 						<div class="grid-50 mobile-grid-50">
-								<img class="avatar" src="img/PersonIcon.png" />
+								<img class="avatar" src="img/kommittee/JackWade.jpg" />
 								<a href="mailto:kaimanatd@gmail.com">Jack Wade</a>          
 						</div>
 						<div class="grid-50 mobile-grid-50">
-								<img class="avatar" src="img/PersonIcon.png" />
+								<img class="avatar" src="img/kommittee/NickDeBoer.jpg" />
 								<a href="mailto:kaimanatd@gmail.com">Nick DeBoer</a>          
 						</div>
 				</div>
 				<div class="testifier kommitteeposition grid-25 mobile-grid-50">
 						<h2>Open Coordinator</h2>
-						<img class="avatar" src="img/PersonIcon.png" />
+						<img class="avatar" src="img/kommittee/BenBergen.jpg" />
 						<a href="mailto:kaimanaopen@gmail.com">Ben Bergen</a>          
 				</div>
 				<div class="testifier kommitteeposition grid-25 mobile-grid-50">
 						<h2>Women's Coordinator</h2>
-						<img class="avatar" src="img/PersonIcon.png" />
+						<img class="avatar" src="img/kommittee/JenaKline.jpg" />
 						<a href="mailto:kaimanawomen@gmail.com">Jena Kline</a>
 				</div>
 				<div class="testifier kommitteeposition grid-25 mobile-grid-50">
 						<h2>Kaimana Guru</h2>
-						<img class="avatar" src="img/PersonIcon.png" />
+						<img class="avatar" src="img/kommittee/MondoChun.jpg" />
 						Mondo Chun
 				</div>
 				<div class="testifier kommitteeposition grid-25 mobile-grid-50">
 						<h2>Entertainment Director</h2>
-						<img class="avatar" src="img/PersonIcon.png" />
+						<img class="avatar" src="img/kommittee/AlexGloberson.jpg" />
 						Alex Globerson
 				</div>
 				<div class="testifier kommitteeposition grid-25 mobile-grid-50">
 						<h2>Schwag</h2>
-						<img class="avatar" src="img/PersonIcon.png" />
+						<img class="avatar" src="img/kommittee/MarkSlivka.jpg" />
 						Mark Slivka
 				</div>
 				<div class="testifier kommitteeposition grid-25 mobile-grid-50">
@@ -71,33 +71,33 @@
 				<div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
 						<h2>Volunteer Coordinators</h2>
 						<div class="grid-50 mobile-grid-50">
-								<img class="avatar" src="img/PersonIcon.png" />
+								<img class="avatar" src="img/kommittee/StephenParrish.jpg" />
 								Stephen Parrish
 						</div>
 						<div class="grid-50 mobile-grid-50">
-								<img class="avatar" src="img/PersonIcon.png" />
+								<img class="avatar" src="img/kommittee/CaleJorgenson.jpg" />
 								Cale Jorgenson
 						</div>
 				</div>
 				<div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
 						<h2>Grinds</h2>
 						<div class="grid-50 mobile-grid-50">
-								<img class="avatar" src="img/PersonIcon.png" />
+								<img class="avatar" src="img/kommittee/JeanetteClark.jpg" />
 								Jeanette Clark
 						</div>
 						<div class="grid-50 mobile-grid-50">
-								<img class="avatar" src="img/PersonIcon.png" />
+								<img class="avatar" src="img/kommittee/BeckyMia.jpg" />
 								Becky Mia
 						</div>
 				</div>
 				<div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
 						<h2>Website</h2>
 						<div class="grid-50 mobile-grid-50">
-								<img class="avatar" src="img/image_20_133.jpg" />
+								<img class="avatar" src="img/kommittee/ClayMcKell.jpg" />
 								<a href="mailto:webmaster@hawaiiultimate.com">Clay "Dukes" McKell</a>
 						</div>
 						<div class="grid-50 mobile-grid-50">
-								<img class="avatar" src="img/PersonIcon.png" />
+								<img class="avatar" src="img/kommittee/JenaKline.jpg" />
 								Jena Kline
 						</div>
 				</div>
