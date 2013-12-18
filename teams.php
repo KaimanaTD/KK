@@ -15,6 +15,8 @@
   <header>
     <?php include('partial/banner.php'); ?>
     <?php require('partial/nav.php'); ?>
+	<?php include('control/LV_settings.php'); ?>
+	<script>var LV_api_url="<?php echo KK_LEAGUEVINE_API_URL; ?>", LV_access_token="<?php echo KK_LEAGUEVINE_ACCESS_TOKEN; ?>";</script>
   </header>
   <!-- Add your site or application content here -->
   <div class="content">
