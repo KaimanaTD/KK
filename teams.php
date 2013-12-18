@@ -19,14 +19,12 @@
 	<script>var LV_api_url="<?php echo KK_LEAGUEVINE_API_URL; ?>", LV_access_token="<?php echo KK_LEAGUEVINE_ACCESS_TOKEN; ?>";</script>
   </header>
   <!-- Add your site or application content here -->
-  <div class="content">
-	<section class="grid-70">
-<!--      <article>-->
-        <h1>Teams</h1>
-        <p>
-          Team list will be updated once bids have been accepted.  Check back in late November!  
-        </p>
-<!--      </article>-->
+  <div class="content" id="teams">
+	<section class="grid-70 LV">
+		<h1>Teams</h1>
+		<article id="LV_list_teams">
+			<p>This year's lineup features teams from all over the globe: Australia to France and back to Hawaii.</p>
+		</article>
 	</section>
     <aside class="grid-30">
       <p>
