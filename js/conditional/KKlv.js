@@ -8,17 +8,15 @@ jQuery(document).ready(function() {
   /*
    * Display Teams
    */
-  get_LV('19436').done(function(data, textStatus, jqXHR){
+  get_LV({'tournament_id':'19435'}).done(function(data, textStatus, jqXHR){
     console.log(data);
   });
 });
 
-function get_LV(id) {
+function get_LV(param_obj) {
   return $.ajax("control/LV.php", {
     type: "GET",
-    data: {
-      'tournament_id':id
-    },
+    data: param_obj,
     dataType: "json"
   }).always(function(){
     // Do me all of the times!
