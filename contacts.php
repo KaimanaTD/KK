@@ -38,6 +38,7 @@
                 <a href="mailto:kaimanatd@gmail.com">Nick DeBoer</a>          
               </div>
             </div>
+            <div class="clear hide-on-desktop"></div>
             <div class="testifier kommitteeposition grid-25 mobile-grid-50">
               <h2>Open Coordinator</h2>
               <img class="avatar" src="img/kommittee/BenBergen.jpg" />
@@ -48,6 +49,7 @@
               <img class="avatar" src="img/kommittee/JenaKline.jpg" />
               <a href="mailto:kaimanawomen@gmail.com">Jena Kline</a>
             </div>
+            <div class="clear"></div>
             <div class="testifier kommitteeposition grid-25 mobile-grid-50">
               <h2>Kaimana Guru</h2>
               <img class="avatar" src="img/kommittee/MondoChun.jpg" />
@@ -58,6 +60,7 @@
               <img class="avatar" src="img/kommittee/AlexGloberson.jpg" />
               Alex Globerson
             </div>
+            <div class="clear hide-on-desktop"></div>
             <div class="testifier kommitteeposition grid-25 mobile-grid-50">
               <h2>Schwag</h2>
               <img class="avatar" src="img/kommittee/MarkSlivka.jpg" />
@@ -68,6 +71,7 @@
               <img class="avatar" src="img/kommittee/KimbaTowler.jpg" />
               Kimba Towler
             </div>
+            <div class="clear"></div>
             <div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
               <h2>Volunteer Coordinators</h2>
               <div class="grid-50 mobile-grid-50">
@@ -79,6 +83,7 @@
                 Cale Jorgenson
               </div>
             </div>
+            <div class="clear hide-on-desktop"></div>
             <div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
               <h2>Grinds</h2>
               <div class="grid-50 mobile-grid-50">
@@ -90,6 +95,7 @@
                 Becky Mia
               </div>
             </div>
+            <div class="clear"></div>
             <div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
               <h2>Website</h2>
               <div class="grid-50 mobile-grid-50">
