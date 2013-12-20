@@ -65,7 +65,7 @@
 				</div>
 				<div class="testifier kommitteeposition grid-25 mobile-grid-50">
 						<h2>Welcome Committee</h2>
-						<img class="avatar" src="img/PersonIcon.png" />
+						<img class="avatar" src="img/kommittee/KimbaTowler.jpg" />
 						Kimba Towler
 				</div>
 				<div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
