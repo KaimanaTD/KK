@@ -8,8 +8,32 @@ jQuery(document).ready(function() {
   /*
    * Display Teams
    */
-  get_LV({'tournament_id':'19435'}).done(function(data, textStatus, jqXHR){
+  get_LV({'tournaments':JSON.stringify(tournament_params)}).done(function(data, textStatus, jqXHR){
     console.log(data);
+    var $target = $('#LV_list_teams');
+    for (var d = 0; d < data.objects.length; d++) {
+      var thisdiv = data.objects[d];
+      var $d = $('<div/>', {'class': 'grid-parent'});
+      $d.append('<h2><a href="' + thisdiv.leaguevine_url + '">' + thisdiv.name + '</a></h2>');
+      get_LV({'tournament_teams':thisdiv.id}).done(function(teamdata, textStatus, jqXHR){
+        for (var t = 0; t < teamdata.objects.length; t++) {
+          var thisteam = teamdata.objects[t];
+          var $t = $('<div/>', {'class': 'team_row'});
+          $t.append([
+            $('<span/>', {
+              'class': 'grid-10',
+              'text': thisteam.seed
+            }),
+            $('<span/>', {
+              'class': 'grid-90',
+              'text': '<a href="' + thisteam.team.leaguevine_url + '">' + thisteam.team.name + '</a>'
+            })
+          ]);
+          $d.append($t);
+        }
+        $target.append($d);
+      });
+    }
   });
 });
 
