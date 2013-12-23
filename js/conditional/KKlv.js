@@ -14,8 +14,8 @@ jQuery(document).ready(function() {
     for (var d = 0; d < data.objects.length; d++) {
       var thisdiv = data.objects[d];
       var $d = $('<div/>', {'class': 'grid-parent'});
-      $d.append('<h2><a href="' + thisdiv.leaguevine_url + '">' + thisdiv.name + '</a></h2>');
-      get_LV({'tournament_teams':thisdiv.id}).done(function(teamdata, textStatus, jqXHR){
+      $d.append('<h2><a href="' + thisdiv.leaguevine_url + '">' + thisdiv.name + '</a></h2>');      
+      get_LV({'tournament_teams':'[' + thisdiv.id + ']'}).done(function(teamdata, textStatus, jqXHR){
         for (var t = 0; t < teamdata.objects.length; t++) {
           var thisteam = teamdata.objects[t];
           var $t = $('<div/>', {'class': 'team_row'});

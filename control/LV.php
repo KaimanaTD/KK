@@ -4,12 +4,12 @@ date_default_timezone_set('Pacific/Honolulu');
 require_once 'LV_settings.php';
 $single_params = array(
     'tournament_id' => 'tournaments/',
-    'tournament_teams' => 'tournament_teams/',
+    //'tournament_teams' => 'tournament_teams/',
     'team_id' => 'teams/'
 );
 $multiple_params = array(
     'tournaments' => 'tournaments/?tournament_ids=',
-    //'tournament_teams' => 'tournament_teams/?tournament_ids=',
+    'tournament_teams' => 'tournament_teams/?tournament_ids=',
     'teams' => 'teams/?team_ids='    
 );
 $url = '';
