@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
     var $target = $('#LV_list_teams');
     $.each(data.objects, function(ind, d){
       var $d = $('<div/>', {
-        'class': 'Hi'
+        'class': 'LV_division_list'
       });
       if (d.season.league.name.match(/(O|o)pen/)) {
         $d.attr({
