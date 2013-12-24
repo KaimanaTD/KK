@@ -223,6 +223,10 @@ article.paypal form table{
 	width: 100%;
 }
 
+.team_row:last-of-type > span {
+  padding-bottom:20px;
+}
+
 table {
   text-align: center;
   font-size: smaller;
