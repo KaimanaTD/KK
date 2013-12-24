@@ -8,34 +8,70 @@ jQuery(document).ready(function() {
   /*
    * Display Teams
    */
-  get_LV({'tournaments':JSON.stringify(tournament_params)}).done(function(data, textStatus, jqXHR){
-    console.log(data);
+  get_LV({
+    'tournaments':JSON.stringify(tournament_params)
+  }).done(function(data, textStatus, jqXHR){
     var $target = $('#LV_list_teams');
-    for (var d = 0; d < data.objects.length; d++) {
-      var thisdiv = data.objects[d];
-      var $d = $('<div/>', {'class': 'grid-parent'});
-      $d.append('<h2><a href="' + thisdiv.leaguevine_url + '">' + thisdiv.name + '</a></h2>');      
-      get_LV({'tournament_teams':'[' + thisdiv.id + ']'}).done(function(teamdata, textStatus, jqXHR){
-        for (var t = 0; t < teamdata.objects.length; t++) {
-          var thisteam = teamdata.objects[t];
-          var $t = $('<div/>', {'class': 'team_row'});
-          $t.append([
-            $('<span/>', {
-              'class': 'grid-10',
-              'text': thisteam.seed
-            }),
-            $('<span/>', {
-              'class': 'grid-90',
-              'text': '<a href="' + thisteam.team.leaguevine_url + '">' + thisteam.team.name + '</a>'
-            })
-          ]);
-          $d.append($t);
-        }
-        $target.append($d);
+    $.each(data.objects, function(ind, d){
+      var $d = $('<div/>', {
+        'class': 'Hi'
       });
-    }
+      if (d.season.league.name.match(/(O|o)pen/)) {
+        $d.attr({
+          'id':'LV_list_open'
+        });
+      } else {
+        $d.attr({
+          'id':'LV_list_women'
+        });
+      };
+      $d.append('<h2><a href="' + d.leaguevine_url + '">' + d.name + '</a></h2>');
+      get_LV({
+        'tournament_teams':'[' + d.id + ']'
+      }).done(function(data, tS, jq){
+        
+        var team_ids = [];
+        $.each(data.objects, function (ind,t){
+          team_ids[t.seed-1] = t.team_id;
+        })
+        get_LV({
+          'teams':JSON.stringify(team_ids)
+        }).done(function(data, tS, jq){
+          var team_array = [];
+          var $t;
+          var seed;
+          $.each(data.objects, function(ind,t){
+            seed = (1+team_ids.indexOf(t.id));
+            $t = $('<div/>', {
+              'class': 'team_row grid-parent'
+            }).append([
+              $('<span/>', {
+                'class': 'grid-10 seed',
+                'text': seed
+              }),
+              $('<span/>', {
+                'class': 'grid-60 team_name'
+              }).append('<a href="' + t.leaguevine_url + '">' + t.name + '</a>')
+              ]);
+            if (t.city || t.country) {
+              $t.append($('<span/>', {
+                'class': 'grid-30',
+                'text': t.city + (t.city ? ', ' : '') + t.country
+              }));
+            } else {
+              $t.find('.team_name').addClass('suffix-30');
+            }
+            team_array[seed-1] = $t;
+          })
+          $d.append(team_array);
+          $target.append($d);
+        })
+      })
+          
+    });
+      
   });
-});
+});    
 
 function get_LV(param_obj) {
   return $.ajax("control/LV.php", {
