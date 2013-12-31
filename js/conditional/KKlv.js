@@ -8,6 +8,7 @@ jQuery(document).ready(function() {
   /*
    * Display Teams
    */
+  $(document).ajaxStop(function(){$('#ajaxloader').hide();});
   get_LV({
     'tournaments':JSON.stringify(tournament_params)
   }).done(function(data, textStatus, jqXHR){

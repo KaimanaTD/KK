@@ -8,6 +8,9 @@
   <title>KK27 | Teams</title>
   <meta name="description" content="This year's crop of teams attending Kaimana Klassik.">
   <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc teams">
+  <style>
+    #ajaxloader {background: url('img/ajax-loader.gif') no-repeat; width:16px; height:16px; margin: 0 auto;}
+  </style>
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>
@@ -24,6 +27,7 @@
 		<h1>Teams</h1>
 		<article id="LV_list_teams">
 			<p>This year's lineup features teams from all over the globe: Australia to France and back to Hawaii.</p>
+            <div id="ajaxloader"></div>
 		</article>
 	</section>
     <aside class="grid-30">
