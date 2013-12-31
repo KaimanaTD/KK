@@ -17,7 +17,7 @@ if (isset($_GET['sheetname'])) {
 } else {
   $sheetname = 'TeamSheetMap';
 }
-
+//$sheetname = str_replace("'", "\\'", $sheetname);
 // Include the API
 require_once('sgs.php');
 

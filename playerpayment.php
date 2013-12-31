@@ -194,6 +194,7 @@
 
 function reg_get(key,sheetname) {
   sheetname = (typeof sheetname !== 'undefined' ? sheetname : 'TeamSheetMap');
+  console.log(encodeURIComponent(sheetname));
   return $.ajax("control/reg.php",{
       type: "GET",
       data: {
@@ -206,6 +207,9 @@ function reg_get(key,sheetname) {
   })
   .fail(function(jqXHR, textStatus, errorThrown) {
       // handle request failure
+      console.log(jqXHR);
+      console.log(textStatus);
+      console.log(errorThrown);
   });
 };
 
