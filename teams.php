@@ -11,6 +11,7 @@
   <style>
     #ajaxloader {background: url('img/ajax-loader.gif') no-repeat; width:16px; height:16px; margin: 0 auto;}
   </style>
+  <link rel="stylesheet" href="css/LV.css">
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>

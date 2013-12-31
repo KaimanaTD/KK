@@ -1,0 +1,11 @@
+section.LV a {
+  text-decoration: none;
+}
+
+section.LV h2 {
+  text-align: center;
+}
+
+article#LV_list_teams>div {
+  font-size: 120%;
+}
