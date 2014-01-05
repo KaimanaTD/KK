@@ -13,7 +13,8 @@ jQuery(document).ready(function() {
       $('#ajaxloader').hide();
     });
     get_LV({
-      'tournaments':JSON.stringify(tournament_params)
+      'trunk':'tournaments',
+      'query':'tournament_ids=' + JSON.stringify(tournament_params)
     }).done(function(data, textStatus, jqXHR){
       var $target = $('#LV_list_teams');
       $.each(data.objects, function(ind, d){
@@ -31,7 +32,8 @@ jQuery(document).ready(function() {
         };
         $d.append('<h2><a href="' + d.leaguevine_url + '">' + d.name + '</a></h2>');
         get_LV({
-          'tournament_teams':'[' + d.id + ']'
+          'trunk':'tournament_teams',
+          'query':'tournament_ids=' + '[' + d.id + ']'
         }).done(function(data, tS, jq){
         
           var team_ids = [];
@@ -39,7 +41,8 @@ jQuery(document).ready(function() {
             team_ids[t.seed-1] = t.team_id;
           })
           get_LV({
-            'teams':JSON.stringify(team_ids)
+            'trunk':'teams',
+            'query':'team_ids=' + JSON.stringify(team_ids)
           }).done(function(data, tS, jq){
             var team_array = [];
             var $t;
