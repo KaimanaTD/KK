@@ -26,9 +26,12 @@
         </p>
       </article>
       <article class="grid-100 grid-parent">
-        <h2>Saturday Pools</h2>
-        <div id="LV_sat_pools_open" class="grid-50 mobile-grid-100 grid-parent"></div>
-        <div id="LV_sat_pools_women" class="grid-50 mobile-grid-100 grid-parent"></div>
+        <details>
+          <summary><h2>Saturday Games</h2></summary>
+          <div id="LV_sat_pools_open" class="grid-50 mobile-grid-100 grid-parent">Temp content.</div>
+          <div id="LV_sat_pools_women" class="grid-50 mobile-grid-100 grid-parent"></div>
+        </details>
+      </article>
       <article class="grid-100 grid-parent">
         <h3>Sunday Games</h3>
       </article>

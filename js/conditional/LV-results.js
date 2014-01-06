@@ -5,6 +5,7 @@ var ID_open = 19436;
 var no_content = "This information is not currently available.";
 
 jQuery(document).ready(function() {
+  var $articles = $('article');
   $.getScript('js/conditional/LV-utils.js', function(){
     //
     // Display Pools
