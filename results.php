@@ -29,6 +29,11 @@
         <h2>Saturday Pools</h2>
         <div id="LV_sat_pools_open" class="grid-50 mobile-grid-100 grid-parent"></div>
         <div id="LV_sat_pools_women" class="grid-50 mobile-grid-100 grid-parent"></div>
+      <article class="grid-100 grid-parent">
+        <h3>Sunday Games</h3>
+      </article>
+      <article class="grid-100 grid-parent">
+        <h3>Monday Games</h3>
       </article>
 	</section>
     <?php /*
