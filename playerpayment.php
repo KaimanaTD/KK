@@ -63,7 +63,7 @@
         <div id="payment_summary" class="grid-50 mobile-grid-100">
           <table></table>
           <div id="reg_pay">
-            <script src="js/paypal-button.min.js?merchant=mondochun@juno.com" 
+            <script src="js/paypal-button.min.js?merchant=photo-facilitator@claymckell.com" 
                 data-button="buynow" 
                 data-name="KK27Registration" 
                 data-amount="1" 
@@ -74,7 +74,6 @@
             ></script>
           </div>
         </div>
-        
       </article>
 	</section>
 <!--    <aside class="grid-30">
