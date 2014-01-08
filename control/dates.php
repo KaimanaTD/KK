@@ -8,7 +8,8 @@ if (
   ) {
     die("Access denied.");  
   }
+date_default_timezone_set('Pacific/Honolulu');
 $date = array(
-  'late_start' => mktime(0,0,0,1,15,2014)
+  'late_start' => mktime(0,0,0,1,16,2014)
 );
 ?>
