@@ -22,6 +22,10 @@
   <title>Player Payment</title>
   <meta name="description" content="Kaimana Klassik 27 player registration payment portal">
   <meta name="keywords" content="Kaimana ultimate frisbee credit card paypal oahu">
+  <?php
+    define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0', 1);
+    require_once 'control/dates.php';
+  ?>
 </head>
 <body>
   <?php include('partial/oldBrowser.php'); ?>
