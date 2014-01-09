@@ -69,12 +69,13 @@
           <table></table>
           <div id="reg_pay">
             <script src="js/paypal-button.min.js?merchant=photo-facilitator@claymckell.com" 
+                data-env="sandbox" 
                 data-button="buynow" 
                 data-name="KK27Registration" 
                 data-amount="1" 
                 data-shipping="0" 
                 data-tax="0" 
-                data-notify_url="http://kaimanaklassik.com/control/ipn.php"
+                data-notify_url="http://kaimanaklassik.com/control/ipnsandbox.php"
                 data-return="http://kaimanaklassik.com/paymentconfirmation.php"
             ></script>
           </div>
