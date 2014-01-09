@@ -18,6 +18,7 @@
     div#payment_summary table tr:last-of-type {font-weight:bold; border-top:1px solid white;}
     div#payment_summary table tr:last-of-type td:first-of-type {text-align:right;}
     div#reg_pay {text-align:center;}
+    p#time_warning {font-size:130%;}
   </style>
   <title>Player Payment</title>
   <meta name="description" content="Kaimana Klassik 27 player registration payment portal">
@@ -358,7 +359,6 @@ function reloadWithinTime(t){
   if (t<tol) location.reload();
   return null;
 }
-
 
   </script> 
 </body>
