@@ -62,7 +62,7 @@ When you are testing your IPN script you should be using a PayPal "Sandbox"
 account: https://developer.paypal.com
 When you are ready to go live change use_sandbox to false.
 */
-$listener->use_sandbox = true;
+$listener->use_sandbox = false;
 
 /*
 By default the IpnListener object is going  going to post the data back to PayPal
@@ -119,7 +119,7 @@ if ($verified) {
   if ($_POST['payment_status'] != 'Completed') {exit(0);};
 	// check that txn_id has not been previously processed
 	// check that receiver_email is your PayPal email
-  if ($_POST['receiver_email'] != 'photo@claymckell.com') {
+  if ($_POST['receiver_email'] != 'mondochun@juno.com') {
     $errmsg .= "'receiver_email' does not match:";
     $errmsg .= $_POST['receiver_email'] . "\n";
   };
