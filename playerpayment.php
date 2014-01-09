@@ -38,7 +38,7 @@
   <div class="content">
 	<section class="grid-100">
       <article class="grid-parent">
-        <div class="grid-100">
+        <div id="payment_instructions" class="grid-100">
           <h1>Registration Payment</h1>
           <p>
             After submitting your registration form, please find select your team and find your name below.
@@ -102,6 +102,28 @@
     // Magic constants
     var prices = {'player_early': 140, 'player_late':165, 'guest': 80};
     prices['player'] = prices.player_early;
+    var now = new Date(<?php echo json_encode(date('c',$_SERVER['REQUEST_TIME'])); ?>);
+	var deadline = new Date(1000*<?php echo json_encode($date["late_start"]);?>);
+    //deadline = new Date(Date.parse(now)+1000*30);
+    console.log('Now:'); console.log(now);
+    console.log('Deadline:'); console.log(deadline);
+    if (deadline - now < 5*60*1000) {
+      displayTimeWarning(deadline-now);
+      var interval = setInterval(clocktick, 1000);
+    } 
+//	var latewarningDOM = document.getElementById("deadline_warning");
+    function clocktick() {
+		now = Date(Date.parse(now)+1000);
+		var d = new Date(now);
+        console.log("We are "+(d>deadline?"after":"before")+" the deadline.");
+		if (d > deadline) {
+          reloadWithinTime(d-deadline);
+			prices['player'] = prices.player_late;
+            $('p#time_warning').remove();
+		} else {
+          $('span#increase_time').html((deadline-d)/1000);
+        };
+	};
     var PAYPAL_ITEM_MAXLEN = 127;
     // Registration fanciness
 	var $PPbutton = $('div#reg_pay');
@@ -306,6 +328,17 @@ function build_team_list(n) {
     return out;
   };
 };
+
+function displayTimeWarning(t){
+  var $target = $('#payment_instructions');
+  $target.append('<p id="time_warning">WARNING: Fee Increase occurs in <span id="increase_time">'+t/1000+'</span> seconds.</p>');
+};
+
+function reloadWithinTime(t){
+  var tol = 1001;
+  if (t<tol) location.reload();
+  return null;
+}
 
 
   </script> 
