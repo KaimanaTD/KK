@@ -108,7 +108,7 @@
     //deadline = new Date(Date.parse(now)+1000*30);
     console.log('Now:'); console.log(now);
     console.log('Deadline:'); console.log(deadline);
-    if (deadline - now < 5*60*1000 && deadline - now > -2000) {
+    if (deadline - now < 10*60*1000 && deadline - now > -2000) {
     displayTimeWarning(deadline-now);
     var interval = setInterval(clocktick, 1000);
   } 
