@@ -30,7 +30,8 @@ function render_pools(data,Textstatus,jqXHR){
   var $poolwrapper,
     $poolname,
     $poolgame,
-    pool;
+    pool,
+	desired_game_fields = encodeURIComponent(['[','game_site','game_site_id','id','leaguevine_url','pool','pool_round','start_time','team_1','team_1_score','team_2','team_2_score','winner','winner_id',']'].join(','));
   if (data.objects.length>0) {
     $poolwrapper = $('<div/>',{
       'class':'pool_wrapper'
@@ -41,14 +42,20 @@ function render_pools(data,Textstatus,jqXHR){
        * Get game info for every team in the pool.  How?
        */
       pool = data.objects[p];
+	  console.log(pool);
       $poolname = $('<div/>',{
         'class':'grid-100 pool_name'
       }).html('<a href="'+pool.leaguvine_url+'">Pool '+pool.name+'</a>');
-      $poolname.append($('<div/>'),{
-        'class':'pool_fields',
-        'text':'' // TODO Get field info for the pool here.
-      });
-      
+	  get_LV({
+	    'trunk':'games',
+		'query':'tournament_id='+pool.tournament_id+'&pool_id='+pool.id+'&fields='+desired_game_fields
+	  }).done(function(gamejson,tS,jq) {
+	  console.log('Game JSON:'); console.log(gamejson);
+//        $poolname.append($('<div/>'),{
+//          'class':'pool_fields',
+//          'text':'' // TODO Get field info for the pool here.
+//        });
+      })
     }
   } else {
     content.push($('<p>'+no_content+'</p>'));
