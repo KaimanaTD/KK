@@ -178,10 +178,6 @@
       test: Modernizr.cssremunit,
       nope: 'js/conditional/REM-unit-polyfill/js/rem.min.js'
     },
-    {
-      test: Modernizr.details,
-      nope: 'js/conditional/details.polyfill.min.js'
-    },
     { load: ['js/plugins.js', 'js/main.js'] }
   ]);
 </script>
