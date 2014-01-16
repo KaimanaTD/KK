@@ -103,9 +103,9 @@
   jQuery(document).ready(function(){
     // Magic constants
     var prices = {'player_early': 140, 'player_late':165, 'guest': 80};
-    prices['player'] = prices.player_early;
     var now = new Date(<?php echo json_encode(date('c',$_SERVER['REQUEST_TIME'])); ?>);
 	var deadline = new Date(1000*<?php echo json_encode($date["late_start"]);?>);
+    prices['player'] = (now<deadline ? prices.player_early : prices.player_late);
     //deadline = new Date(Date.parse(now)+1000*30);
     console.log('Now:'); console.log(now);
     console.log('Deadline:'); console.log(deadline);
