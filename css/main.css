@@ -264,6 +264,10 @@ iframe#twitter-widget-0 {
   margin-top: 1rem;
 }
 
+div.carousel {
+	text-align: center;
+}
+
 /* Styles for lead image carousel */
 div.carousel#lead > div{
   width: 200px;

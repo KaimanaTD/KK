@@ -66,6 +66,7 @@
     <aside class="grid-30">
       <iframe src="//player.vimeo.com/video/37438019" width="200" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <div class="carousel" id="lead">
+		<img src="img/ajax-loader.gif" class="spinner"/>
 		<?php for ($ind=14; $ind<=24; $ind++) { ?>
 			<div id="lead_<?php echo $ind;?>" class="hidden"></div>
 		<?php } ?>
@@ -145,6 +146,7 @@
     <section class="grid-100 mobile-grid-100">
       <h1>Sponsors</h1>
       <div id="sponsors" class="carousel">
+		<img src="img/ajax-loader.gif" class="spinner"/>
 		<?php
 			function makeSponsor($fname, $url) {
 				return array("image_path" => "img/sponsors/".$fname, "url" => $url);
@@ -160,7 +162,7 @@
 			);
 			foreach ($sponsor_array as $company => $data) {	
 		?>
-				<img src="<?php echo $data[image_path];?>" data-url="<?php echo $data[url];?>"/>
+				<img src="<?php echo $data[image_path];?>" data-url="<?php echo $data[url];?>" class="hidden"/>
 		<?php } ?>
       </div>
     </section>

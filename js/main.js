@@ -21,7 +21,9 @@ jQuery(document).ready(function(){
 		auto: {
 		  timeoutDuration: 2000
 		}
-	  }).children().removeClass("hidden");
+	  }).children().removeClass("hidden")
+		.filter(function(ind){return $(this).hasClass("spinner");})
+		.remove();
       var sponsor_carousel = $('div[class="carousel"][id="sponsors"]');
       sponsor_carousel.carouFredSel({
         circular: true,
@@ -39,7 +41,9 @@ jQuery(document).ready(function(){
         auto: {
           timeoutDuration: 4000
         }
-      });
+      }).children().removeClass("hidden")
+		.filter(function(ind){return $(this).hasClass("spinner");})
+		.remove();
       sponsor_carousel.children('img').each(function(){
         var sponsor_url = $(this).attr('data-url');
         if (sponsor_url) {
