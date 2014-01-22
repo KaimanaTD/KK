@@ -66,15 +66,9 @@
     <aside class="grid-30">
       <iframe src="//player.vimeo.com/video/37438019" width="200" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <div class="carousel" id="lead">
-        <div id="lead_01"></div>
-        <div id="lead_02"></div>
-        <div id="lead_03"></div>
-        <div id="lead_04"></div>
-        <div id="lead_05"></div>
-        <div id="lead_06"></div>
-        <div id="lead_07"></div>
-        <div id="lead_08"></div>
-        <div id="lead_10"></div>
+		<?php for ($ind=14; $ind<=24; $ind++) { ?>
+			<div id="lead_<?php echo $ind;?>" class="hidden"></div>
+		<?php } ?>
       </div>
       <a class="twitter-timeline" href="https://twitter.com/KaimanaKlassik" data-chrome="" data-dnt="true" data-tweet-limit="5" data-widget-id="388448727339261953">Tweets by @KaimanaKlassik</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
 		auto: {
 		  timeoutDuration: 2000
 		}
-	  });
+	  }).children().removeClass("hidden");
       var sponsor_carousel = $('div[class="carousel"][id="sponsors"]');
       sponsor_carousel.carouFredSel({
         circular: true,
