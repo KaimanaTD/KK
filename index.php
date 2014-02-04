@@ -157,7 +157,7 @@
 				"Girls Who Surf" => makeSponsor("GWSlogo.png","http://www.surfhnl.com/"),
 				"RawRevolution" => makeSponsor("RawRev.gif","http://www.rawrev.com"),
 				"Ultimate Peace" => makeSponsor("UltiPeace.png","http://www.ultimatepeace.org/"),
-				"Planned Parenthood" => makeSponsor("pp.png","http://www.plannedparenthood.org/hawaii/"),
+				"Planned Parenthood" => makeSponsor("PPYL-Logo.png","http://www.plannedparenthood.org/hawaii/"),
 				"Styrophobia" => makeSponsor("styro.jpg","http://styrophobia.com/")
 			);
 			foreach ($sponsor_array as $company => $data) {	
