@@ -152,7 +152,7 @@
 				return array("image_path" => "img/sponsors/".$fname, "url" => $url);
 			};
 			$sponsor_array = array(
-				"ClimbOn" => makeSponsor("COLogo.png","http://skinourishment.com/"),
+				"ClimbOn" => makeSponsor("crossFIXEHANDSClimbOn.png","http://skinourishment.com/"),
 				"5ultimate" => makeSponsor("Five-Ultimate-Logo-4.png","http://fiveultimate.com/"),
 				"RawRevolution" => makeSponsor("RawRev.gif","http://www.rawrev.com"),
 				"Planned Parenthood" => makeSponsor("PPYL-Logo.png","http://www.plannedparenthood.org/hawaii/"),
