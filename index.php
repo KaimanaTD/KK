@@ -155,7 +155,6 @@
 				"ClimbOn" => makeSponsor("COLogo.png","http://skinourishment.com/"),
 				"5ultimate" => makeSponsor("Five-Ultimate-Logo-4.png","http://fiveultimate.com/"),
 				"RawRevolution" => makeSponsor("RawRev.gif","http://www.rawrev.com"),
-				"Ultimate Peace" => makeSponsor("UltiPeace.png","http://www.ultimatepeace.org/"),
 				"Planned Parenthood" => makeSponsor("PPYL-Logo.png","http://www.plannedparenthood.org/hawaii/"),
 				"Styrophobia" => makeSponsor("styro.jpg","http://styrophobia.com/")
 			);
