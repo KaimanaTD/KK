@@ -12,6 +12,9 @@
     <title>Player Registration</title>
     <meta name="description" content="Kaimana 27 player registration form">
     <meta name="keywords" content="Kaimana Klassik Hawaii player registration ultimate Oahu frisbee">
+    <style>
+      p#time_warning {font-size:130%;}
+    </style>
     <script>
       now = new Date(<?php echo json_encode(date('c', $_SERVER['REQUEST_TIME'])); ?>);
       deadline = new Date(1000*<?php echo json_encode($date["reg_end"]); ?>);
