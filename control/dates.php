@@ -11,6 +11,6 @@ if (
 date_default_timezone_set('Pacific/Honolulu');
 $date = array(
   'late_start' => mktime(0,0,0,1,16,2014),
-  'reg_end' => mktime(0,0,0,2,9,2014)
+  'reg_end' => mktime(16,14,0,2,10,2014)
 );
 ?>

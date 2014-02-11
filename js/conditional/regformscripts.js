@@ -1,10 +1,9 @@
 jQuery(document).ready(function(){
-  var now = new Date(<?php echo json_encode(date('c', $_SERVER['REQUEST_TIME'])); ?>);
-  var deadline = new Date(1000*<?php echo json_encode($date["reg_end"]); ?>);
-  deadline = new Date(Date.parse(now)+1000*30);
-  console.log('Now:'); console.log(now);
-  console.log('Deadline:'); console.log(deadline);
-  if (deadline - now < 10*60*1000 && deadline - now > -2000) {
+  console.log('Now:');
+  console.log(now);
+  console.log('Deadline:');
+  console.log(deadline);
+  if (deadline - now < 95*60*60*1000 && deadline - now > -2000) {
     displayTimeWarning(deadline-now);
     var interval = setInterval(clocktick, 1000);
   } 
@@ -30,10 +29,10 @@ jQuery(document).ready(function(){
 });
 
 function displayTimeWarning(t){
-  var $target = $('#registration_instruction_wrapper');
-  $target.append(
-  '<p id="time_warning">'+
-    'WARNING: Fee increase occurs in '+
+  var $target = $('#registration_instruction_wrapper>p:last-of-type');
+  $target.after(
+    '<p id="time_warning">'+
+    'WARNING: Online registration will only be available for another '+
     '<span id="increase_time">'+
     ( t<1000*60 ? t/1000 : Math.floor(t/1000/60) )+
     '</span>'+
@@ -41,7 +40,13 @@ function displayTimeWarning(t){
     '<span id="increase_time_units">'+
     ( t<1000*60 ? 'seconds' : 'minute'+( Math.floor(t/1000/60)==1 ? '' : 's' ) )+
     '</span>.  '+
-    'This will result in the page being reloaded, and you will have to start the payment process over.'+
+    'If you miss the online registration period, you must register and pay at the fields on Friday or Saturday.'+
     '</p>'
-);
+    );
 };
+
+function reloadWithinTime(t){
+  var tol = 1001;
+  if (t<tol) location.reload();
+  return null;
+}
