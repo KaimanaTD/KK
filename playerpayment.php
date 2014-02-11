@@ -41,6 +41,7 @@
       <article class="grid-parent">
         <div id="payment_instructions" class="grid-100">
           <h1>Registration Payment</h1>
+          <?php if ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
           <p>
             After submitting your registration form, please find select your team and find your name below.
             You may pay for more than one person on a team by Control/Command-clicking names (may not work on all touch screen devices).
@@ -79,7 +80,14 @@
             ></script>
           </div>
         </div>
-        
+        <?php } else { ?>
+        <p>
+          In order for us to have accurate records at the fields, we have closed online payment at this time.
+        </p>
+        <p>
+          If you still need to register or pay, please bring your information and cash to the registration tent on Friday night or Saturday morning.
+        </p>
+        <?php } ?>
       </article>
 	</section>
 <!--    <aside class="grid-30">
@@ -104,8 +112,9 @@
     // Magic constants
     var prices = {'player_early': 140, 'player_late':165, 'guest': 80};
     var now = new Date(<?php echo json_encode(date('c',$_SERVER['REQUEST_TIME'])); ?>);
-	var deadline = new Date(1000*<?php echo json_encode($date["late_start"]);?>);
-    prices['player'] = (now<deadline ? prices.player_early : prices.player_late);
+	var deadline = new Date(1000*<?php echo json_encode($date["reg_end"]);?>);
+    var fee_increase_deadline = new Date(1000*<?php echo json_encode($date["late_start"]);?>);
+    prices['player'] = (now<fee_increase_deadline ? prices.player_early : prices.player_late);
     //deadline = new Date(Date.parse(now)+1000*30);
     console.log('Now:'); console.log(now);
     console.log('Deadline:'); console.log(deadline);
@@ -342,7 +351,7 @@ function displayTimeWarning(t){
   var $target = $('#payment_instructions');
   $target.append(
     '<p id="time_warning">'+
-      'WARNING: Fee increase occurs in '+
+      'WARNING: Online payment will only be available for another '+
       '<span id="increase_time">'+
         ( t<1000*60 ? t/1000 : Math.floor(t/1000/60) )+
       '</span>'+
@@ -350,7 +359,7 @@ function displayTimeWarning(t){
       '<span id="increase_time_units">'+
         ( t<1000*60 ? 'seconds' : 'minute'+( Math.floor(t/1000/60)==1 ? '' : 's' ) )+
       '</span>.  '+
-      'This will result in the page being reloaded, and you will have to start the payment process over.'+
+      'This will result in the page being reloaded (and any progress will be lost), and you will have to pay at the fields on Friday or Saturday.'+
     '</p>'
   );
 };
