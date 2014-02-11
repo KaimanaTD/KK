@@ -1,8 +1,8 @@
 jQuery(document).ready(function(){
-  console.log('Now:');
-  console.log(now);
-  console.log('Deadline:');
-  console.log(deadline);
+//  console.log('Now:');
+//  console.log(now);
+//  console.log('Deadline:');
+//  console.log(deadline);
   if (deadline - now < 95*60*60*1000 && deadline - now > -2000) {
     displayTimeWarning(deadline-now);
     var interval = setInterval(clocktick, 1000);
@@ -12,7 +12,7 @@ jQuery(document).ready(function(){
     now = Date(Date.parse(now)+1000);
     var d = new Date(now);
     var s = (deadline-d)/1000;
-    console.log("We are "+(d>deadline?"after":"before")+" the deadline.");
+    //console.log("We are "+(d>deadline?"after":"before")+" the deadline.");
     if (d > deadline) {
       reloadWithinTime(deadline-d);
       $('p#time_warning').remove();

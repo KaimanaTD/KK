@@ -116,8 +116,8 @@
     var fee_increase_deadline = new Date(1000*<?php echo json_encode($date["late_start"]);?>);
     prices['player'] = (now<fee_increase_deadline ? prices.player_early : prices.player_late);
     //deadline = new Date(Date.parse(now)+1000*30);
-    console.log('Now:'); console.log(now);
-    console.log('Deadline:'); console.log(deadline);
+//    console.log('Now:'); console.log(now);
+//    console.log('Deadline:'); console.log(deadline);
     if (deadline - now < 10*60*1000 && deadline - now > -2000) {
     displayTimeWarning(deadline-now);
     var interval = setInterval(clocktick, 1000);
@@ -127,7 +127,7 @@
     now = Date(Date.parse(now)+1000);
     var d = new Date(now);
     var s = (deadline-d)/1000;
-    console.log("We are "+(d>deadline?"after":"before")+" the deadline.");
+//    console.log("We are "+(d>deadline?"after":"before")+" the deadline.");
     if (d > deadline) {
       reloadWithinTime(deadline-d);
       prices['player'] = prices.player_late;
