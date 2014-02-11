@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
 //  console.log(now);
 //  console.log('Deadline:');
 //  console.log(deadline);
-  if (deadline - now < 95*60*60*1000 && deadline - now > -2000) {
+  if (deadline - now < 24*60*60*1000 && deadline - now > -2000) {
     displayTimeWarning(deadline-now);
     var interval = setInterval(clocktick, 1000);
   } 
