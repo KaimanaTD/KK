@@ -1,8 +1,8 @@
 jQuery(document).ready(function(){
-//  console.log('Now:');
-//  console.log(now);
-//  console.log('Deadline:');
-//  console.log(deadline);
+  //  console.log('Now:');
+  //  console.log(now);
+  //  console.log('Deadline:');
+  //  console.log(deadline);
   if (deadline - now < 24*60*60*1000 && deadline - now > -2000) {
     displayTimeWarning(deadline-now);
     var interval = setInterval(clocktick, 1000);
@@ -17,12 +17,17 @@ jQuery(document).ready(function(){
       reloadWithinTime(deadline-d);
       $('p#time_warning').remove();
     } else {
-      if (s > 60 ) {
-        $('span#increase_time').html(Math.floor(s/60));
-        $('span#increase_time_units').html('minute'+(Math.floor(s/60)==1 ? '' : 's'));
+      if (s > 3600) {
+        $('span#increase_time').html(Math.floor(s/3600));
+        $('span#increase_time_units').html('hour'+(Math.floor(s/3600)==1 ? '' : 's'));
       } else {
-        $('span#increase_time').html(s);
-        $('span#increase_time_units').html('seconds');
+        if (s > 60 ) {
+          $('span#increase_time').html(Math.floor(s/60));
+          $('span#increase_time_units').html('minute'+(Math.floor(s/60)==1 ? '' : 's'));
+        } else {
+          $('span#increase_time').html(s);
+          $('span#increase_time_units').html('seconds');
+        }
       }
     };
   };
@@ -34,11 +39,21 @@ function displayTimeWarning(t){
     '<p id="time_warning">'+
     'WARNING: Online registration will only be available for another '+
     '<span id="increase_time">'+
-    ( t<1000*60 ? t/1000 : Math.floor(t/1000/60) )+
+    ( t<1000*60*60 
+      ?
+      ( t<1000*60 ? t/1000 : Math.floor(t/1000/60) )
+      :
+      Math.floor(t/1000/60/60)
+    )+
     '</span>'+
     ' '+
     '<span id="increase_time_units">'+
-    ( t<1000*60 ? 'seconds' : 'minute'+( Math.floor(t/1000/60)==1 ? '' : 's' ) )+
+    ( t<1000*60*60 
+      ?
+      ( t<1000*60 ? 'seconds' : 'minute'+( Math.floor(t/1000/60)==1 ? '' : 's' ) )
+      :
+      'hour'+( Math.floor(t/1000/60/60)==1 ? '' : 's' )
+    )+
     '</span>.  '+
     'If you miss the online registration period, you must register and pay at the fields on Friday or Saturday.'+
     '</p>'

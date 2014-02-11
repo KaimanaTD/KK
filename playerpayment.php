@@ -133,12 +133,17 @@
       prices['player'] = prices.player_late;
       $('p#time_warning').remove();
     } else {
-      if (s > 60 ) {
-        $('span#increase_time').html(Math.floor(s/60));
-        $('span#increase_time_units').html('minute'+(Math.floor(s/60)==1 ? '' : 's'));
+      if (s > 3600) {
+        $('span#increase_time').html(Math.floor(s/3600));
+        $('span#increase_time_units').html('hour'+(Math.floor(s/3600)==1 ? '' : 's'));
       } else {
-        $('span#increase_time').html(s);
-        $('span#increase_time_units').html('seconds');
+        if (s > 60 ) {
+          $('span#increase_time').html(Math.floor(s/60));
+          $('span#increase_time_units').html('minute'+(Math.floor(s/60)==1 ? '' : 's'));
+        } else {
+          $('span#increase_time').html(s);
+          $('span#increase_time_units').html('seconds');
+        }
       }
     };
   };
@@ -353,11 +358,21 @@ function displayTimeWarning(t){
     '<p id="time_warning">'+
       'WARNING: Online payment will only be available for another '+
       '<span id="increase_time">'+
-        ( t<1000*60 ? t/1000 : Math.floor(t/1000/60) )+
+      ( t<1000*60*60 
+        ?
+        ( t<1000*60 ? t/1000 : Math.floor(t/1000/60) )
+        :
+        Math.floor(t/1000/60/60)
+      )+
       '</span>'+
       ' '+
       '<span id="increase_time_units">'+
-        ( t<1000*60 ? 'seconds' : 'minute'+( Math.floor(t/1000/60)==1 ? '' : 's' ) )+
+      ( t<1000*60*60 
+        ?
+        ( t<1000*60 ? 'seconds' : 'minute'+( Math.floor(t/1000/60)==1 ? '' : 's' ) )
+        :
+        'hour'+( Math.floor(t/1000/60/60)==1 ? '' : 's' )
+      )+
       '</span>.  '+
       'This will result in the page being reloaded (and any progress will be lost), and you will have to pay at the fields on Friday or Saturday.'+
     '</p>'
