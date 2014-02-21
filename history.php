@@ -1024,23 +1024,23 @@ Jack Wade & Nick DeBoer
 </td>
 
 <td>
-<a href="../Stigmata.jpg")" class="poplink" scrolling="yes">
+<a href="img/Stigmata.jpg" class="poplink" scrolling="yes">
 Stigmata Chelada</a>
 </td>
 
 <td>
-<a href="../Coyotes.jpg")" class="poplink" scrolling="yes">
+<a href="img/coyotes.jpeg" class="poplink" scrolling="yes">
 Coyotes of the Caribbean</a>
 
 </td>
 
 <td>
-<a href="../KK26BOW.jpg")" class="poplink" scrolling="yes">
+<a href="img/KK26BOW.jpg" class="poplink" scrolling="yes">
 Bag-O-Wine</a>
 </td>
 
 <td>
-<a href="../KK26Freakswomen2.jpg")" class="poplink" scrolling="yes">
+<a href="img/KK26Freakswomen2.jpg" class="poplink" scrolling="yes">
 Freaks Women</a>
 </td>
 
