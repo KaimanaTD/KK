@@ -1052,6 +1052,21 @@ Don Najita
 
 </tr>
 
+<tr>
+<td>2014</td>
+<td>Waimanalo Polo Club</td>
+<td>Jack Wade & Nick DeBoer</td>
+<td>Colony</td>
+<td>Sporting Team BAU</td>
+<td>FLTower</td>
+<td>Freshly Squeezed</td>
+<td>
+	Ignacio Lobos<br>
+	Kim Fleischer<br>
+	Clay "Dukes" McKell
+</td>
+</tr>
+
 </table>
 </article>
 
