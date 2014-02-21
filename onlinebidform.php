@@ -3,8 +3,13 @@
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<?php  ?>
 <head>
-  <?php require('partial/head.php'); ?>
+  <?php 
+	require('partial/head.php'); 
+	define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0',1);
+	require_once('control/dates.php');
+  ?>
   <title></title>
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -21,15 +26,21 @@
 	<section class="grid-100">
       <article>
         <h1>Team Bids</h1>
-        <p>
-          Please complete the form below and submit your payment of $420 either via <a href="onlinepayment.php">PayPal</a> or <a href="bidding.php">check</a>.
-        </p>
-		<p id="deadline_warning" class="hidden">
-			<strong>NOTICE: Team bid payments submitted after midnight Hawaii Standard Time on November 8, 2013 will be considered late.</strong>
-		</p>
-        <div class="googleform">
-          <iframe src="https://docs.google.com/a/hawaiiultimate.com/forms/d/1kKmjSfAUAeIAbmy_p2jJj71U-SLRba-sh29u9PAYpKM/viewform?embedded=true" width="760" height="850" frameborder="0" marginheight="0" marginwidth="0">Your browser may not support the technology used to display this registration form.  Please fill out the form on its <a href="https://docs.google.com/forms/d/1kKmjSfAUAeIAbmy_p2jJj71U-SLRba-sh29u9PAYpKM/viewform">external site</a>.</iframe>
-        </div>
+		<?php if ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
+			<p>
+			  Please complete the form below and submit your payment of $420 either via <a href="onlinepayment.php">PayPal</a> or <a href="bidding.php">check</a>.
+			</p>
+			<p id="deadline_warning" class="hidden">
+				<strong>NOTICE: Team bid payments submitted after midnight Hawaii Standard Time on November 8, 2013 will be considered late.</strong>
+			</p>
+			<div class="googleform">
+			  <iframe src="https://docs.google.com/a/hawaiiultimate.com/forms/d/1kKmjSfAUAeIAbmy_p2jJj71U-SLRba-sh29u9PAYpKM/viewform?embedded=true" width="760" height="850" frameborder="0" marginheight="0" marginwidth="0">Your browser may not support the technology used to display this registration form.  Please fill out the form on its <a href="https://docs.google.com/forms/d/1kKmjSfAUAeIAbmy_p2jJj71U-SLRba-sh29u9PAYpKM/viewform">external site</a>.</iframe>
+			</div>
+		<?php } else { ?>
+			<p>
+			  Sorry, the team bid window has closed.  Please <a href="mailto:kaimanatd@gmail.com">contact the TD's</a> to see if another team would like to merge with yours.
+			</p>
+		<?php } ?>
       </article>
 	</section>
   </div>
