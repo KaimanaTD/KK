@@ -51,12 +51,12 @@ jQuery(document).ready(function() {
                 'text': seed
               }),
               $('<span/>', {
-                'class': 'grid-60 team_name'
+                'class': 'grid-45 team_name'
               }).append('<a href="' + t.leaguevine_url + '">' + t.name + '</a>')
               ]);
             if (t.city || t.country) {
               $t.append($('<span/>', {
-                'class': 'grid-30',
+                'class': 'grid-45',
                 'text': t.city + (t.city ? ', ' : '') + t.country
               }));
             } else {
