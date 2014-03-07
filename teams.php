@@ -24,18 +24,17 @@
   </header>
   <!-- Add your site or application content here -->
   <div class="content" id="teams">
-	<section class="grid-70 LV">
+	<section class="grid-60 LV">
 		<h1>Teams</h1>
 		<article id="LV_list_teams">
 			<p>This year's lineup features teams from all over the globe: Australia to France and back to Hawaii.</p>
             <div id="ajaxloader"></div>
 		</article>
 	</section>
-    <aside class="grid-30">
-      <p>
-        Is your team social?  Contact the <a href="mailto:webmaster@hawaiiultimate.com">webmaster</a> to feature your team's online presence here.
-      </p>
-	</aside>
+    <aside class="grid-40">
+      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/KaimanaKlassik/kaimana-teams" data-widget-id="441843347980697600">Tweets from https://twitter.com/KaimanaKlassik/kaimana-teams</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </aside>
   </div>
   <?php include('partial/foot.php'); ?>
   </div> <!-- /wrapper -->
