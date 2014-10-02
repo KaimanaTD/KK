@@ -5,8 +5,8 @@
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <?php require('partial/head.php'); ?>
-  <title>Kaimana Klassik 27 - 2014</title>
-  <meta name="description" content="Kaimana Klassik is the premier ultimate tournament in Hawaii.  It's 27th year promises to be the best yet.">
+  <title>Kaimana Klassik 28 - 2014</title>
+  <meta name="description" content="Kaimana Klassik is the premier ultimate tournament in Hawaii.  It's 28th year promises to be the best yet.">
   <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc">
 </head>
 <body>
@@ -21,24 +21,27 @@
   <div class="content">
     <section class="main grid-70">
       <h1>Greetings from Kaimana!</h1>
-      <h1 id="homedates">February 15, 16, 17, 2014</h1>
+      <h1 id="homedates">February 14, 15, 16, 2015</h1>
       <h2>HAWAII'S BIGGEST & BEST WOMENS/OPEN TOURNAMENT</h2>
       <p>16 Open and 16 Women's Teams</p>
       <article>
-        <p>The party starts on Friday, February 14 with evening registration and entertainment.  Games start Saturday morning and continue through 
-        finals on the afternoon of President’s Day holiday on Monday, February 17. </p>
-        <p>Make your trip a real vacation ~ stay through the following weekend, February 22-23, and join us for the Post-Kaimana Hilo Hat Draw!                
-        Stay tuned for details.  </p>
+        <p>
+          The party starts on Friday, February 13 with evening registration and entertainment.  
+          Games start Saturday morning and continue through finals on the afternoon of President’s Day holiday on Monday, February 16. </p>
+        <p>
+          Make your trip a real vacation ~ stay through the following weekend, February 21-22, and join us for the Post-Kaimana Maui Hat Draw!                
+          Stay tuned for details.  
+        </p>
       </article>
       <article>
-        <h2>Registration is Now Open</h2>
-        <p>Players and guests can now <a href="playerregistration.php">register for the tournament</a>.</p>
-        <p>Early registration ensures your team will keep its bid and saves you money!  Until January 15, player fees are $140.  From then on, player fees are $165.</p>
+        <h2>Registration is not yet Open</h2>
+        <?php #<p>Players and guests can now <a href="playerregistration.php">register for the tournament</a>.</p> ?>
+        <p>Early registration ensures your team will keep its bid and saves you money!  Until January 15, player fees are $140.  From then on, player fees are $175.</p>
       </article>
       <article>
         <h2>Start the Chatter!</h2>
         <p><strong>Team bids are currently being accepted</strong></p>
-        <p>$420 team deposit due on NOVEMBER 8, 2013</p>
+        <p>$420 team deposit due on NOVEMBER 7, 2014</p>
         <p>Send in your bids now.  (<a href="onlinebidform.php">Online bid submission</a> is now available)</p>
       </article>
       <article>
@@ -56,7 +59,7 @@
           <li>Your team's history at Kaimana, if any, or your team's history in general,</li>
           <li>Something fun, original, and convincing!</li>
         </ul>
-        <p>Send all team bids to:  Jack Wade, 1308 Center Street, Apartment B2, Honolulu HI 96816.</p>
+        <p>Send all team bids to:  Nick DeBoer, 1118B 15th Ave, Honolulu HI 96816.</p>
       </article>
       <article>
         <h2>NO TEAM? NO PROBLEM!</h2>
