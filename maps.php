@@ -4,8 +4,12 @@
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <?php require('partial/head.php'); ?>
-  <title></title>
+  <?php 
+    require('partial/head.php');
+    define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0',1);
+	require_once('control/dates.php');
+  ?>
+  <title><?php echo $str['abbreviation'];?> | Maps</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 </head>

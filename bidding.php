@@ -9,6 +9,7 @@
     define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0',1);
 	require_once('control/dates.php');
   ?>
+  <title><?php echo $str['abbreviation'];?> | Bids & Fees</title>
   <meta name="description" content="Instructions for bids and fees for Kaimana Klassik.">
   <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc bids bidding fees payment">
 </head>

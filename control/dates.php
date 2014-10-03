@@ -16,4 +16,8 @@ $date = array(
   'late_start' => mktime(0,0,0,1,16,2015),
   'reg_end' => mktime(0,0,0,2,12,2015)
 );
+$str = array(
+  'number' => '28',
+  'abbreviation' => 'KK28'
+)
 ?>

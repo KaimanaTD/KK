@@ -4,7 +4,11 @@
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <?php require('partial/head.php'); ?>
+  <?php 
+    require('partial/head.php');
+    define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0',1);
+	require_once('control/dates.php');
+  ?>
   <script src="js/conditional/big-adapt.js"></script>
   <link rel="stylesheet" href="js/unsemantic/assets/stylesheets/unsemantic-grid-base.css">
   <script src="js/unsemantic/assets/javascripts/adapt.min.js"></script>
@@ -21,7 +25,7 @@
     p#time_warning {font-size:130%;}
   </style>
   <title>Player Payment</title>
-  <meta name="description" content="Kaimana Klassik 27 player registration payment portal">
+  <meta name="description" content="Kaimana Klassik <?php echo $str['number'];?> player registration payment portal">
   <meta name="keywords" content="Kaimana ultimate frisbee credit card paypal oahu">
   <?php
     define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0', 1);

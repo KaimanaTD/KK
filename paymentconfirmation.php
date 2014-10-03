@@ -4,9 +4,13 @@
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <?php require('partial/head.php'); ?>
+  <?php 
+    require('partial/head.php');
+    define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0',1);
+	require_once('control/dates.php');
+  ?>
   <title>Payment Confirmation</title>
-  <meta name="description" content="Kaimana Klassik 27 player registration confirmation">
+  <meta name="description" content="Kaimana Klassik <?php echo $str['number'];?> player registration confirmation">
   <meta name="keywords" content="Kaimana Klassik Oahu ultimate frisbee payment registration confirmation social media twitter facebook">
 </head>
 <body>

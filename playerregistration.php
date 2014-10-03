@@ -10,7 +10,7 @@
     require_once 'control/dates.php';
     ?>
     <title>Player Registration</title>
-    <meta name="description" content="Kaimana 27 player registration form">
+    <meta name="description" content="Kaimana <?php echo $str['number'];?> player registration form">
     <meta name="keywords" content="Kaimana Klassik Hawaii player registration ultimate Oahu frisbee">
     <style>
       p#time_warning {font-size:130%;}
