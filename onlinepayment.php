@@ -4,8 +4,12 @@
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <?php require('partial/head.php'); ?>
-  <title></title>
+  <?php 
+    require('partial/head.php');
+    define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0',1);
+	require_once('control/dates.php');
+  ?>
+  <title>Kaimana Team Bid Payment</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 </head>
@@ -22,13 +26,13 @@
       <article class="paypal">
         <h1>Team Bid Payment</h1>
 		<p id="deadline_warning" class="hidden">
-			<strong>NOTICE: Team bid payments submitted after midnight Hawaii Standard Time on November 8, 2013 will be considered late.</strong>
+			<strong>NOTICE: Team bid payments submitted after midnight Hawaii Standard Time on <?php echo date('M j, Y',$date['bids_close']); ?>  will be considered late.</strong>
 		</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="S6CZGX43UQEBW">
           <table>
-            <tr><td><input type="hidden" name="on0" value="Kaimana Klassik 27 Team Deposit">Kaimana Klassik 27 Team Deposit</td></tr><tr><td><select name="os0">
+            <tr><td><input type="hidden" name="on0" value="Kaimana Klassik 28 Team Deposit">Kaimana Klassik 28 Team Deposit</td></tr><tr><td><select name="os0">
                 <option value="Team Deposit">Team Deposit $420.00 USD</option>
             </select> </td></tr>
           </table>
@@ -44,7 +48,7 @@
   <?php require('partial/scripts.php'); ?>
   <script>
 	var now = new Date(<?php echo json_encode(date('c',$_SERVER['REQUEST_TIME'])); ?>);
-	var deadline = new Date( '2013-11-08T23:59:59-10:00');
+	var deadline = new Date( <?php echo "'".date('c',$date['bids_close'])."'";?> );
 	var latewarningDOM = document.getElementById("deadline_warning");
 	var interval = setInterval(clocktick, 1000);
 	function clocktick() {
