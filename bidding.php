@@ -19,49 +19,49 @@
   <!-- Add your site or application content here -->
   <div class="content">
 	<section class="grid-70">
-		<h1>Bids & Fees</h1>
-    <article>
-				<p>
-						Player fee is $140.00 per player<a id="note1_ref" class="notesymbol" href="#note1_text">*</a> this year. 
-						Fee includes all breakfasts and dinners, entertainment, camping, players' pack (cup, disc, and Kaimana logo surprise), plus all field supplies (water, fruit, juice, EMT).
-				</p>
+      <h1>Bids & Fees</h1>
+      <article>
+		<p>
+          Player fee is $140.00 per player<a id="note1_ref" class="notesymbol" href="#note1_text">*</a> this year. 
+          Fee includes all breakfasts and dinners, entertainment, camping, players' pack (cup, disc, and Kaimana logo surprise), plus all field supplies (water, fruit, juice, EMT).
+		</p>
         <p>
-						All players should <a href="playerregistration.php">register</a> and <a href="playerpayment.php">pay online</a>, if possible.  
-						Individual online registration and payment will be open once team bids have been accepted (mid to late November).  
-						If you cannot pay online, please do so by sending a check made out to <strong>Kaimana Klassik</strong> to: 
+          All players should <a href="playerregistration.php">register</a> and <a href="playerpayment.php">pay online</a>, if possible.  
+          Individual online registration and payment will be open once team bids have been accepted (mid to late November).  
+          If you cannot pay online, please do so by sending a check made out to <strong>Kaimana Klassik</strong> to: 
 <blockquote>Jack Wade 
 1308 Center Street 
 Apartment B2
 Honolulu, HI 96816
 </blockquote>
-						If paying by check, please register using the online form and choose the pay by check option.  
-						Players should also register on-site either Friday night or Saturday morning.
-				</p>
-				<p>
-						After January 15, 2014, late registration fee is $165 (you must have registered and PAID before January 15 in order to avoid the late fee).  
-						Only players who have registered and paid before January 15 are guaranteed a complete players' pack.
-				</p>
+          If paying by check, please register using the online form and choose the pay by check option.  
+          Players should also register on-site either Friday night or Saturday morning.
+		</p>
         <p>
-						A full player's fee refund is available to players who notify the tournament director (via writing or email) before January 25th that they will not be attending the tournament. 
-						After January 25th, players withdrawing from the tournament will receive a partial refund.
-				</p>
+          After January 15, 2014, late registration fee is $165 (you must have registered and PAID before January 15 in order to avoid the late fee).  
+          Only players who have registered and paid before January 15 are guaranteed a complete players' pack.
+        </p>
         <p>
-						Guest fee is $80 for the weekend. 
-						Guests should register and pay online.  
-						The guest fee covers all breakfasts and dinners, entertainment, camping, and a guest pack.
-				</p>
+          A full player's fee refund is available to players who notify the tournament director (via writing or email) before January 25th that they will not be attending the tournament. 
+          After January 25th, players withdrawing from the tournament will receive a partial refund.
+        </p>
         <p>
-						A nightly guest pass can be purchased at the door for $30/night.  
-						This fee covers dinner and entertainment for one evening.
-						<span class="allcaps">
-						All guests must have a player "sponsor" them.
-						Players should notify us prior to the tournament of guest names.
-						No one will be allowed to enter the party without a player "sponsor".
-						</span>
-				</p>
+          Guest fee is $80 for the weekend. 
+          Guests should register and pay online.  
+          The guest fee covers all breakfasts and dinners, entertainment, camping, and a guest pack.
+        </p>
+        <p>
+          A nightly guest pass can be purchased at the door for $30/night.  
+          This fee covers dinner and entertainment for one evening.
+          <span class="allcaps">
+          All guests must have a player "sponsor" them.
+          Players should notify us prior to the tournament of guest names.
+          No one will be allowed to enter the party without a player "sponsor".
+          </span>
+        </p>
 		</article>
 		<article>
-				<h2>How to submit an individual bid</h2>
+          <h2>How to submit an individual bid</h2>
 		<p>
 		  Depending on the number of team bids, we may have an Aloha Spirit team in the Open and Womens 
 		  division for individual players.  To register, complete the online registration and select "Aloha Spirit" 
@@ -70,20 +70,20 @@ Honolulu, HI 96816
 		</p>
 		</article>
 		<article>
-				<h2>Team Bids</h2>
-				<p>
-		Caveats of the bidding process:
-		</p>
-		<ul>
-		  <li>The $420 initial deposit can later be applied to three individual player's fees (the captain plus two other players). For those teams that do not make the final cut, we will refund your full deposit.</li>
-          <li>Bid-winning teams will be notified via email (as will wait-listed teams) by November 15. Bid-winning teams must respond via e-mail or letter </li>
-          by November 22, whether or not they wish to accept the bid. If no response is received, that team will forfeit its bid, and the next wait-listed team will be contacted. At this point, the declining bid-winning team will receive a 100% refund on its deposit.</li>
-          <li>Bid-winning teams are required to secure their bid by submitting entrance fees for at least 8 players (at $140 per player) by December 13.</li>
-          <li>If a bid-winning and bid-accepting team fails to submit the above mentioned players' fees, its bid will be lost, and the next wait-listed team will be given priority. If we are able to fill this new vacancy, we will issue only a partial deposit refund of $160. If we are unable to fill the vacancy, no refund of deposit will be issued.</li>
-          <li>The remainders of each team's entrance fees are due by January 15. Any entrance fee not paid in full by this date will be assessed the late registration fee of $165.</li>
-          <li>If any team forfeits its position after January 1, the deposit will be forfeited, regardless of our success in filling the vacancy.  </li>        
-        </ul>
-      </article>
+          <h2>Team Bids</h2>
+          <p>
+            Caveats of the bidding process:
+          </p>
+          <ul>
+            <li>The $420 initial deposit can later be applied to three individual player's fees (the captain plus two other players). For those teams that do not make the final cut, we will refund your full deposit.</li>
+            <li>Bid-winning teams will be notified via email (as will wait-listed teams) by November 15. Bid-winning teams must respond via e-mail or letter </li>
+            by November 22, whether or not they wish to accept the bid. If no response is received, that team will forfeit its bid, and the next wait-listed team will be contacted. At this point, the declining bid-winning team will receive a 100% refund on its deposit.</li>
+            <li>Bid-winning teams are required to secure their bid by submitting entrance fees for at least 8 players (at $140 per player) by December 13.</li>
+            <li>If a bid-winning and bid-accepting team fails to submit the above mentioned players' fees, its bid will be lost, and the next wait-listed team will be given priority. If we are able to fill this new vacancy, we will issue only a partial deposit refund of $160. If we are unable to fill the vacancy, no refund of deposit will be issued.</li>
+            <li>The remainders of each team's entrance fees are due by January 15. Any entrance fee not paid in full by this date will be assessed the late registration fee of $165.</li>
+            <li>If any team forfeits its position after January 1, the deposit will be forfeited, regardless of our success in filling the vacancy.  </li>        
+          </ul>
+        </article>
 	</section>
 		<aside class="grid-30">
           <h2>Announcements</h2>
