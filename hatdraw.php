@@ -23,12 +23,9 @@
         <h1>Post-Kaimana Hilo Hat Draw</h1>
         <h2>February 22-23, 2014 on the Big Island</h2>
        <p>
-          You can find all the details on the <a href="http://www.hilohatdraw.com/index.html">Hilo Hat Draw on their website</a>. 
+          Stay tuned for details regarding the Hilo Hat Draw!  
         </p>
       <!--</article>-->
-	</section>
-	<section class="grid-100" style="text-align:center">
-		<img src="http://www.hilohatdraw.com/img/disc.jpg" style="max-width:325px"/>
 	</section>
 <!--    <aside class="grid-30">
       <p>
