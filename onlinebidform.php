@@ -10,7 +10,7 @@
 	define('SECURE_CONSTANT_173945d5ecd6224993ffc110dfb30fa0',1);
 	require_once('control/dates.php');
   ?>
-  <title></title>
+  <title>Kaimana Team Bid Form</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 </head>
@@ -34,7 +34,7 @@
 				<strong>NOTICE: Team bid payments submitted after midnight Hawaii Standard Time on November 8, 2013 will be considered late.</strong>
 			</p>
 			<div class="googleform">
-			  <iframe src="https://docs.google.com/a/hawaiiultimate.com/forms/d/1kKmjSfAUAeIAbmy_p2jJj71U-SLRba-sh29u9PAYpKM/viewform?embedded=true" width="760" height="850" frameborder="0" marginheight="0" marginwidth="0">Your browser may not support the technology used to display this registration form.  Please fill out the form on its <a href="https://docs.google.com/forms/d/1kKmjSfAUAeIAbmy_p2jJj71U-SLRba-sh29u9PAYpKM/viewform">external site</a>.</iframe>
+			  <iframe src="https://docs.google.com/forms/d/1XGdHafa8j4MB1oX0Y7_rEvRO6EBxxq5_JgTrtzHJGug/viewform?embedded=true" width="760" height="850" frameborder="0" marginheight="0" marginwidth="0">Your browser may not support the technology used to display this registration form.  Please fill out the form on its <a href="https://docs.google.com/forms/d/1XGdHafa8j4MB1oX0Y7_rEvRO6EBxxq5_JgTrtzHJGug/viewform?usp=send_form">external site</a>.</iframe>
 			</div>
 		<?php } else { ?>
 			<p>
@@ -49,7 +49,7 @@
   <?php require('partial/scripts.php'); ?>
   <script>
 	var now = new Date(<?php echo json_encode(date('c',$_SERVER['REQUEST_TIME'])); ?>);
-	var deadline = new Date( '2013-11-08T23:59:59-10:00');
+	var deadline = new Date( '2014-11-07T23:59:59-10:00');
 	var latewarningDOM = document.getElementById("deadline_warning");
 	var interval = setInterval(clocktick, 1000);
 	function clocktick() {
