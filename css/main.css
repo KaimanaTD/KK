@@ -123,8 +123,8 @@ nav li:hover {
 }
 
 .banner h1 {
-  background-image: url("../img/GreetingsBanner.jpg");
-  height: 250px;
+  background-image: url("../img/KK28Banner.png");
+  height: 226px;
   width: 960px;
   display: inline-block;
   vertical-align: middle;
@@ -441,7 +441,7 @@ a.notebacklink {
     font-size: 1.1rem;
   }
   .banner h1 {
-    background-image: url("../img/GreetingsBannerMobile.jpg");
+    background-image: url("../img/KK28Banner.png");
     height: 83px;
     width: 226px;
     display: inline-block;
