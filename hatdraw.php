@@ -24,10 +24,10 @@
   <div class="content">
 	<section class="grid-100">
       <!--<article>-->
-        <h1>Post-Kaimana Hilo Hat Draw</h1>
-        <h2>February 22-23, 2014 on the Big Island</h2>
+        <h1>Post-Kaimana Maui Hat Draw</h1>
+        <h2>February 21-22, 2014 on the Big Island</h2>
        <p>
-          Stay tuned for details regarding the Hilo Hat Draw!  
+          Stay tuned for details regarding the Maui Hat Draw!  
         </p>
       <!--</article>-->
 	</section>
