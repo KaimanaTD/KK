@@ -32,7 +32,12 @@
           <article class="registration_form">
             <h1>Player Registration</h1>
             <div id="registration_instruction_wrapper">
-              <?php if ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
+              <?php if ($_SERVER['REQUEST_TIME'] < $date["bid_notification"]) {?>
+                <p>
+                  Online registration has not yet opened for Kaimana <?php echo $str['number'];?>.
+                  Team captains will be notified of the decision on their bid by <?php echo date('F j, Y', $date["bid_notification"]);?>, and individual registration will open shortly thereafter.
+                </p>
+              <?php } elseif ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
               <p>
                 Please complete the registration form below.  Prior to submitting, please read the <a href="KK27Waiver.pdf" target="_blank">waiver</a>.
               </p>
@@ -41,7 +46,7 @@
               </div>
               <?php } else {?>
                   <p>
-                    Online registration has ended for Kaimana 27.  If you still need to register, please go to the registration tent on Friday night or Saturday morning.
+                    Online registration has ended for Kaimana <?php echo $str['number'];?>.  If you still need to register, please go to the registration tent on Friday night or Saturday morning.
                   </p>
                   <p>
                     The <a href="KK27Waiver.pdf" target="_blank">waiver</a> is still available online.

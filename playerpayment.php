@@ -45,7 +45,12 @@
       <article class="grid-parent">
         <div id="payment_instructions" class="grid-100">
           <h1>Registration Payment</h1>
-          <?php if ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
+          <?php if ($_SERVER['REQUEST_TIME'] < $date["bid_notification"]) {?>
+            <p>
+              Online player and guest payment has not yet opened for Kaimana <?php echo $str['number'];?>.
+              Team captains will be notified of the decision on their bid by <?php echo date('F j, Y', $date["bid_notification"]);?>, and individual registration and payment will open shortly thereafter.
+            </p>
+          <?php } elseif ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
           <p>
             After submitting your registration form, please find select your team and find your name below.
             You may pay for more than one person on a team by Control/Command-clicking names (may not work on all touch screen devices).
