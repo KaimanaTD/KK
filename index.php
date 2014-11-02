@@ -74,7 +74,7 @@
 			<div id="lead_<?php echo $ind;?>" class="hidden"></div>
 		<?php } ?>
       </div>
-      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK27" data-widget-id="360230608397541376" data-chrome="" data-tweet-limit="5">Tweets about "@KaimanaKlassik OR #KK27"</a>
+      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%40KaimanaKlassik+OR+%23KK28" data-widget-id="360230608397541376" data-chrome="" data-tweet-limit="5">Tweets about "@KaimanaKlassik OR #KK28"</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</aside>
     <section class="testimonials grid-100 mobile-grid-100 grid-parent">
