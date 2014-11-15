@@ -90,15 +90,15 @@ $bill = new KommitteeMember('Bill Sumrow');
 # Kommittee Positions
 $women_coord = new KommitteePosition("Women's Coordinator", $jena, 'kaimanawomen@gmail.com');
 $all_positions = array(
-  new KommitteePosition('Tournament Director', $nick, 'kaimanatd@gmail.com'),
-  new KommitteePosition('Open Coordinator', new KommitteeMember(), 'kaimanaopen@gmail.com'),
+  new KommitteePosition('Tournament Director', array($nick,$stephen), 'kaimanatd@gmail.com'),
+  new KommitteePosition('Open Coordinator', $bill, 'kaimanaopen@gmail.com'),
   $women_coord,
   new KommitteePosition('Kaimana Guru', $mondo),
   new KommitteePosition('Entertainment Director',$alex),
   new KommitteePosition('Schwag',$mark),
   new KommitteePosition('Welcome Committee', new KommitteeMember()),
-  new KommitteePosition('Volunteer Coordinator', $stephen),
-  new KommitteePosition('Grinds', new KommitteeMember()),
+  new KommitteePosition('Volunteer Coordinator', $christine),
+  new KommitteePosition('Grinds', $jack),
   new KommitteePosition('Website', $clay)
 );
 ?>
