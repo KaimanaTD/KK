@@ -1,3 +1,107 @@
+<?php
+class KommitteeMember {
+  public $name = '<i>(vacant)</i>';
+  public $img = 'img/PersonIcon.png';
+  public $email = NULL;
+  function __construct() {
+    /*
+     * Arguments (all optional): 
+     * 1. Name
+     * 2. Image path
+     * 3. Email address
+     */
+    $nargs = func_num_args();
+    if ($nargs >= 1) {
+      $this->name = func_get_arg(0);
+      if ($nargs >= 2) {
+        $this->img = func_get_arg(1);
+        if ($nargs >= 3) {
+          $this->email = func_get_arg(2);
+        }
+      }
+    }
+  }
+}
+class KommitteePosition {
+  public $title = NULL;
+  public $email = NULL;
+  public $person = NULL;
+  public $npeople = 0;
+  function __construct($t,$p,$e = NULL) {
+    /*
+     * Arguments:
+     * 1. Title
+     * 2. Array of KommitteeMember objects.
+     * 3. [optional] Email address
+     */
+    $this->title = $t;
+    $this->person = $p;
+    $this->email = $e;
+    $this->npeople = (is_array($p) ? count($p) : 1);
+  }
+  public function render() {
+    $out = '<div class="testifier kommitteeposition';
+    if ($this->npeople==1) {
+      $out .= ' grid-25 mobile-grid-50">';
+    } else {
+      $out .= ' grid-50 mobile-grid-100 grid-parent">';
+      $this->title = $this->title.'s';
+    }
+    $out .= '<h2>'.$this->title.'</h2>';
+    $email_link = FALSE;
+    if ($this->npeople==1) {
+      $out .= '<img class="avatar" src="'.$this->person->img.'" />';
+      if ($this->email != NULL || $this->person->email != NULL) {
+        $out .= '<a href="mailto:'.($this->email!=NULL ? $this->email : $this->person->email).'">';
+        $email_link = TRUE;
+      }
+      $out .= $this->person->name . ($email_link ? '</a>' : '');
+      $out .= '</div>';
+    } else {
+      # Assume $this->npeople = 2.
+      $position_email_bool = $this->email != NULL;
+      for ($pn = 0; $pn < 2; $pn++) {
+        $out .= '<div class="grid-50 mobile-grid-50">';
+        $out .= '<img class="avatar" src="'.$this->person[$pn]->img.'" />';
+        $person_email_bool = $position_email_bool || $this->person[$pn]->email != NULL;
+        if ($person_email_bool) {
+          $out .= '<a href="mailto:'.($position_email_bool ? $this->email : $this->person[$pn]->email).'">';
+          $email_link = TRUE;
+        }
+        $out .= $this->person[$pn]->name . ($person_email_bool ? '</a>' : '');
+        $out .= '</div>';
+      }
+      $out .= '</div>';
+    }
+    return $out;
+  }
+}
+# Kommittee Members
+$jena = new KommitteeMember('Jena Kline','img/kommittee/JenaKline.jpg');
+$nick = new KommitteeMember('Nick DeBoer','img/kommittee/NickDeBoer.jpg');
+$jack = new KommitteeMember('Jack Wade','img/kommittee/JackWade.jpg');
+$clay = new KommitteeMember('Clay "Dukes" McKell','img/kommittee/ClayMcKell.jpg','webmaster@hawaiiultimate.com');
+$mark = new KommitteeMember('Mark Slivka','img/kommittee/MarkSlivka.jpg');
+$stephen = new KommitteeMember('Stephen Parrish','img/kommittee/StephenParrish.jpg');
+$mondo = new KommitteeMember('Mondo Chun','img/kommittee/MondoChun.jpg');
+$alex = new KommitteeMember('Alex Globerson','img/kommittee/AlexGloberson.jpg');
+$christine = new KommitteeMember('Christine Kline');
+$bill = new KommitteeMember('Bill Sumrow');
+# Kommittee Positions
+$women_coord = new KommitteePosition("Women's Coordinator", $jena, 'kaimanawomen@gmail.com');
+$all_positions = array(
+  new KommitteePosition('Tournament Director', $nick, 'kaimanatd@gmail.com'),
+  new KommitteePosition('Open Coordinator', new KommitteeMember(), 'kaimanaopen@gmail.com'),
+  $women_coord,
+  new KommitteePosition('Kaimana Guru', $mondo),
+  new KommitteePosition('Entertainment Director',$alex),
+  new KommitteePosition('Schwag',$mark),
+  new KommitteePosition('Welcome Committee', new KommitteeMember()),
+  new KommitteePosition('Volunteer Coordinator', $stephen),
+  new KommitteePosition('Grinds', new KommitteeMember()),
+  new KommitteePosition('Website', $clay)
+);
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -31,86 +135,17 @@
           </article>
           <article class="grid-100 mobile-grid-100 grid-parent">
             <h1 class="grid-100 mobile-grid-100">Kaimana Klassik Kommittee</h1>
-            <div class="testifier kommitteeposition grid-50 mobile-grid-100 grid-parent">
-              <h2>Tournament Directors</h2>
-              <div class="grid-50 mobile-grid-50">
-                <img class="avatar" src="img/kommittee/JackWade.jpg" />
-                <a href="mailto:kaimanatd@gmail.com">Jack Wade</a>          
-              </div>
-              <div class="grid-50 mobile-grid-50">
-                <img class="avatar" src="img/kommittee/NickDeBoer.jpg" />
-                <a href="mailto:kaimanatd@gmail.com">Nick DeBoer</a>          
-              </div>
-            </div>
-            <div class="clear hide-on-desktop"></div>
-            <div class="testifier kommitteeposition grid-25 mobile-grid-50">
-              <h2>Open Coordinator</h2>
-              <img class="avatar" src="img/kommittee/BenBergen.jpg" />
-              <a href="mailto:kaimanaopen@gmail.com">Ben Bergen</a>          
-            </div>
-            <div class="testifier kommitteeposition grid-25 mobile-grid-50">
-              <h2>Women's Coordinator</h2>
-              <img class="avatar" src="img/kommittee/JenaKline.jpg" />
-              <a href="mailto:kaimanawomen@gmail.com">Jena Kline</a>
-            </div>
+            <?php 
+              $c = 0;
+              for ($p = 0; $p < count($all_positions); $p++) {
+                echo $all_positions[$p]->render();
+                $c += $all_positions[$p]->npeople;
+                if ($c % 2 == 0) {
+                  echo '<div class="clear'.($c % 4 == 0 ? '' : 'hide-on-desktop').'"></div>';
+                }
+              }
+            ?>
             <div class="clear"></div>
-            <div class="testifier kommitteeposition grid-25 mobile-grid-50">
-              <h2>Kaimana Guru</h2>
-              <img class="avatar" src="img/kommittee/MondoChun.jpg" />
-              Mondo Chun
-            </div>
-            <div class="testifier kommitteeposition grid-25 mobile-grid-50">
-              <h2>Entertainment Director</h2>
-              <img class="avatar" src="img/kommittee/AlexGloberson.jpg" />
-              Alex Globerson
-            </div>
-            <div class="clear hide-on-desktop"></div>
-            <div class="testifier kommitteeposition grid-25 mobile-grid-50">
-              <h2>Schwag</h2>
-              <img class="avatar" src="img/kommittee/MarkSlivka.jpg" />
-              Mark Slivka
-            </div>
-            <div class="testifier kommitteeposition grid-25 mobile-grid-50">
-              <h2>Welcome Committee</h2>
-              <img class="avatar" src="img/kommittee/KimbaTowler.jpg" />
-              Kimba Towler
-            </div>
-            <div class="clear"></div>
-            <div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
-              <h2>Volunteer Coordinators</h2>
-              <div class="grid-50 mobile-grid-50">
-                <img class="avatar" src="img/kommittee/StephenParrish.jpg" />
-                Stephen Parrish
-              </div>
-              <div class="grid-50 mobile-grid-50">
-                <img class="avatar" src="img/kommittee/CaleJorgenson.jpg" />
-                Cale Jorgenson
-              </div>
-            </div>
-            <div class="clear hide-on-desktop"></div>
-            <div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
-              <h2>Grinds</h2>
-              <div class="grid-50 mobile-grid-50">
-                <img class="avatar" src="img/kommittee/JeanetteClark.jpg" />
-                Jeanette Clark
-              </div>
-              <div class="grid-50 mobile-grid-50">
-                <img class="avatar" src="img/kommittee/BeckyMia.jpg" />
-                Becky Mia
-              </div>
-            </div>
-            <div class="clear"></div>
-            <div class="testifier kommitteeposition grid-50 mobile-grid-100 gridparent">
-              <h2>Website</h2>
-              <div class="grid-50 mobile-grid-50">
-                <img class="avatar" src="img/kommittee/ClayMcKell.jpg" />
-                <a href="mailto:webmaster@hawaiiultimate.com">Clay "Dukes" McKell</a>
-              </div>
-              <div class="grid-50 mobile-grid-50">
-                <img class="avatar" src="img/kommittee/JenaKline.jpg" />
-                Jena Kline
-              </div>
-            </div>
           </article>
         </section>
       </div>
