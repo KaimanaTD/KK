@@ -25,7 +25,9 @@
 	<section class="grid-100">
       <!--<article>-->
         <h1>Post-Kaimana Maui Hat Draw</h1>
-        <h2>February 21-22, 2014 on the Big Island</h2>
+        <h2>
+          <?php echo date('F j',$date['hat_start']).'-'.date('j, Y',$date['hat_end']).' '; ?>
+          on Maui</h2>
        <p>
           Stay tuned for details regarding the Maui Hat Draw!  
         </p>
