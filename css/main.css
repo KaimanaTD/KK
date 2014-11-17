@@ -100,22 +100,22 @@ textarea {
 body {
 	max-width: 960px;
 	margin: 0 auto;
-	background: #f6b76a;
+	background: #0000fe;
     font-family: Frutiger, "Frutiger Linotype", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .wrapper {
-	background: #5d5542;
+	background: #000034;
 	text-align: center;
 }
 
 nav ul li{
-	background: #8dc9c7;
+	background: #FFCC33;
 	transition: background-color 0.15s ease;
 }
 
 nav li:hover {
-	background-color: #ff9933;
+	background-color: #e6b82e;
 }
 
 .banner {
@@ -156,7 +156,7 @@ section:last-of-type {
 }
 
 aside {
-  background: #5ca4a9;
+  background: #01009a;
 }
 
 footer {
@@ -199,7 +199,7 @@ article.paypal form table{
 
 .testimonial{
   background: rgba(198,198,198,.35);
-  border: 1rem solid #5D5542;
+  border: 1rem solid #000034;
   padding: 1rem;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
