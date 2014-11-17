@@ -219,6 +219,10 @@ article.paypal form table{
   max-width: 100%;
 }
 
+.kommitteeposition h2 {
+  height: 3em;
+}
+
 .kommitteeposition .avatar {
 	width: 100%;
 }
