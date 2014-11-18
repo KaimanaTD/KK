@@ -42,14 +42,14 @@
                 Please complete the registration form below.  Prior to submitting, please read the <a href="KK27Waiver.pdf" target="_blank">waiver</a>.
               </p>
               <div class="googleform">
-                <iframe src="https://docs.google.com/forms/d/1x__TmfeBj4StK7Wbo0Kop0JReR_o9XLIGxwli3ObUJU/viewform?embedded=true" width="700" height="1650" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                <iframe src="https://docs.google.com/forms/d/1x__TmfeBj4StK7Wbo0Kop0JReR_o9XLIGxwli3ObUJU/viewform?embedded=true" width="700" height="1750" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
               </div>
               <?php } else {?>
                   <p>
                     Online registration has ended for Kaimana <?php echo $str['number'];?>.  If you still need to register, please go to the registration tent on Friday night or Saturday morning.
                   </p>
                   <p>
-                    The <a href="KK27Waiver.pdf" target="_blank">waiver</a> is still available online.
+                    The <a href="https://docs.google.com/document/d/1pJQ-hJ_KsFTRdHM6q3Q2a6syr3-sNJJOuL3eFmF2JpU/edit?usp=sharing" target="_blank">waiver</a> is still available online.
                   </p>
               <?php } ?>
             </div>
