@@ -267,44 +267,36 @@ function reg_get(key,sheetname) {
 };
 
 function build_team_list(n) {
-  var div_order = ["Open","Women","Guests"];
-  var sskey_open = "0ApzvRgA17RKMdGJsaVZHTjZsb204bUJRQUtCcS1Id1E";
-  var sskey_women = "0ApzvRgA17RKMdGxRdmpRcUxnNmZuRS1adkFYTmZUTkE";
-  var sskey_guests = "0ApzvRgA17RKMdEktVnhnczRJWEJOUzd3Wkd2dmR1cUE";
-  var sskeys = [[sskey_open], [sskey_women], [sskey_guests]];
-  var teamdic = {
-    'playerid':'_cre1l',
-    'firstname':'_cn6ca',
-    'lastname':'_cokwr',
-    'team':'_cpzh4',
-    'receivedamt':'_chk2m',
-    'receiveddate':'_ciyn3',
-    'privatereg':'_ckd7g',
-    'paymentmeth':'_clrrx'
-  };
+  var sskey = "11RmRVQvS9c4AlUEYHYsI47UpIL6I9abqnWKCVm1l5_c";
   var $fieldset = $('<fieldset/>');
   var $teamselect = $('<select/>', {'id':'team'+n, 'name':'team'+n, 'class':'reg team'})
         .append('<option class="loading" value="" disabled="disabled" selected="selected">Loading teams...</option>');
   var $playerselect = $('<select/>', {'id':'players'+n, 'name':'players'+n, 'multiple':'true', 'class':'reg player'})
     .append('<option class="loading" value="" disabled="disabled" selected="selected">Waiting for team selection...</option>');
-  $.when(reg_get(sskey_open), reg_get(sskey_women), reg_get(sskey_guests))
-    .done(function(resp_open,resp_women,resp_guests){
-      var $opengroup = $('<optgroup/>',{'label':'OPEN'}),
-        $womengroup = $('<optgroup/>',{'label':'WOMEN'}),
-        $guestgroup = $('<optgroup/>',{'label':'GUESTS'});
-      $opengroup.append(write_team_names(resp_open,sskey_open).join(''));
-      $womengroup.append(write_team_names(resp_women,sskey_women).join(''));
-      $guestgroup.append(write_team_names(resp_guests,sskey_guests).join(''));
-      $teamselect.find('option.loading').remove();
-      $teamselect.append('<option class="instructions" value="" disabled="disabled" selected="selected">Select a team...</option>')
-        .append($opengroup).append($womengroup).append($guestgroup);
-    }); // end .when.done
+  reg_get(sskey).done(function(data, textStatus, jqXHR){
+    var $opengroup = $('<optgroup/>',{'label':'OPEN'}),
+      $womengroup = $('<optgroup/>',{'label':'WOMEN'}),
+      $guestgroup = $('<optgroup/>',{'label':'GUESTS'});
+    var open_teams = [], 
+      women_teams = [], 
+      guests = ['GUEST'];
+    $.each(data, function(ind,val){
+      if (val.open !== '') {open_teams.push(val.open);}
+      if (val.women !== '') {women_teams.push(val.women);}
+    });
+    $opengroup.append(write_team_names(open_teams,'OPEN - ').join(''));
+    $womengroup.append(write_team_names(women_teams,'WOMEN - ').join(''));
+    $guestgroup.append(write_team_names(guests,'').join(''));
+    $teamselect.find('option.loading').remove();
+    $teamselect.append('<option class="instructions" value="" disabled="disabled" selected="selected">Select a team...</option>')
+      .append($opengroup).append($womengroup).append($guestgroup);
+  }); // end reg_get().done
   $teamselect.change(function(){
     $playerselect.find('option').remove();
     $playerselect.append('<option class="loading" value="">Loading...</option>');
-    // Know the value is passed of the form KEYSTRING,Sheet Name.
-    var team_vals = $teamselect.val().split(',');
-    reg_get(team_vals[0],team_vals[1]).done(function(data, textStatus, jqXHR){
+    // Know the value is passed of the form "Sheet Name".
+    var team_vals = $teamselect.val();
+    reg_get(sskey,team_vals).done(function(data, textStatus, jqXHR){
       $playerselect.find('option.loading').remove();
       var data_array = data;
       var player_info = [];
@@ -352,10 +344,10 @@ function build_team_list(n) {
   };
   return $fieldset;
   // SUBFUNCTION
-  function write_team_names(response,div_key) {
+  function write_team_names(team_list,div_prefix) {
     var out = [];
-    $.each(response[0],function(ind,val){
-      out.push('<option value="' + div_key + ',' + val.teamname + '">' + val.teamname + '</option>');
+    $.each(team_list,function(ind,val){
+      out.push('<option value="' + div_prefix + val + '">' + val + '</option>');
     });
     return out;
   };
