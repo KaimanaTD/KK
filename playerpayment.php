@@ -303,12 +303,12 @@ function build_team_list(n) {
       var $opt;
       for (var p = 0; p < data_array.length; p++){
         player_info = data_array[p];
-        if ( player_info[teamdic["privatereg"]] != 1 ) {
+        if ( player_info['privatereg'] != 1 ) {
           $opt = $('<option/>', {
-              'value':player_info[teamdic["playerid"]]+','+player_info[teamdic["firstname"]]+' '+player_info[teamdic["lastname"]],
-              'text':player_info[teamdic["firstname"]]+' '+player_info[teamdic["lastname"]]
+              'value':player_info["playerid"]+','+player_info["firstname"]+' '+player_info["lastname"],
+              'text':player_info["firstname"]+' '+player_info["lastname"]
           });
-          if (player_info[teamdic["paymentmeth"]]!=="" || player_info[teamdic["paymentmeth"]]=="FRAUD") {
+          if (player_info["receivedmethod"]!=="" || player_info["receivedmethod"]=="FRAUD") {
             $opt.attr({'disabled':'disabled'});
             // Add help message explaining the grey-ness.
           };
