@@ -80,7 +80,7 @@
           <div id="reg_pay">
             <script src="js/paypal-button.min.js?merchant=mondochun@juno.com" 
                 data-button="buynow" 
-                data-name="KK27Registration" 
+                data-name=<?php echo '"'.$str['abbreviation'].'Registration" ';?>
                 data-amount="1" 
                 data-shipping="0" 
                 data-tax="0" 
@@ -221,7 +221,7 @@
         $paypal_button.prepend('<input type="hidden" name="custom" value="'+all_ids.join(',')+'">');
       };
       var $itemname = $paypal_button.find('input[name="item_name"]');
-      var all_names_string = 'KK27Registration for ';
+      var all_names_string = 'KK28Registration for ';
       var name_to_add = '';
       var num_names_rem = 0;
       while (all_names.length>0) {
