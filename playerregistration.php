@@ -42,7 +42,7 @@
                 Please complete the registration form below.  Prior to submitting, please read the <a href="KK27Waiver.pdf" target="_blank">waiver</a>.
               </p>
               <div class="googleform">
-                <iframe src="https://docs.google.com/forms/d/1g05kkyGYl45vNeyDpklFxtwgHe8JxU-JGKq4rXRP-dQ/viewform?embedded=true" width="700" height="1650" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                <iframe src="https://docs.google.com/forms/d/1x__TmfeBj4StK7Wbo0Kop0JReR_o9XLIGxwli3ObUJU/viewform?embedded=true" width="700" height="1650" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
               </div>
               <?php } else {?>
                   <p>
