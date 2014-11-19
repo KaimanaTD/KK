@@ -29,7 +29,7 @@ set_include_path(get_include_path() . PATH_SEPARATOR . dirname(__FILE__) . "/Zen
 require_once 'credentials.php';
 require_once 'dates.php';
 // Lifted from the URL of Google Doc I want to work with
-define('SGS_SHEET_ID', '0ApzvRgA17RKMdGdfaUZLV3hnQjV1V3cxV3QzUFNoeVE');
+define('SGS_SHEET_ID', '1GdCtEqK7ikpDLmcjbF_ltoAAgGkqB1jRcFYOo6TBmyE');
 
 // Include the API
 require_once('sgs.php');
@@ -130,7 +130,7 @@ if ($verified) {
     "guests" => 0
   );
   foreach ($id_array as $id) {
-    if ($id[2] == '2') {
+    if ($id[2] == '3') {
       $npeople["guests"] += 1;
     } else {
       $npeople["players"] += 1;
@@ -172,7 +172,7 @@ if ($verified) {
     // Write results to database.
     foreach ($writedata as $id => $val) {
       $id_string = (string)$id;
-      if ($id_string[2] == '2') {
+      if ($id_string[2] == '3') {
         $writedata[$id]['amt'] = $fees['guest'];
         $writedata[$id]['meth'] = 'PayPal';
       } else {
