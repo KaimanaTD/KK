@@ -186,7 +186,7 @@
         // Should be in the form [ ID, First  Last ]
         var item = val.value.split(',');
         all_names.push(item[1]);
-        if (item[0][2] == 2) {
+        if (item[0][2] == 3) {
           subtotal += prices.guest;
           all_ids.push(item[0]);
           guests.push('<tr><td>'+item.slice(1).join()+'</td><td>$'+prices.guest+'</td></tr>');
