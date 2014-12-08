@@ -34,8 +34,8 @@
         </p>
       </article>
       <article>
-        <h2>Registration is not yet Open</h2>
-        <?php #<p>Players and guests can now <a href="playerregistration.php">register for the tournament</a>.</p> ?>
+        <h2>Registration is now open!</h2>
+        <p>Players and guests can now <a href="playerregistration.php">register for the tournament</a>.</p>
         <p>Early registration ensures your team will keep its bid and saves you money!  Until January 15, player fees are $140.  From then on, player fees are $175.</p>
       </article>
       <article>
