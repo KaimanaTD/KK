@@ -73,6 +73,7 @@ jQuery(document).ready(function() {
           })
           $d.append(team_array);
           $target.append($d);
+          $('.team_row').after('<div class="clear"></div>');
         })
       })
           
