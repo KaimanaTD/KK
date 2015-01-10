@@ -1,9 +1,9 @@
 jQuery(document).ready(function() {
   var $LV = ('.LV');
   // URL for LV women: https://www.leaguevine.com/tournaments/19435/kaimana-klassik-women/
-  var ID_women = 19435;
+  var ID_women = 19756;
   // URL for LV open: https://www.leaguevine.com/tournaments/19436/kaimana-klassik-open/
-  var ID_open = 19436;
+  var ID_open = 19755;
   var tournament_params = [ID_women, ID_open];
   /*
    * Display Teams
