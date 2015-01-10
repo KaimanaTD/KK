@@ -31,9 +31,16 @@ jQuery(document).ready(function() {
         'tournament_teams':'[' + d.id + ']'
       }).done(function(data, tS, jq){
         
-        var team_ids = [];
+        var seeded_team_ids = [],
+            unseeded_team_ids = [],
+            team_ids = [];
         $.each(data.objects, function (ind,t){
-          team_ids[t.seed-1] = t.team_id;
+          if (t.seed) {
+            seeded_team_ids[t.seed-1] = t.team_id;
+          } else {
+            unseeded_team_ids.push(t.team_id);
+          }
+          team_ids = seeded_team_ids.concat(unseeded_team_ids);
         })
         get_LV({
           'teams':JSON.stringify(team_ids)
