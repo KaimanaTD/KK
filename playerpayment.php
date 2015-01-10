@@ -119,7 +119,7 @@
   <script>
   jQuery(document).ready(function(){
     // Magic constants
-    var prices = {'player_early': 140, 'player_late':165, 'guest': 80};
+    var prices = {'player_early': 140, 'player_late':175, 'guest': 80};
     var now = new Date(<?php echo json_encode(date('c',$_SERVER['REQUEST_TIME'])); ?>);
 	var deadline = new Date(1000*<?php echo json_encode($date["reg_end"]);?>);
     var fee_increase_deadline = new Date(1000*<?php echo json_encode($date["late_start"]);?>);

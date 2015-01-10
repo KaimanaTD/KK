@@ -142,7 +142,7 @@ if ($verified) {
   $fees = array(
     "guest" => 80,
     "regular" => 140,
-    "late" => 165
+    "late" => 175
   );
   $fees["player"] = ($payment_date_proper < $date["late_start"] ? $fees["regular"] : $fees["late"]);
   $expected_amount = $npeople["players"]*$fees["player"] + $npeople["guests"]*$fees["guest"];
