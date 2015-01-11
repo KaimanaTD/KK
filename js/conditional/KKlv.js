@@ -64,7 +64,7 @@ jQuery(document).ready(function() {
             if (t.city || t.country) {
               $t.append($('<span/>', {
                 'class': 'grid-45',
-                'text': t.city + (t.city ? ', ' : '') + t.country
+                'text': t.city + (t.city && t.country ? ', ' : '') + t.country
               }));
             } else {
               $t.find('.team_name').addClass('suffix-30');
