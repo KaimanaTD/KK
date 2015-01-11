@@ -16,6 +16,7 @@ $url = '';
 $curl = curl_init();
 curl_setopt_array($curl, array(
       CURLOPT_RETURNTRANSFER => 1,
+      CURLOPT_CAINFO => dirname(__FILE__) . '/cert/cacert.pem',
       CURLOPT_HTTPHEADER => array(
           'Content-type' => 'application/x-www-form-urlencoded',
           'Accept' => 'application/json',
