@@ -29,7 +29,7 @@
           <?php echo date('F j',$date['hat_start']).'-'.date('j, Y',$date['hat_end']).' '; ?>
           on Maui</h2>
        <p>
-          Stay tuned for details regarding the Maui Hat Draw!  
+         Check out the <a href="http://website.mauiultimate.com/maui-hat-draw/maui-hat-draw-2015">Maui Ultimate</a> site for more details.  
         </p>
       <!--</article>-->
 	</section>
