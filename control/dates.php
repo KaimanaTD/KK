@@ -11,18 +11,18 @@ if (
 date_default_timezone_set('Pacific/Honolulu');
 # mktime(hh,mm,ss,MM,DD,YYYY)
 $date = array(
-  'bids_close' => mktime(23,59,59,11,7,2014),
-  'bid_notification' => mktime(23,59,59,11,15,2014),
-  'late_start' => mktime(0,0,0,1,16,2015),
-  'reg_end' => mktime(0,0,0,2,12,2015),
-  'play_start' => mktime(8,0,0,2,14,2015),
-  'play_end' => mktime(17,0,0,2,16,2015),
-  'hat_start' => mktime(8,0,0,2,21,2015),
-  'hat_end' => mktime(17,0,0,2,22,2015)
+  'bids_close' => mktime(23,59,59,11,20,2015),
+  'bid_notification' => mktime(23,59,59,11,30,2015),
+  'late_start' => mktime(0,0,0,1,16,2016),
+  'reg_end' => mktime(0,0,0,2,5,2016),
+  'play_start' => mktime(8,0,0,2,13,2016),
+  'play_end' => mktime(17,0,0,2,15,2016),
+  'hat_start' => mktime(8,0,0,2,20,2016),
+  'hat_end' => mktime(17,0,0,2,21,2016)
 );
 $str = array(
-  'number' => '28',
-  'abbreviation' => 'KK28'
+  'number' => '29',
+  'abbreviation' => 'KK29'
 );
 $secsperday = 60*60*24;
 ?>
