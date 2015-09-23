@@ -24,13 +24,12 @@
   <div class="content">
 	<section class="grid-100">
       <!--<article>-->
-        <h1>Post-Kaimana Maui Hat Draw</h1>
+        <h1>Post-Kaimana Big Island Hat Draw</h1>
         <h2>
           <?php echo date('F j',$date['hat_start']).'-'.date('j, Y',$date['hat_end']).' '; ?>
-          on Maui</h2>
+          on Big Island</h2>
        <p>
-         Check out the <a href="http://website.mauiultimate.com/maui-hat-draw/maui-hat-draw-2015">Maui Ultimate</a> site for more details.  
-        </p>
+Stay tuned for details!        </p>
       <!--</article>-->
 	</section>
 <!--    <aside class="grid-30">
