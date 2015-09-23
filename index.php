@@ -5,8 +5,8 @@
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <?php require('partial/head.php'); ?>
-  <title>Kaimana Klassik 28 - 2014</title>
-  <meta name="description" content="Kaimana Klassik is the premier ultimate tournament in Hawaii.  It's 28th year promises to be the best yet.">
+  <title>Kaimana Klassik 29 - 2016</title>
+  <meta name="description" content="Kaimana Klassik is the premier ultimate tournament in Hawaii.  It's 29th year promises to be the best yet.">
   <meta name="keywords" content="Kaimana Klassik ultimate Hawaii frisbee Waimanalo Oahu open women disc">
 </head>
 <body>
@@ -21,51 +21,29 @@
   <div class="content">
     <section class="main grid-70">
       <h1>Greetings from Kaimana!</h1>
-      <h1 id="homedates">February 14, 15, 16, 2015</h1>
+      <h1 id="homedates">February 13, 14, 15, 2016</h1>
       <h2>HAWAII'S BIGGEST & BEST WOMENS/OPEN TOURNAMENT</h2>
       <p>16 Open and 16 Women's Teams</p>
       <article>
         <p>
-          The party starts on Friday, February 13 with evening registration and entertainment.  
-          Games start Saturday morning and continue through finals on the afternoon of President’s Day holiday on Monday, February 16. </p>
+          The party starts on Friday, February 12 with evening registration and entertainment.  
+          Games start Saturday morning and continue through finals on the afternoon of President’s Day holiday on Monday, February 15. </p>
         <p>
-          Make your trip a real vacation ~ stay through the following weekend, February 21-22, and join us for the Post-Kaimana Maui Hat Draw!                
+          Make your trip a real vacation ~ stay through the following weekend, February 20-21, and join us for the Post-Kaimana Big Island Hat Draw!                
           Stay tuned for details.  
         </p>
       </article>
       <article>
-        <h2>Registration is now open!</h2>
-        <p>Players and guests can now <a href="playerregistration.php">register for the tournament</a>.</p>
-        <p>Early registration ensures your team will keep its bid and saves you money!  Until January 15, player fees are $140.  From then on, player fees are $175.</p>
-      </article>
-      <article>
         <h2>Start the Chatter!</h2>
-        <p><strong>Team bids are currently being accepted</strong></p>
-        <p>$420 team deposit due on NOVEMBER 7, 2014</p>
-        <p>Send in your bids now.  (<a href="onlinebidform.php">Online bid submission</a> is now available)</p>
+        <p><strong>Get your team bids in order...</strong></p>
+        <p>$450 team deposit due on NOVEMBER 20, 2015</p>
       </article>
-      <article>
-        <h2>How to submit a team bid</h2>
-        <p>Bids can be in any format you wish, but must include:
-          <ul>
-            <li>Contact information for captain or organizer, including name, email address, and phone number(s)</li>
-            <li>The number of players you actually anticipate having on your roster come February, as well as the number you have that are currently committed 
-          <li>$420 deposit (3 player fees)</li> 
-            <li>U.S. dollars in the form of a check payable to Kaimana Klassik or money order (<a href="onlinepayment.php">online payment</a> now available)</li>
-          </ul>
-        <p>Preference will be given to bids that also include: 
-        <ul>
-          <li>What your team can contribute to Kaimana both competitively and in spirit,</li>
-          <li>Your team's history at Kaimana, if any, or your team's history in general,</li>
-          <li>Something fun, original, and convincing!</li>
-        </ul>
-        <p>Send all team bids to:  Nick DeBoer, 1118B 15th Ave, Honolulu HI 96816.</p>
-      </article>
-      <article>
-        <h2>NO TEAM? NO PROBLEM!</h2>
-        <p>Individuals will be placed on the Aloha Spirit team or on other teams needing players.</p>
-       </article>
-	</section><!-- /main -->
+        <article>
+-        <h2>NO TEAM? NO PROBLEM!</h2>
+-        <p>Individuals will be placed on the Aloha Spirit team or on other teams needing players.</p>
+-       </article>
+-	</section><!-- /main -->
++      	</section><!-- /main -->
     <aside class="grid-30">
       <iframe src="//player.vimeo.com/video/37438019" width="200" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <div class="carousel" id="lead">
