@@ -42,7 +42,7 @@ Honolulu, HI 96816
           Players should also register on-site either Friday night or Saturday morning.
 		</p>
         <p>
-          After January 15, 2016, late registration fee is $175 (you must have registered and PAID before January 15 in order to avoid the late fee).  
+          After January 15, 2016, late registration fee is $180 (you must have registered and PAID before January 15 in order to avoid the late fee).  
           Only players who have registered and paid before January 15 are guaranteed a complete players' pack.
         </p>
         <p>
@@ -85,7 +85,7 @@ Honolulu, HI 96816
               Bid-winning teams must respond via e-mail or letter by November 22, whether or not they wish to accept the bid. If no response is received, that team will forfeit its bid, and the next wait-listed team will be contacted. At this point, the declining bid-winning team will receive a 100% refund on its deposit.</li>
             <li>Bid-winning teams are required to secure their bid by submitting entrance fees for at least 8 players (at $150 per player) by December 13.</li>
             <li>If a bid-winning and bid-accepting team fails to submit the above mentioned players' fees, its bid will be lost, and the next wait-listed team will be given priority. If we are able to fill this new vacancy, we will issue only a partial deposit refund of $160. If we are unable to fill the vacancy, no refund of deposit will be issued.</li>
-            <li>The remainders of each team's entrance fees are due by January 15. Any entrance fee not paid in full by this date will be assessed the late registration fee of $175.</li>
+            <li>The remainders of each team's entrance fees are due by January 15. Any entrance fee not paid in full by this date will be assessed the late registration fee of $180.</li>
             <li>If any team forfeits its position after January 1, the deposit will be forfeited, regardless of our success in filling the vacancy.  </li>        
           </ul>
         </article>
