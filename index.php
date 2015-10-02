@@ -35,8 +35,8 @@
       </article>
       <article>
         <h2>Start the Chatter!</h2>
-        <p><strong>Get your team bids in order and register at the link below!</strong></p>
-        <p>http://ultimatecentral.com/en_US/e/kaimana-klassik-29</p>
+        <p><strong>Get your team bids in order and register here:</strong></p>
+        <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
         	</p>$450 team deposit due on NOVEMBER 20, 2015</p>
       </article>
         <article>
