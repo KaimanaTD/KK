@@ -30,7 +30,7 @@
           Games start Saturday morning and continue through finals on the afternoon of President’s Day holiday on Monday, February 15. </p>
         <p>
           Make your trip a real vacation ~ stay through the following weekend, February 20-21, and join us for the Post-Kaimana Big Island Hat Draw!                
-          http://ultimatecentral.com/en_US/e/hilo-hat-draw-2016  
+          <a href="http://ultimatecentral.com/en_US/e/hilo-hat-draw-2016">Ultimate Central</a></li>  
         </p>
       </article>
       <article>
