@@ -82,7 +82,7 @@
                 echo date('l',$date['hat_start']).'-'.date('l',$date['hat_end']).', ';
                 echo date('F j',$date['hat_start']).'-'.date('j',$date['hat_end']);
               ?></dt>
-              <dd>Post-Kaimana Hat Draw, Maui.  Stay around for some interisland fun!</dd>
+              <dd>Post-Kaimana Hat Draw, Big Island.  Stay around for some interisland fun!</dd>
             </dl>
           <dt><h2>Where?</h2></dt>
           <dd>
