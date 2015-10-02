@@ -30,13 +30,14 @@
           Games start Saturday morning and continue through finals on the afternoon of President’s Day holiday on Monday, February 15. </p>
         <p>
           Make your trip a real vacation ~ stay through the following weekend, February 20-21, and join us for the Post-Kaimana Big Island Hat Draw!                
-          Stay tuned for details.  
+          http://ultimatecentral.com/en_US/e/hilo-hat-draw-2016  
         </p>
       </article>
       <article>
         <h2>Start the Chatter!</h2>
-        <p><strong>Get your team bids in order...</strong></p>
-        <p>$450 team deposit due on NOVEMBER 20, 2015</p>
+        <p><strong>Get your team bids in order and register at the link below!</strong></p>
+        <p>http://ultimatecentral.com/en_US/e/kaimana-klassik-29</p>
+        	</p>$450 team deposit due on NOVEMBER 20, 2015</p>
       </article>
         <article>
 -        <h2>NO TEAM? NO PROBLEM!</h2>
