@@ -36,6 +36,7 @@ Cost:  $95 entry fee for payments recieved prior to 1/15/16.  $125 entry fee for
 Included:  2 free nights camping, and 2 dinners at Big Kahuna Ranch on 2/19 and 2/20/16.  A simple breakfast before the games on 2/20 and 2/21/16.  Also included will be lots of fun, prizes, entertainment, beer, and Ultimate.
  
 This tournament will take place in beautiful Hilo, Hawaii.  You may want to take an extra week to enjoy some of the marvelous sites here on the Big Island.  Within a few minutes are jungles, beaches, volcanoes, water falls, museums, farmer's markets and historic downtown Hilo.  There is also the Kona side of the island with sunny beach resorts and amazing snorkeling.  This tournament will occur during the height of the Humpback whale migration, so keep an eye out for them splashing around while you are visiting.       </p>
+      Register Here! <a href="http://ultimatecentral.com/en_US/e/hilo-hat-draw-2016">Ultimate Central</a></li> 
       <!--</article>-->
 	</section>
 <!--    <aside class="grid-30">
