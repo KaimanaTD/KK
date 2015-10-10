@@ -1071,6 +1071,20 @@ Don N.
 </td>
 </tr>
 
+</tr>
+
+<tr>
+<td>2015</td>
+<td>Waimanalo Polo Club</td>
+<td>Stephen Parrish & Nick DeBoer</td>
+<td>Kamaloli/td>
+<td>Mahalo Y'all</td>
+<td></td>
+<td></td>
+<td>
+	
+</td>
+</tr>
 </table>
 </article>
 
