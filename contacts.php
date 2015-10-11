@@ -104,7 +104,7 @@ $all_positions = array(
   new KommitteePosition('Something Awesome', $jeanette),
   new KommitteePosition('Volunteer Coordinator', $michelle),
   new KommitteePosition('Grinds', $jack),
-  new KommitteePosition('Grinds 2', $jeanette),
+  new KommitteePosition('Grinds 2', $isaac),
   new KommitteePosition('Website', $clay)
   );
 ?>
