@@ -105,8 +105,7 @@ $all_positions = array(
   new KommitteePosition('Volunteer Coordinator', $michelle),
   new KommitteePosition('Grinds', $jack),
   new KommitteePosition('Grinds 2', $jeanette),
-  new KommitteePosition('Website', $clay)
-);
+  new KommitteePosition('Website', $clay);
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
