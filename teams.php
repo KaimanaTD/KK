@@ -31,7 +31,7 @@
 	<section class="grid-60 LV">
 		<h1>Teams</h1>
 		<article id="LV_list_teams">
-			<p>Team bids are currently being accepted!  Last year's lineup features teams from all over the globe: Australia to France and back to Hawaii.</p>
+			<p>Team bids are currently being accepted!  Last year's lineup featured teams from all over the globe: Australia to France and back to Hawaii.</p>
             <div id="ajaxloader"></div>
 		</article>
 	</section>
