@@ -96,17 +96,15 @@ $court = new KommitteeMember ('Courtney Gill', 'img/kommittee/CourtneyGill.jpg')
 # Kommittee Positions
 $women_coord = new KommitteePosition("Women's Coordinator", $jena, 'kaimanawomen@gmail.com');
 $all_positions = array(
-  new KommitteePosition('Tournament Director', array($rachel,$stephen), 'kaimanatd@gmail.com'),
+  new KommitteePosition('Tournament Directors', array($rachel,$stephen), 'kaimanatd@gmail.com'),
   new KommitteePosition('Open Coordinator', $bill, 'kaimanaopen@gmail.com'),
   $women_coord,
   new KommitteePosition('Kaimana Guru', $mondo),
   new KommitteePosition('Entertainment Director',$alex),
   new KommitteePosition('Schwag',$mark),
   new KommitteePosition('Theme', $court),
-  new KommitteePosition('Something Awesome', $jeanette),
-  new KommitteePosition('Volunteer Coordinator', $michelle),
-  new KommitteePosition('Grinds', $jack),
-  new KommitteePosition('Seconds', $isaac),
+  new KommitteePosition('Volunteer Coordinators', array($michelle,$jeanette)),
+  new KommitteePosition('Grinds', array($jack,$isaac))
   );
 ?>
 <!DOCTYPE html>
