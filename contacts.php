@@ -87,7 +87,7 @@ $mondo = new KommitteeMember('Mondo Chun','img/kommittee/MondoChun.jpg');
 $alex = new KommitteeMember('Alex Globerson','img/kommittee/AlexGloberson.jpg');
 $christine = new KommitteeMember('Christine Kline','img/kommittee/ChristineKline.jpg');
 $bill = new KommitteeMember('Bill Sumrow','img/kommittee/BillSumrow.jpg');
-$rachel = new KommitteeMember ('Rachel Lindsey', 'img/kommittee/rachellindsey.jpg');
+$rachel = new KommitteeMember ('Rachel Lindsey', 'img/kommittee/rachellindsey copy.jpg');
 $michelle = new KommitteeMember ('Michelle Swan', 'img/kommittee/MichelleSwan.jpg');
 # Kommittee Positions
 $women_coord = new KommitteePosition("Women's Coordinator", $jena, 'kaimanawomen@gmail.com');
