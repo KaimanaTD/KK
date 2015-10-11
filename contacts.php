@@ -87,8 +87,11 @@ $mondo = new KommitteeMember('Mondo Chun','img/kommittee/MondoChun.jpg');
 $alex = new KommitteeMember('Alex Globerson','img/kommittee/AlexGloberson.jpg');
 $christine = new KommitteeMember('Christine Kline','img/kommittee/ChristineKline.jpg');
 $bill = new KommitteeMember('Bill Sumrow','img/kommittee/BillSumrow.jpg');
-$rachel = new KommitteeMember ('Rachel Lindsey', 'img/kommittee/rachellindsey copy.jpg');
+$rachel = new KommitteeMember ('Rachel Lindsey', 'img/kommittee/RachelLindsey.jpg');
 $michelle = new KommitteeMember ('Michelle Swan', 'img/kommittee/MichelleSwan.jpg');
+$isaac = new KommitteeMember ('Isaac Ishihara', 'img/kommittee/IsaacIshihara.jpg');
+$jeanette = new KommitteeMember ('Jeanette Clark', 'img/kommittee/JeanetteClark.jpg');
+
 # Kommittee Positions
 $women_coord = new KommitteePosition("Women's Coordinator", $jena, 'kaimanawomen@gmail.com');
 $all_positions = array(
@@ -98,9 +101,10 @@ $all_positions = array(
   new KommitteePosition('Kaimana Guru', $mondo),
   new KommitteePosition('Entertainment Director',$alex),
   new KommitteePosition('Schwag',$mark),
-  new KommitteePosition('Welcome Committee', new KommitteeMember()),
+  new KommitteePosition('Something Awesome', $jeanette,
   new KommitteePosition('Volunteer Coordinator', $michelle),
   new KommitteePosition('Grinds', $jack),
+  new KommitteePosition('Grinds 2', $jeanette),
   new KommitteePosition('Website', $clay)
 );
 ?>
