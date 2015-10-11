@@ -101,7 +101,7 @@ $all_positions = array(
   new KommitteePosition('Kaimana Guru', $mondo),
   new KommitteePosition('Entertainment Director',$alex),
   new KommitteePosition('Schwag',$mark),
-  new KommitteePosition('Something Awesome', $jeanette,
+  new KommitteePosition('Something Awesome', $jeanette),
   new KommitteePosition('Volunteer Coordinator', $michelle),
   new KommitteePosition('Grinds', $jack),
   new KommitteePosition('Grinds 2', $jeanette),
