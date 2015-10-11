@@ -91,6 +91,7 @@ $rachel = new KommitteeMember ('Rachel Lindsey', 'img/kommittee/RachelLindsey.jp
 $michelle = new KommitteeMember ('Michelle Swan', 'img/kommittee/MichelleSwan.jpg');
 $isaac = new KommitteeMember ('Isaac Ishihara', 'img/kommittee/IsaacIshihara.jpg');
 $jeanette = new KommitteeMember ('Jeanette Clark', 'img/kommittee/JeanetteClark.jpg');
+$court = new KommitteeMember ('Courtney Gill', 'img/kommittee/CourtneyGill.jpg');
 
 # Kommittee Positions
 $women_coord = new KommitteePosition("Women's Coordinator", $jena, 'kaimanawomen@gmail.com');
@@ -101,6 +102,7 @@ $all_positions = array(
   new KommitteePosition('Kaimana Guru', $mondo),
   new KommitteePosition('Entertainment Director',$alex),
   new KommitteePosition('Schwag',$mark),
+  new KommitteePosition('Theme', $court),
   new KommitteePosition('Something Awesome', $jeanette),
   new KommitteePosition('Volunteer Coordinator', $michelle),
   new KommitteePosition('Grinds', $jack),
