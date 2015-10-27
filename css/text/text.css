@@ -24,7 +24,8 @@
 
 @font-face {
   font-family: 'KaushanScript';
-  src: url('Kauchan/KaushanScript.otf');
+  src: url('Kaushan/KaushanScript.otf');
+  src: url('Kaushan/KaushanScript.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
