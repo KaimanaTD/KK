@@ -23,9 +23,9 @@
 }*/
 
 @font-face {
-  font-family: 'GiddyupStd';
-  src: url('Giddyup/GiddyupStd.otf');
-  src: url('Giddyup/GiddyupStd.ttf') format('truetype');
+  font-family: 'AnuDraw';
+  src: url('AnuDraw/ANUDRG__.otf');
+  src: url('AnuDraw/ANUDRG__.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
