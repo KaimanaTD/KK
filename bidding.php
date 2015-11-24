@@ -82,10 +82,10 @@ Honolulu, HI 96816
           <ul>
             <li>The $450 initial deposit can later be applied to three individual player's fees (the captain plus two other players). For those teams that do not make the final cut, we will refund your full deposit.</li>
             <li>Bid-winning teams will be notified via email (as will wait-listed teams) by <?php echo date('F j',$date['bid_notification']);?>. 
-              Bid-winning teams must respond via e-mail or letter by November 22, whether or not they wish to accept the bid. If no response is received, that team will forfeit its bid, and the next wait-listed team will be contacted. At this point, the declining bid-winning team will receive a 100% refund on its deposit.</li>
-            <li>Bid-winning teams are required to secure their bid by submitting entrance fees for at least 8 players (at $150 per player) by December 13.</li>
+              Bid-winning teams must respond via e-mail or letter by December 2, whether or not they wish to accept the bid. If no response is received, that team will forfeit its bid, and the next wait-listed team will be contacted. At this point, the declining bid-winning team will receive a 100% refund on its deposit.</li>
+            <li>Bid-winning teams are required to secure their bid by submitting entrance fees for at least 10 players (at $150 per player) by December 9.</li>
             <li>If a bid-winning and bid-accepting team fails to submit the above mentioned players' fees, its bid will be lost, and the next wait-listed team will be given priority. If we are able to fill this new vacancy, we will issue only a partial deposit refund of $160. If we are unable to fill the vacancy, no refund of deposit will be issued.</li>
-            <li>The remainders of each team's entrance fees are due by January 15. Any entrance fee not paid in full by this date will be assessed the late registration fee of $180.</li>
+            <li>The remainders of each team's entrance fees are due by January 5. Any entrance fee not paid in full by this date will be assessed the late registration fee of $180.</li>
             <li>If any team forfeits its position after January 1, the deposit will be forfeited, regardless of our success in filling the vacancy.  </li>        
           </ul>
         </article>
