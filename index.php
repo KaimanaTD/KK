@@ -35,13 +35,13 @@
       </article>
       <article>
         <h2>Start the Chatter!</h2>
-        <p><strong>Get your team bids in order and register here:</strong></p>
+        <p><strong>Individual registration is now open here:</strong></p>
         <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
-        	</p>$450 team deposit due on NOVEMBER 20, 2015</p>
+        	</p>Register by January 5th for early bird registration pricing - $150.</p>
       </article>
         <article>
 -        <h2>NO TEAM? NO PROBLEM!</h2>
--        <p>Individuals will be placed on the Aloha Spirit team or on other teams needing players.</p>
+-        <p>Players looking to pick up - Please do NOT register at this time.  Instead send an email to kaimanatd@gmail.com and label the subject heading "Kaimana Pick Up".  Include a brief blurb about yourself (open/women's division, years of experience, level of play, and anything else you'd like to include) so that we can match you with an appropriate team who may need players.  We will notify you closer to the tournament as to which team you will register with.  As long as we receive an email from you before 1/5/2016 we will guarantee the $150 rate.  </p>
 -       </article>
 -	</section><!-- /main -->
 +      	</section><!-- /main -->
