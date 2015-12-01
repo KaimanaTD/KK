@@ -33,9 +33,8 @@
             <h1>Player Registration</h1>
             <div id="registration_instruction_wrapper">
               <?php if ($_SERVER['REQUEST_TIME'] < $date["bid_notification"]) {?>
-                <p>
-                  Online registration has not yet opened for Kaimana <?php echo $str['number'];?>.
-                  Team captains will be notified of the decision on their bid by <?php echo date('F j, Y', $date["bid_notification"]);?>, and individual registration will open shortly thereafter.
+                <p>Individual registration is now open here:
+                  <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
                 </p>
               <?php } elseif ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
               <p>
