@@ -25,7 +25,7 @@
 	<section class="grid-100">
       <article class="paypal">
         <h1>Team Bid Payment</h1>
-		<p 
+		<p></p>
 		Team bids are no longer being accepted for Kaimana Klassik 29.
 		</p>
       </article>
