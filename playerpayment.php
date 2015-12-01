@@ -47,8 +47,9 @@
           <h1>Registration Payment</h1>
           <?php if ($_SERVER['REQUEST_TIME'] < $date["bid_notification"]) {?>
             <p>
-              Online player and guest payment has not yet opened for Kaimana <?php echo $str['number'];?>.
-              Team captains will be notified of the decision on their bid by <?php echo date('F j, Y', $date["bid_notification"]);?>, and individual registration and payment will open shortly thereafter.
+              <p>Individual registration ($150 before 1/5/2016, $180 before 2/5/2016) is now open here:
+                  <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
+                </p>
             </p>
           <?php } elseif ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
           <p>
