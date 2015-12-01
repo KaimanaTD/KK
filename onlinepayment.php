@@ -25,10 +25,7 @@
 	<section class="grid-100">
       <article class="paypal">
         <h1>Team Bid Payment</h1>
-		<p id="deadline_warning" class="hidden">
-			<strong>NOTICE: Team bid payments submitted after midnight Hawaii Standard Time on <?php echo date('M j, Y',$date['bids_close']); ?>  will be considered late.</strong>
-		</p>
-        <li>Team Bid Registration can be found at <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
+		<p Team bids are no longer being accepted for Kaimana Klassik 29.>
       </article>
 	</section>
   </div>
