@@ -56,25 +56,7 @@
            Individual registration and payment is now open here:
                   <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
           </p>
-        </div>
-        <div id="reg_form" class="grid-50 mobile-grid-100 grid-parent">
-          <form id="registration">
-            <?php #NOTE: Form contents injected by jQuery, below. ?>
-            <button id="calculate" class="grid-100 mobile-grid-100" type="submit">Calculate total</button>
-          </form>
-        </div>
-        <div id="payment_summary" class="grid-50 mobile-grid-100">
-          <table></table>
-          <div id="reg_pay">
-            <script src="js/paypal-button.min.js?merchant=mondochun@juno.com" 
-                data-button="buynow" 
-                data-name=<?php echo '"'.$str['abbreviation'].'Registration" ';?>
-                data-amount="1" 
-                data-shipping="0" 
-                data-tax="0" 
-                data-notify_url="http://kaimanaklassik.com/control/ipn.php"
-                data-return="http://kaimanaklassik.com/paymentconfirmation.php"
-            ></script>
+        
           </div>
         </div>
         <?php } else { ?>
