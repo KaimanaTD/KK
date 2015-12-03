@@ -53,21 +53,8 @@
             </p>
           <?php } elseif ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
           <p>
-            After submitting your registration form, please find select your team and find your name below.
-            You may pay for more than one person on a team by Control/Command-clicking names (may not work on all touch screen devices).
-          </p>
-          <p>
-            When everyone has been selected, click "Calculate total" and check the names and prices.
-          </p>
-          <p>
-            When ready, the "Buy Now" button will ask you to authorize the payment via PayPal.  
-            You will receive a confirmation message to your PayPal email shortly.
-          </p>
-          <p>
-            Disabled (gray-ed out) names indicate that person has already been paid for online.
-          </p>
-          <p>
-            Any problems with registration or payments should be directed to <a href="mailto:webmaster@hawaiiultimate.com">the webmaster</a>.
+           Individual registration and payment is now open here:
+                  <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
           </p>
         </div>
         <div id="reg_form" class="grid-50 mobile-grid-100 grid-parent">
