@@ -31,7 +31,9 @@
 	<section class="grid-60 LV">
 		<h1>Teams</h1>
 		<article id="LV_list_teams">
-			<p>Team bids are currently being accepted!  Last year's lineup featured teams from all over the globe: Australia to France and back to Hawaii.</p>
+			<p>Check out this year's lineup at the link below!</p>
+			<a href="http://ultimatecentral.com/en_us/e/kaimana-klassik-29/teams">Ultimate Central</a></li>
+			<p>Last year's lineup featured teams from all over the globe: Australia to France and back to Hawaii.</p>
             <div id="ajaxloader"></div>
 		</article>
 	</section>
