@@ -27,9 +27,8 @@
 		<dl>
           <dt><h2>Who?</h2></dt>
           <dd>
-            Up to 16 Open teams and 16 Women's teams. 
-            In past years, teams have hailed from Asia to Australia to Europe to mainland U.S. to just down the street. 
-            Check back in November for specific teams.
+          	<p>Check out this year's lineup at the link below!</p>
+            <a href="http://ultimatecentral.com/en_us/e/kaimana-klassik-29/teams">Ultimate Central</a></li>
           </dd>
           <dt><h2>What?</h2></dt>
           <dd> Food. Fun. Camping. Dancing. Swimming. AND ULTIMATE!</dd>
