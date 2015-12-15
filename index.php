@@ -23,7 +23,7 @@
       <h1>Greetings from Kaimana!</h1>
       <h1 id="homedates">February 13, 14, 15, 2016</h1>
       <h2>HAWAII'S BIGGEST & BEST WOMENS/OPEN TOURNAMENT</h2>
-      <p>16 Open and 16 Women's Teams</p>
+      <p></p>
       <article>
         <p>
           The party starts on Friday, February 12 with evening registration and entertainment.  
