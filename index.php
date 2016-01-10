@@ -37,7 +37,7 @@
         <h2>Start the Chatter!</h2>
         <p><strong>Individual registration is now open here:</strong></p>
         <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
-        	</p>Register by January 5th for early bird registration pricing - $150.</p>
+        	</p>Register by February 5th!!.</p>
       </article>
         <article>
 -        <h2>NO TEAM? NO PROBLEM!</h2>
