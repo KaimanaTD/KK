@@ -39,7 +39,7 @@ This year, we are going to have a truly packed Kaimana!  Let's do our part and t
 We are trying out a new site called groupcarpool to organize carpooling for Kaimana.  If you're interested in giving or getting rides to and from the airport, you're in the right place.  Please follow the instructions below:
 
 <p></p>
-1.  Follow the link to the "Kaimana Klassic 29 - 2016 Carpool" here, no login required at any time: <a href="https://www.groupcarpool.com/t/bv8fn5">Ultimate Central</a></li>
+1.  Follow the link to the "Kaimana Klassic 29 - 2016 Carpool" here, no login required at any time: <a href="https://www.groupcarpool.com/t/bv8fn5">Group Carpool</a></li>
 </p>
 2.  If you want to offer space in your car from the Honolulu airport to the fields at Waimanalo, click Add.  After you add your car, you can look at the wait list and move people in to your car who match your schedule.  Please fill out your car's information in the following way for this tournament (examples in quotes):
 
@@ -85,7 +85,7 @@ Notes:  I fly in on AIRLINE FLIGHT & NUMBER arriving at ARRIVAL TIME. I want to 
 <p></p>
 5.  The link for our "Kaimana Klassic 29 - 2016 Carpool" should display well in the browser of your iPhone or android so you can look at it on the go, no app required.
 <p></p>
-6.  If you have questions about how the site works, watch the groupcarpool demo video at:  <a href="https://www.youtube.com/watch?v=fh2ahWi2Slg">Ultimate Central</a></li> 
+6.  If you have questions about how the site works, watch the groupcarpool demo video at:  <a href="https://www.youtube.com/watch?v=fh2ahWi2Slg">Instructions</a></li> 
 <p>
 
       </article>
