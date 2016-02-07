@@ -93,7 +93,8 @@ Notes:  I fly in on AIRLINE FLIGHT & NUMBER arriving at ARRIVAL TIME. I want to 
         <h2>Start the Chatter!</h2>
         <p><strong>Individual registration is now open here:</strong></p>
         <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
-        	</p>Register by February 5th!!.</p>
+        	</p>Players please register by February 8th!!  Online registration will be closed after that date.</p>
+        	<p>Guests may continue to register online through Thursday, 2/11!!</p>
       </article>
         <article>
 -        <h2>NO TEAM? NO PROBLEM!</h2>
