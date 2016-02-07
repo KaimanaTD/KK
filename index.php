@@ -38,8 +38,9 @@ This year, we are going to have a truly packed Kaimana!  Let's do our part and t
 
 We are trying out a new site called groupcarpool to organize carpooling for Kaimana.  If you're interested in giving or getting rides to and from the airport, you're in the right place.  Please follow the instructions below:
 
-1.  Follow the link to the "Kaimana Klassic 29 - 2016 Carpool" here, no login required at any time: https://www.groupcarpool.com/t/bv8fn5
-
+<p></p>
+1.  Follow the link to the "Kaimana Klassic 29 - 2016 Carpool" here, no login required at any time: <a href="https://www.groupcarpool.com/t/bv8fn5">Ultimate Central</a></li>
+</p>
 2.  If you want to offer space in your car from the Honolulu airport to the fields at Waimanalo, click Add.  After you add your car, you can look at the wait list and move people in to your car who match your schedule.  Please fill out your car's information in the following way for this tournament (examples in quotes):
 
 Name:  YOUR NAME HERE      "Lei"
@@ -62,6 +63,7 @@ Returning time: WHAT DAY/TIME YOU WANT TO LEAVE WAIMANALO TO GO TO THE AIRPORT
 
 Notes:  I fly in on AIRLINE & FLIGHT NUMBER, I want to leave from the airport to Waimanalo on DAY at TIME. I want to return from Waimanalo to the airport on DAY at TIME.  My flight out is on AIRLINE & FLIGHT NUMBER departing at DEPARTURE TIME.  ANYTHING ELSE IMPORTANT.
 
+<p></p>
 3.  If you want a seat in a car, click Join Waitlist, or click directly on the car you want to join if you see one that fits your schedule.  You can also move yourself from the waitlist to a car that you see matches your schedule.  You can join a car roundtrip if the departure and return work for you, or join just one way.  Please fill out your information in the following way for this tournament:
 
 Name:  YOUR NAME HERE      "Kai"
@@ -78,11 +80,12 @@ State:  Hawaii
 
 Notes:  I fly in on AIRLINE FLIGHT & NUMBER arriving at ARRIVAL TIME. I want to leave from the airport to Waimanalo on DAY at TIME. I want to return from Waimanalo to the airport on DAY at TIME.  My flight out is on AIRLINE & FLIGHT NUMBER departing at DEPARTURE TIME.   ANYTHING ELSE IMPORTANT.
 
+<p></p>
 4.  You will get e-mail notifications if you are added to a car from the waitlist or if anyone adds themselves to your car.  Change of plans?  You can easily make changes, whether you're the driver or the passenger, but please remember to be courteous to people that are planning around this carpool.  It's probably a good idea to be in touch with the people you're carpooling with in advance of the carpool.  Also, be sure to look at the details of the car you're joining, as some of our local players may be using this site too and will not be going from "Airport - Waimanalo."
-
+<p></p>
 5.  The link for our "Kaimana Klassic 29 - 2016 Carpool" should display well in the browser of your iPhone or android so you can look at it on the go, no app required.
-
-6.  If you have questions about how the site works, watch the groupcarpool demo video at:  https://www.youtube.com/watch?v=fh2ahWi2Slg 
+<p></p>
+6.  If you have questions about how the site works, watch the groupcarpool demo video at:  <a href="https://www.youtube.com/watch?v=fh2ahWi2Slg">Ultimate Central</a></li> 
 <p>
 
       </article>
