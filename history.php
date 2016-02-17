@@ -1082,6 +1082,21 @@ Don N.
 <td>He Lolo</td>
 <td>Forbidden Fruit</td>
 <td>Rebecca Eldredge
+
+</td>
+</tr>
+
+</tr>
+
+<tr>
+<td>2016</td>
+<td>Waimanalo Polo Club</td>
+<td>Rachel Lindsey & Stephen Parrish</td>
+<td>KUT</td>
+<td>Beachyonce</td>
+<td>Freaks</td>
+<td>Diva Cup Dragons</td>
+<td>Mark Slivka & Jack Wade
 	
 </td>
 </tr>
