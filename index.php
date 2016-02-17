@@ -26,79 +26,21 @@
       <p></p>
       <article>
         <p>
-          The party starts on Friday, February 12 with evening registration and entertainment.  
-          Games start Saturday morning and continue through finals on the afternoon of President’s Day holiday on Monday, February 15. </p>
+         Kaimana Klassik 29 was a blast!  Congrats to our Open Division winners KUT and Womens Division winners Beachyonce! 
+         Special shout outs to our spirit team winners - Freaks and Diva Cup Dragons!</p>
         <p>
-          Make your trip a real vacation ~ stay through the following weekend, February 20-21, and join us for the Post-Kaimana Big Island Hat Draw!                
+          Join us this weekend, February 20-21, for the Post-Kaimana Big Island Hat Draw!                
           <a href="http://ultimatecentral.com/en_US/e/hilo-hat-draw-2016">Ultimate Central</a></li>  
         </p>
-        KK29 is a week away!  We're so excited to have you all and we want to be sure that everyone has a way to get to Waimanalo for the absolute best Presidents' Day weekend of 2016.
-
-This year, we are going to have a truly packed Kaimana!  Let's do our part and try to carpool from the airport when we can and help other travelers out when we've rented wheels to get to the fields.
-
-We are trying out a new site called groupcarpool to organize carpooling for Kaimana.  If you're interested in giving or getting rides to and from the airport, you're in the right place.  Please follow the instructions below:
-
-<p></p>
-1.  Follow the link to the "Kaimana Klassic 29 - 2016 Carpool" here, no login required at any time: <a href="https://www.groupcarpool.com/t/bv8fn5">Group Carpool</a></li>
-</p>
-2.  If you want to offer space in your car from the Honolulu airport to the fields at Waimanalo, click Add.  After you add your car, you can look at the wait list and move people in to your car who match your schedule.  Please fill out your car's information in the following way for this tournament (examples in quotes):
-
-Name:  YOUR NAME HERE      "Lei"
-
-E-mail:  YOUR E-MAIL HERE    "Leilovesnalo@hula.org"
-
-Phone:  XXX-XXX-XXXX  "292-929-2929"
-
-Seats:  # OF SEATS IN YOUR CAR
-
-Address:  AIRPORT - WAIMANALO "Airport - Waimanalo"
-
-City:  HONOLULU "Honolulu"
-
-State:  HAWAII "Hawaii"
-
-Departing time:  WHAT DAY/TIME YOU WANT TO LEAVE THE AIRPORT
-
-Returning time: WHAT DAY/TIME YOU WANT TO LEAVE WAIMANALO TO GO TO THE AIRPORT
-
-Notes:  I fly in on AIRLINE & FLIGHT NUMBER, I want to leave from the airport to Waimanalo on DAY at TIME. I want to return from Waimanalo to the airport on DAY at TIME.  My flight out is on AIRLINE & FLIGHT NUMBER departing at DEPARTURE TIME.  ANYTHING ELSE IMPORTANT.
-
-<p></p>
-3.  If you want a seat in a car, click Join Waitlist, or click directly on the car you want to join if you see one that fits your schedule.  You can also move yourself from the waitlist to a car that you see matches your schedule.  You can join a car roundtrip if the departure and return work for you, or join just one way.  Please fill out your information in the following way for this tournament:
-
-Name:  YOUR NAME HERE      "Kai"
-
-E-mail:  YOUR E-MAIL HERE    "Kailovesnalo@hula.org"
-
-Phone:  XXX-XXX-XXXX  "808-888-8080"
-
-City:  AIRPORT - WAIMANALO "Airport - Waimanalo"
-
-Address:  
-
-State:  Hawaii
-
-Notes:  I fly in on AIRLINE FLIGHT & NUMBER arriving at ARRIVAL TIME. I want to leave from the airport to Waimanalo on DAY at TIME. I want to return from Waimanalo to the airport on DAY at TIME.  My flight out is on AIRLINE & FLIGHT NUMBER departing at DEPARTURE TIME.   ANYTHING ELSE IMPORTANT.
-
-<p></p>
-4.  You will get e-mail notifications if you are added to a car from the waitlist or if anyone adds themselves to your car.  Change of plans?  You can easily make changes, whether you're the driver or the passenger, but please remember to be courteous to people that are planning around this carpool.  It's probably a good idea to be in touch with the people you're carpooling with in advance of the carpool.  Also, be sure to look at the details of the car you're joining, as some of our local players may be using this site too and will not be going from "Airport - Waimanalo."
-<p></p>
-5.  The link for our "Kaimana Klassic 29 - 2016 Carpool" should display well in the browser of your iPhone or android so you can look at it on the go, no app required.
-<p></p>
-6.  If you have questions about how the site works, watch the groupcarpool demo video at:  <a href="https://www.youtube.com/watch?v=fh2ahWi2Slg">Instructions</a></li> 
-<p>
+       
 
       </article>
       <article>
         <h2>Start the Chatter!</h2>
-        <p><strong>Individual registration is now open here:</strong></p>
-        <a href="http://ultimatecentral.com/en_US/e/kaimana-klassik-29">Ultimate Central</a></li>
-        	</p>Players please register by February 8th!!  Online registration will be closed after that date.</p>
-        	<p>Guests may continue to register online through Thursday, 2/11!!</p>
+        <p>Stay tuned for KK30 details...</p>
       </article>
         <article>
--        <h2>NO TEAM? NO PROBLEM!</h2>
--        <p>Players looking to pick up - Please do NOT register at this time.  Instead send an email to kaimanatd@gmail.com and label the subject heading "Kaimana Pick Up".  Include a brief blurb about yourself (open/women's division, years of experience, level of play, and anything else you'd like to include) so that we can match you with an appropriate team who may need players.  We will notify you closer to the tournament as to which team you will register with.  As long as we receive an email from you before 1/5/2016 we will guarantee the $150 rate.  </p>
+-        <h2>
 -       </article>
 -	</section><!-- /main -->
 +      	</section><!-- /main -->
