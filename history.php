@@ -1096,7 +1096,8 @@ Don N.
 <td>Beachyonce</td>
 <td>Freaks</td>
 <td>Diva Cup Dragons</td>
-<td>Mark Slivka & Jack Wade
+<td>Mark Slivka<br>
+    Jack Wade
 	
 </td>
 </tr>
