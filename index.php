@@ -29,7 +29,7 @@
          Kaimana Klassik 29 was a blast!  Congrats to our Open Division winners KUT and Womens Division winners Beachyonce! 
          Special shout outs to our spirit team winners - Freaks and Diva Cup Dragons!</p>
         <p>
-          Join us this weekend, February 20-21, for the Post-Kaimana Big Island Hat Draw!                
+          Thanks to the Big Island for an amazing Post-Kaimana Hat Draw!                
           <a href="http://ultimatecentral.com/en_US/e/hilo-hat-draw-2016">Ultimate Central</a></li>  
         </p>
        
