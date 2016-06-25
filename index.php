@@ -21,7 +21,7 @@
   <div class="content">
     <section class="main grid-70">
       <h1>Greetings from Kaimana!</h1>
-      <h1 id="homedates">February 13, 14, 15, 2016</h1>
+      <h1 id="homedates">February 18 - 20, 2017</h1>
       <h2>HAWAII'S BIGGEST & BEST WOMENS/OPEN TOURNAMENT</h2>
       <p></p>
       <article>
