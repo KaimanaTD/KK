@@ -29,7 +29,7 @@
          Kaimana Klassik XXX will start accepting bids on September 26th through ultimate central.  The bid window will close October 28th and acceptance/wait-list notifications will go out by November 4th.</p>
         <p>
           Consider staying for the Maui Hat Draw, February 25 & 26th!                
-          <a href="http://ultimatecentral.com/en_US/e/hilo-hat-draw-2016">Ultimate Central</a></li>  
+          
         </p>
        
 
