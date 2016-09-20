@@ -26,10 +26,9 @@
       <p></p>
       <article>
         <p>
-         Kaimana Klassik 29 was a blast!  Congrats to our Open Division winners KUT and Womens Division winners Beachyonce! 
-         Special shout outs to our spirit team winners - Freaks and Diva Cup Dragons!</p>
+         Kaimana Klassik XXX will start accepting bids on September 26th through ultimate central.  The bid window will close October 28th and acceptance/wait-list notifications will go out by November 4th.</p>
         <p>
-          Thanks to the Big Island for an amazing Post-Kaimana Hat Draw!                
+          Consider staying for the Maui Hat Draw, February 25 & 26th!                
           <a href="http://ultimatecentral.com/en_US/e/hilo-hat-draw-2016">Ultimate Central</a></li>  
         </p>
        
@@ -37,7 +36,7 @@
       </article>
       <article>
         <h2>Start the Chatter!</h2>
-        <p>Stay tuned for KK30 details...</p>
+        <p>Kaimana Klassik XXX, February 18th - 20th, 2017</p>
       </article>
         <article>
 -        <h2>
