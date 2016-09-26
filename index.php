@@ -27,11 +27,13 @@
       <article>
         <p>
          Kaimana Klassik XXX is now accepting bids through October 28th via ultimate central.  Acceptance/wait-list notifications will go out by November 4th.</p>
-        <a href="http://ultimatecentral.com/en_us/e/kaimana-klassik-xxx>Ultimate Central</a></li>
+        <a href="http://ultimatecentral.com/en_us/e/kaimana-klassik-xxx">Ultimate Central</a></li>
 	      <p>
           Consider staying for the Maui Hat Draw, February 25 & 26th!                
           
         </p>
+		 
+	
        
 
       </article>
