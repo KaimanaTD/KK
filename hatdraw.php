@@ -24,20 +24,15 @@
   <div class="content">
 	<section class="grid-100">
       <!--<article>-->
-        <h1>Post-Kaimana Big Island Hat Draw</h1>
+        <h1>Post-Kaimana Maui Hat Draw</h1>
         <h2>
-          <?php echo date('F j',$date['hat_start']).'-'.date('j, Y',$date['hat_end']).' '; ?>
-          on Big Island</h2>
+          
        <p>
-When: February 20th - 21st, 2016.
-Where: Hilo, Hawaii on the Big Island of Hawaii.
+When: February 25th - 26th, 2017.
+Where: Maui, Hawaii
 What:  Coed hat draw format (all participants will be placed on a coed team based upon their skills).
-Cost:  $95 entry fee for payments recieved prior to 1/15/16.  $125 entry fee for payments recieved after 1/15/16.
-Included:  2 free nights camping, and 2 dinners at Big Kahuna Ranch on 2/19 and 2/20/16.  A simple breakfast before the games on 2/20 and 2/21/16.  Also included will be lots of fun, prizes, entertainment, beer, and Ultimate.
- 
-This tournament will take place in beautiful Hilo, Hawaii.  You may want to take an extra week to enjoy some of the marvelous sites here on the Big Island.  Within a few minutes are jungles, beaches, volcanoes, water falls, museums, farmer's markets and historic downtown Hilo.  There is also the Kona side of the island with sunny beach resorts and amazing snorkeling.  This tournament will occur during the height of the Humpback whale migration, so keep an eye out for them splashing around while you are visiting.       </p>
-      Register Here! <a href="http://ultimatecentral.com/en_US/e/hilo-hat-draw-2016">Ultimate Central</a></li> 
-      More Details Here! <a href="http://hilohatdraw.com">Hilo Hat Draw</a></li>
+
+<p>
       <!--</article>-->
 	</section>
 <!--    <aside class="grid-30">
