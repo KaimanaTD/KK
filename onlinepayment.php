@@ -26,7 +26,7 @@
       <article class="paypal">
         <h1>Team Bid Payment</h1>
 		<p></p>
-		Team bids are no longer being accepted for Kaimana Klassik 29.
+		Bids are currently being accepted through October 28th.  Please visit "http://ultimatecentral.com/en_us/e/kaimana-klassik-xxx" to complete the process.
 		</p>
       </article>
 	</section>
