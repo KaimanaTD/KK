@@ -26,7 +26,8 @@
       <article class="paypal">
         <h1>Team Bid Payment</h1>
 		<p></p>
-		Bids are currently being accepted through October 28th.  Please visit "http://ultimatecentral.com/en_us/e/kaimana-klassik-xxx" to complete the process.
+		Bids are currently being accepted through October 28th.  
+	       <a href="http://ultimatecentral.com/en_us/e/kaimana-klassik-xxx">Ultimate Central</a></li>
 		</p>
       </article>
 	</section>
