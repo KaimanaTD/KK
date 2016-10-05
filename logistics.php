@@ -27,62 +27,15 @@
 		<dl>
           <dt><h2>Who?</h2></dt>
           <dd>
-          	<p>Check out this year's lineup at the link below!</p>
-            <a href="http://ultimatecentral.com/en_us/e/kaimana-klassik-29/teams">Ultimate Central</a></li>
+          	<p>Submit your bid at the link below!</p>
+            <a href="http://ultimatecentral.com/en_us/e/kaimana-klassik-xxx">Ultimate Central</a></li>
           </dd>
           <dt><h2>What?</h2></dt>
           <dd> Food. Fun. Camping. Dancing. Swimming. AND ULTIMATE!</dd>
           <dt><h2>When?</h2></dt>
           <dd>
-            <?php 
-              echo date('F j', $date['play_start']);
-              $ndays = floor(($date['play_end'] - $date['play_start'])/$secsperday);
-              while ($ndays > 0) {
-                echo ', '.date('j',$date['play_end']-($ndays-1)*$secsperday);
-                $ndays = $ndays - 1;
-              }
-              echo ', '.date('Y').'. ';
-            ?>
-            Important days/times to note:
-            <dl>
-              <dt><?php echo date('l, F j', $date['play_start']-$secsperday); ?></dt>
-              <dd><ul>
-                <li>5:00 to 9:00 pm - Player check-in</li>
-                <li>6:00 to 8:00 pm - Dinner is served</li>
-                <li>8:00 pm - Captains meeting</li>
-              </ul></dd>
-              <dt><?php echo date('l, F j',$date['play_start']); ?></dt>
-              <dd><ul>
-                <li>7:00 am - Breakfast starts</li>
-                <li>7:00 to 7:50 am - Player check-in</li>
-                <li>8:00 am - Opening Ceremony</li>
-                <li>8:45 am to 5:30 pm - Games</li>
-                <li>6:00 pm - Dinner</li>
-              </ul></dd>
-              <dt><?php echo date('l, F j',$date['play_start']+$secsperday); ?></dt>
-              <dd><ul>
-                <li>7:00 am - Breakfast starts</li>
-                <li>8:45 am to 5:30 pm - Games</li>
-                <li>6:00 pm - Dinner</li>
-              </ul></dd>
-              <dt><?php echo date('l, F j',$date['play_end']); ?></dt>
-              <dd>
-                <ul>
-                  <li>7:00 am - Breakfast starts</li>
-                  <li>8:45 am - Bracket play starts</li>
-                  <li>~12:30 and 3:00 pm - Finals</li>
-                  <li>~5:00 - Closing Ceremony (immediately follows Finals)</li>
-                </ul>
-                <p>
-                  Don't schedule your flight too early or you'll miss the Finals and the Closing Ceremony.
-                </p>
-              </dd>
-              <dt><?php 
-                echo date('l',$date['hat_start']).'-'.date('l',$date['hat_end']).', ';
-                echo date('F j',$date['hat_start']).'-'.date('j',$date['hat_end']);
-              ?></dt>
-              <dd>Post-Kaimana Hat Draw, Big Island.  Stay around for some interisland fun!</dd>
-            </dl>
+           
+            
           <dt><h2>Where?</h2></dt>
           <dd>
             Waimanalo Polo Fields, 41-1200 Kalanianaole Highway, Waimanalo, Oahu.  For your reference we have <a href="maps.php">maps of Oahu and Waimanalo</a>.
