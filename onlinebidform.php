@@ -28,13 +28,13 @@
         <h1>Team Bids</h1>
 		<?php if ($_SERVER['REQUEST_TIME'] < $date["reg_end"]) {?>
 			<p>
-			  Team bids are no longer being accepted for Kaimana Klassik 29.
+			  
 			<p id="deadline_warning" class="hidden">
 				
 			</p>
 		<?php } else { ?>
 			<p>
-			  Sorry, the team bid window has closed.  Please <a href="mailto:kaimanatd@gmail.com">contact the TD's</a> to see if another team would like to merge with yours.
+			   <a href="http://ultimatecentral.com/en_us/e/kaimana-klassik-xxx">Ultimate Central</a></li>
 			</p>
 		<?php } ?>
       </article>
